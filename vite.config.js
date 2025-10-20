@@ -15,32 +15,6 @@ export default defineConfig({
   root: '.',
   base,
   publicDir: 'public',
-
-  plugins: [
-    {
-      name: 'upbc-base-path-html-transform',
-      transformIndexHtml(html) {
-        if (base === '/') {
-          return html;
-        }
-
-        const replacements = [
-          ['href="/', `href="${base}`],
-          ["href='/", `href='${base}`],
-          ['src="/', `src="${base}`],
-          ["src='/", `src='${base}`],
-          ['url("/', `url("${base}`],
-          ["url('/", `url('${base}`],
-          ['url(/', `url(${base}`]
-        ];
-
-        return replacements.reduce(
-          (output, [from, to]) => output.replaceAll(from, to),
-          html
-        );
-      }
-    }
-  ],
   
   server: {
     port: 3000,
