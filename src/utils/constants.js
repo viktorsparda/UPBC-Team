@@ -2,10 +2,24 @@
  * Constantes globales de la aplicación UPBC
  */
 
+const BASE_URL = import.meta.env.BASE_URL ?? '/';
+
+const withBase = (path = '') => {
+  if (!path) return BASE_URL;
+  if (/^(https?:)?\/\//.test(path) || path.startsWith('mailto:') || path.startsWith('tel:')) {
+    return path;
+  }
+  if (path.startsWith('#')) {
+    return `${BASE_URL}${path}`;
+  }
+  return `${BASE_URL}${path.replace(/^\//, '')}`;
+};
+
 export const SITE_CONFIG = {
   name: 'Universidad Politécnica de Baja California',
   shortName: 'UPBC',
   description: 'Formando profesionales de excelencia',
+  baseUrl: BASE_URL,
   
   // URLs de redes sociales
   social: {
@@ -18,37 +32,37 @@ export const SITE_CONFIG = {
 
   // Rutas del sitio
   routes: {
-    home: '/',
+    home: withBase(''),
     universidad: {
-      historia: '/src/pages/historia.html',
-      misionVision: '/src/pages/mision-vision.html',
-      directorio: '/src/pages/directorio.html',
-      instalaciones: '/src/pages/instalaciones.html'
+      historia: withBase('src/pages/historia.html'),
+      misionVision: withBase('src/pages/mision-vision.html'),
+      directorio: withBase('src/pages/directorio.html'),
+      instalaciones: withBase('src/pages/instalaciones.html')
     },
     ofertaEducativa: {
-      carreras: '/src/pages/carreras.html',
-      posgrados: '/src/pages/posgrados.html',
-      educacionContinua: '/src/pages/educacion-continua.html',
-      modalidadesEspeciales: '/oferta-educativa/modalidades-especiales/'
+      carreras: withBase('src/pages/carreras.html'),
+      posgrados: withBase('src/pages/posgrados.html'),
+      educacionContinua: withBase('src/pages/educacion-continua.html'),
+      modalidadesEspeciales: withBase('oferta-educativa/modalidades-especiales/')
     },
     admisiones: {
-      requisitos: '/admisiones/requisitos/',
-      procesoInscripcion: '/admisiones/proceso-inscripcion/',
-      calendario: '/src/pages/calendario.html',
-      costos: '/admisiones/costos/'
+      requisitos: withBase('admisiones/requisitos/'),
+      procesoInscripcion: withBase('admisiones/proceso-inscripcion/'),
+      calendario: withBase('src/pages/calendario.html'),
+      costos: withBase('admisiones/costos/')
     },
     vidaUniversitaria: {
-      main: '/src/pages/vida-universitaria.html',
-      vidaEstudiantil: '/vida-universitaria/vida-estudiantil/',
-      convivenciaEquidad: '/vida-universitaria/convivencia-equidad/',
-      eventosEspeciales: '/vida-universitaria/eventos-especiales/',
-      bienestarSalud: '/vida-universitaria/bienestar-salud/'
+      main: withBase('src/pages/vida-universitaria.html'),
+      vidaEstudiantil: withBase('src/pages/vida-estudiantil.html'),
+      convivenciaEquidad: withBase('src/pages/convivencia-equidad.html'),
+      eventosEspeciales: withBase('src/pages/eventos-especiales.html'),
+      bienestarSalud: withBase('src/pages/bienestar-salud.html')
     },
     servicios: {
-      biblioteca: '/servicios/biblioteca/',
-      laboratorios: '/servicios/laboratorios/',
-      serviciosEscolares: '/servicios/servicios-escolares/',
-      becas: '/src/pages/becas.html'
+      biblioteca: withBase('servicios/biblioteca/'),
+      laboratorios: withBase('servicios/laboratorios/'),
+      serviciosEscolares: withBase('servicios/servicios-escolares/'),
+      becas: withBase('src/pages/becas.html')
     }
   },
 
@@ -65,63 +79,63 @@ export const SITE_CONFIG = {
 export const MENU_ITEMS = [
   {
     label: 'Inicio',
-    url: '/',
+    url: withBase(''),
     type: 'link'
   },
   {
     label: 'Universidad',
     type: 'dropdown',
     items: [
-      { label: 'Historia', url: '/src/pages/historia.html' },
-      { label: 'Misión y visión', url: '/src/pages/mision-vision.html' },
-      { label: 'Directorio', url: '/src/pages/directorio.html' },
-      { label: 'Instalaciones', url: '/src/pages/instalaciones.html' }
+      { label: 'Historia', url: withBase('src/pages/historia.html') },
+      { label: 'Misión y visión', url: withBase('src/pages/mision-vision.html') },
+      { label: 'Directorio', url: withBase('src/pages/directorio.html') },
+      { label: 'Instalaciones', url: withBase('src/pages/instalaciones.html') }
     ]
   },
   {
     label: 'Oferta educativa',
     type: 'dropdown',
     items: [
-      { label: 'Carreras', url: '/src/pages/carreras.html' },
-      { label: 'Posgrados', url: '/src/pages/posgrados.html' },
-      { label: 'Educación continua', url: '/src/pages/educacion-continua.html' },
-      { label: 'Modalidades especiales', url: '/oferta-educativa/modalidades-especiales/' }
+      { label: 'Carreras', url: withBase('src/pages/carreras.html') },
+      { label: 'Posgrados', url: withBase('src/pages/posgrados.html') },
+      { label: 'Educación continua', url: withBase('src/pages/educacion-continua.html') },
+      { label: 'Modalidades especiales', url: withBase('oferta-educativa/modalidades-especiales/') }
     ]
   },
   {
     label: 'Admisiones',
     type: 'dropdown',
     items: [
-      { label: 'Requisitos', url: '/admisiones/requisitos/' },
-      { label: 'Proceso de inscripción', url: '/admisiones/proceso-inscripcion/' },
-      { label: 'Calendario escolar', url: '/src/pages/calendario.html' },
-      { label: 'Costos', url: '/admisiones/costos/' }
+      { label: 'Requisitos', url: withBase('admisiones/requisitos/') },
+      { label: 'Proceso de inscripción', url: withBase('admisiones/proceso-inscripcion/') },
+      { label: 'Calendario escolar', url: withBase('src/pages/calendario.html') },
+      { label: 'Costos', url: withBase('admisiones/costos/') }
     ]
   },
   {
     label: 'Vida universitaria',
-    url: '/src/pages/vida-universitaria.html',
+    url: withBase('src/pages/vida-universitaria.html'),
     type: 'dropdown',
     items: [
-      { label: 'Vida Estudiantil', url: '/vida-universitaria/vida-estudiantil/' },
-      { label: 'Convivencia y Equidad', url: '/vida-universitaria/convivencia-equidad/' },
-      { label: 'Eventos Especiales', url: '/vida-universitaria/eventos-especiales/' },
-      { label: 'Bienestar y Salud', url: '/vida-universitaria/bienestar-salud/' }
+      { label: 'Vida Estudiantil', url: withBase('src/pages/vida-estudiantil.html') },
+      { label: 'Convivencia y Equidad', url: withBase('src/pages/convivencia-equidad.html') },
+      { label: 'Eventos Especiales', url: withBase('src/pages/eventos-especiales.html') },
+      { label: 'Bienestar y Salud', url: withBase('src/pages/bienestar-salud.html') }
     ]
   },
   {
     label: 'Servicios',
     type: 'dropdown',
     items: [
-      { label: 'Biblioteca', url: '/servicios/biblioteca/' },
-      { label: 'Laboratorios', url: '/servicios/laboratorios/' },
-      { label: 'Servicios escolares', url: '/servicios/servicios-escolares/' },
-      { label: 'Becas', url: '/src/pages/becas.html' }
+      { label: 'Biblioteca', url: withBase('servicios/biblioteca/') },
+      { label: 'Laboratorios', url: withBase('servicios/laboratorios/') },
+      { label: 'Servicios escolares', url: withBase('servicios/servicios-escolares/') },
+      { label: 'Becas', url: withBase('src/pages/becas.html') }
     ]
   },
   {
     label: 'Contacto',
-    url: '/#contact',
+    url: withBase('#contact'),
     type: 'link'
   }
 ];

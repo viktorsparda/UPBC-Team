@@ -5,6 +5,25 @@
 import { SITE_CONFIG, MENU_ITEMS } from '@utils/constants.js';
 import { select, selectAll, on, addClass, removeClass, toggleClass } from '@utils/dom.js';
 
+const BASE_URL = SITE_CONFIG.baseUrl ?? import.meta.env.BASE_URL ?? '/';
+const resolveAssetPath = (path) => `${BASE_URL}${path.replace(/^\//, '')}`;
+const normalizePath = (url) => {
+  try {
+    const { pathname } = new URL(url, window.location.origin);
+    const basePath = BASE_URL.endsWith('/') ? BASE_URL.slice(0, -1) : BASE_URL;
+    let cleaned = pathname;
+    if (basePath && basePath !== '/' && cleaned.startsWith(basePath)) {
+      cleaned = cleaned.slice(basePath.length);
+    }
+    return cleaned || '/';
+  } catch (error) {
+    if (url.startsWith('#')) {
+      return '#';
+    }
+    return url || '/';
+  }
+};
+
 export class Navbar {
   constructor(container) {
     this.container = typeof container === 'string' ? select(container) : container;
@@ -68,8 +87,8 @@ export class Navbar {
             <div class="col-12">
               <nav class="main-nav">
                 <!-- Logo -->
-                <a href="/" class="logo">
-                  <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" 
+                <a href="${SITE_CONFIG.routes.home}" class="logo">
+                  <img src="${resolveAssetPath('assets/images/logos/UPBC_FullColor-H-FondoClaro.png')}" 
                        alt="Logo ${SITE_CONFIG.shortName}" 
                        class="navbar-logo-img">
                 </a>
@@ -80,7 +99,7 @@ export class Navbar {
                     <ul class="nav single-row-menu">
                       <!-- Mobile Logo -->
                       <div class="mobile-menu-logo" style="display: none;">
-                        <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" 
+            <img src="${resolveAssetPath('assets/images/logos/UPBC_FullColor-H-FondoClaro.png')}" 
                              alt="Logo ${SITE_CONFIG.shortName}" 
                              class="navbar-logo-img">
                         <div class="mobile-menu-close"><i class="fa fa-times"></i></div>
@@ -212,12 +231,13 @@ export class Navbar {
   }
 
   highlightActiveLink() {
-    const currentPath = window.location.pathname;
+    const currentPath = normalizePath(window.location.href);
     const links = selectAll('.nav a', this.container);
 
     links.forEach(link => {
       const href = link.getAttribute('href');
-      if (href === currentPath || currentPath.startsWith(href)) {
+      const linkPath = normalizePath(href || link.href);
+      if (linkPath === currentPath || (linkPath !== '/' && currentPath.startsWith(linkPath))) {
         addClass(link.parentElement, 'active');
       }
     });

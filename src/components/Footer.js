@@ -5,6 +5,9 @@
 import { SITE_CONFIG } from '@utils/constants.js';
 import { select } from '@utils/dom.js';
 
+const BASE_URL = SITE_CONFIG.baseUrl ?? import.meta.env.BASE_URL ?? '/';
+const resolveAssetPath = (path) => `${BASE_URL}${path.replace(/^\//, '')}`;
+
 export class Footer {
   constructor(container) {
     this.container = typeof container === 'string' ? select(container) : container;
@@ -25,6 +28,7 @@ export class Footer {
 
   getTemplate() {
     const currentYear = new Date().getFullYear();
+    const { routes, social } = SITE_CONFIG;
     
     return `
       <footer>
@@ -34,7 +38,7 @@ export class Footer {
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="footer-widget">
                 <h4>UPBC</h4>
-                <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" alt="Logo UPBC" class="img-fluid mb-3" style="max-width: 200px;">
+                <img src="${resolveAssetPath('assets/images/logos/UPBC_FullColor-H-FondoClaro.png')}" alt="Logo UPBC" class="img-fluid mb-3" style="max-width: 200px;">
                 <p>Universidad Politécnica de Baja California - Formando profesionales de excelencia desde 2006.</p>
               </div>
             </div>
@@ -44,7 +48,7 @@ export class Footer {
               <div class="footer-widget">
                 <h4>Enlaces útiles</h4>
                 <ul class="footer-links">
-                  <li><a href="/universidad/directorio/directorio.html">Directorio</a></li>
+                  <li><a href="${routes.universidad.directorio}">Directorio</a></li>
                   <li><a href="#">Aviso de privacidad</a></li>
                   <li><a href="#">Términos y condiciones</a></li>
                   <li><a href="#">Preguntas frecuentes</a></li>
@@ -71,19 +75,19 @@ export class Footer {
               <div class="footer-widget">
                 <h4>Síguenos</h4>
                 <div class="footer-social" style="display: flex; justify-content: space-between; gap: 8px; margin-bottom: 20px;">
-                  <a href="https://www.facebook.com/UPBCUNIVERSIDAD" target="_blank" aria-label="Facebook" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
+                  <a href="${social.facebook}" target="_blank" aria-label="Facebook" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
                     <i class="fa fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.instagram.com/upbcuniversidad/" target="_blank" aria-label="Instagram" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
+                  <a href="${social.instagram}" target="_blank" aria-label="Instagram" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
                     <i class="fa fa-instagram"></i>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCCROxBHIXoVourok76BnXNA" target="_blank" aria-label="YouTube" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
+                  <a href="${social.youtube}" target="_blank" aria-label="YouTube" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
                     <i class="fa fa-youtube-play"></i>
                   </a>
                   <a href="https://twitter.com/upbcuniversidad" target="_blank" aria-label="Twitter" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
                     <i class="fa fa-twitter"></i>
                   </a>
-                  <a href="https://siax.upbc.edu.mx" target="_blank" aria-label="SIAX" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
+                  <a href="${social.siaax}" target="_blank" aria-label="SIAX" style="flex: 1; text-align: center; font-size: 18px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s;">
                     <i class="fa fa-graduation-cap"></i>
                   </a>
                 </div>
