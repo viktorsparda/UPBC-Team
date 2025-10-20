@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Programas de educación continua de la Universidad Politécnica de Baja California (UPBC). Cursos, diplomados y talleres para profesionales.">
+  <meta name="author" content="UPBC">
+  
+  <title>Educación Continua - Universidad Politécnica de Baja California</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  
+  <style>
+    .educacion-continua-section {
+      padding: 120px 0 60px 0;
+      background-color: #fff;
+    }
+    
+    .section-heading {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .section-heading h2 {
+      color: #602b82;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    
+    .section-heading p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .category-tabs {
+      margin-bottom: 40px;
+    }
+    
+    .category-tabs .nav-tabs {
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #e0e0e0;
+      flex-wrap: wrap;
+    }
+    
+    .category-tabs .nav-item {
+      margin-bottom: -2px;
+    }
+    
+    .category-tabs .nav-link {
+      color: #666;
+      padding: 12px 25px;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .category-tabs .nav-link:hover {
+      color: #602b82;
+      border-bottom-color: #cd8b47;
+    }
+    
+    .category-tabs .nav-link.active {
+      color: #602b82;
+      border-bottom-color: #602b82;
+      background: none;
+    }
+    
+    .curso-item {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 30px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .curso-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .curso-image {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .curso-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .curso-item:hover .curso-image img {
+      transform: scale(1.1);
+    }
+    
+    .curso-category {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #cd8b47;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    
+    .curso-info {
+      padding: 25px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .curso-info h4 {
+      color: #602b82;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      min-height: 48px;
+    }
+    
+    .curso-info p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    
+    .curso-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .curso-meta > div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    .curso-meta i {
+      color: #cd8b47;
+    }
+    
+    .main-button {
+      display: inline-block;
+      background-color: #cd8b47;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .main-button:hover {
+      background-color: #602b82;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .benefits-section {
+      padding: 60px 0;
+      background: linear-gradient(135deg, #602b82 0%, #8b4fb9 100%);
+    }
+    
+    .benefit-item {
+      text-align: center;
+      padding: 30px 20px;
+      color: #fff;
+    }
+    
+    .benefit-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #cd8b47;
+    }
+    
+    .benefit-item h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .benefit-item p {
+      font-size: 14px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+    
+    .tab-pane {
+      min-height: 200px;
+    }
+    
+    .tab-content {
+      padding-top: 20px;
+    }
+    
+    @media (max-width: 767px) {
+      .educacion-continua-section {
+        padding: 100px 0 40px 0;
+      }
+      
+      .section-heading h2 {
+        font-size: 28px;
+      }
+      
+      .curso-info h4 {
+        min-height: auto;
+      }
+      
+      .category-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+      
+      .benefits-section {
+        padding: 40px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="educacion-continua-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h2>Programas de Educación Continua</h2>
+              <p>En la Universidad Politécnica de Baja California ofrecemos una amplia variedad de programas de educación continua diseñados para profesionales que buscan actualizar sus conocimientos, desarrollar nuevas habilidades y mantenerse competitivos en el mercado laboral actual.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorías de cursos -->
+        <div class="category-tabs">
+          <ul class="nav nav-tabs" id="courseTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="all-tab" data-tab="all" href="#all">Todos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="diplomados-tab" data-tab="diplomados" href="#diplomados">Diplomados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cursos-tab" data-tab="cursos" href="#cursos">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="talleres-tab" data-tab="talleres" href="#talleres">Talleres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="certificaciones-tab" data-tab="certificaciones" href="#certificaciones">Certificaciones</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content" id="courseTabsContent">
+          <!-- Todos los cursos -->
+          <div class="tab-pane show active" id="all" role="tabpanel">
+            <div class="row">
+              <!-- Curso 1 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-gestion-proyectos.jpg" alt="Diplomado en Gestión de Proyectos">
+                    <div class="curso-category">Diplomado</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Gestión de Proyectos</h4>
+                    <p>Desarrolla habilidades para planificar, ejecutar y controlar proyectos de manera eficiente siguiendo metodologías ágiles.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>120 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>Híbrido</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curso 2 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-marketing-digital.jpg" alt="Curso de Marketing Digital">
+                    <div class="curso-category">Curso</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Marketing Digital</h4>
+                    <p>Aprende estrategias efectivas de marketing en línea, SEO, redes sociales y publicidad digital para impulsar tu negocio.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>60 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>En línea</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curso 3 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-liderazgo.jpg" alt="Taller de Liderazgo y Comunicación Efectiva">
+                    <div class="curso-category">Taller</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Liderazgo y Comunicación Efectiva</h4>
+                    <p>Desarrolla habilidades de liderazgo, comunicación asertiva y gestión de equipos de alto rendimiento.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>20 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-user"></i>
+                        <span>Presencial</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curso 4 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-excel-avanzado.jpg" alt="Curso de Excel Avanzado">
+                    <div class="curso-category">Curso</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Excel Avanzado para Negocios</h4>
+                    <p>Domina funciones avanzadas, tablas dinámicas, macros y análisis de datos para la toma de decisiones empresariales.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>40 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>Híbrido</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curso 5 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-scrum.jpg" alt="Certificación Scrum Master">
+                    <div class="curso-category">Certificación</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Certificación Scrum Master</h4>
+                    <p>Prepárate para obtener la certificación oficial como Scrum Master y lidera equipos ágiles de desarrollo.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>30 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>En línea</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curso 6 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-finanzas.jpg" alt="Diplomado en Finanzas Corporativas">
+                    <div class="curso-category">Diplomado</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Finanzas Corporativas</h4>
+                    <p>Adquiere conocimientos avanzados en análisis financiero, valoración de empresas y gestión de riesgos.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>100 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-user"></i>
+                        <span>Presencial</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diplomados -->
+          <div class="tab-pane" id="diplomados" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-gestion-proyectos.jpg" alt="Diplomado en Gestión de Proyectos">
+                    <div class="curso-category">Diplomado</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Gestión de Proyectos</h4>
+                    <p>Desarrolla habilidades para planificar, ejecutar y controlar proyectos de manera eficiente siguiendo metodologías ágiles.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>120 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>Híbrido</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-finanzas.jpg" alt="Diplomado en Finanzas Corporativas">
+                    <div class="curso-category">Diplomado</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Finanzas Corporativas</h4>
+                    <p>Adquiere conocimientos avanzados en análisis financiero, valoración de empresas y gestión de riesgos.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>100 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-user"></i>
+                        <span>Presencial</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cursos -->
+          <div class="tab-pane" id="cursos" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-marketing-digital.jpg" alt="Curso de Marketing Digital">
+                    <div class="curso-category">Curso</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Marketing Digital</h4>
+                    <p>Aprende estrategias efectivas de marketing en línea, SEO, redes sociales y publicidad digital para impulsar tu negocio.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>60 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>En línea</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-excel-avanzado.jpg" alt="Curso de Excel Avanzado">
+                    <div class="curso-category">Curso</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Excel Avanzado para Negocios</h4>
+                    <p>Domina funciones avanzadas, tablas dinámicas, macros y análisis de datos para la toma de decisiones empresariales.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>40 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>Híbrido</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Talleres -->
+          <div class="tab-pane" id="talleres" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-liderazgo.jpg" alt="Taller de Liderazgo y Comunicación Efectiva">
+                    <div class="curso-category">Taller</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Liderazgo y Comunicación Efectiva</h4>
+                    <p>Desarrolla habilidades de liderazgo, comunicación asertiva y gestión de equipos de alto rendimiento.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>20 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-user"></i>
+                        <span>Presencial</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificaciones -->
+          <div class="tab-pane" id="certificaciones" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="curso-item">
+                  <div class="curso-image">
+                    <img src="/assets/images/educacion-continua/curso-scrum.jpg" alt="Certificación Scrum Master">
+                    <div class="curso-category">Certificación</div>
+                  </div>
+                  <div class="curso-info">
+                    <h4>Certificación Scrum Master</h4>
+                    <p>Prepárate para obtener la certificación oficial como Scrum Master y lidera equipos ágiles de desarrollo.</p>
+                    <div class="curso-meta">
+                      <div class="duration">
+                        <i class="fa fa-clock-o"></i>
+                        <span>30 horas</span>
+                      </div>
+                      <div class="modality">
+                        <i class="fa fa-laptop"></i>
+                        <span>En línea</span>
+                      </div>
+                    </div>
+                    <a href="#" class="main-button">Más información</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beneficios Heading -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h2>Beneficios de nuestra Educación Continua</h2>
+              <p>Nuestros programas están diseñados para ofrecer una experiencia de aprendizaje de calidad que se adapta a las necesidades de los profesionales actuales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección de beneficios -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <h4>Instructores Expertos</h4>
+              <p>Profesionales con amplia experiencia en el campo y excelentes habilidades de enseñanza.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <h4>Horarios Flexibles</h4>
+              <p>Programas diseñados para adaptarse a la agenda de profesionales que trabajan.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa fa-certificate"></i>
+              </div>
+              <h4>Certificación Oficial</h4>
+              <p>Recibe un certificado con valor curricular avalado por la UPBC.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <h4>Networking</h4>
+              <p>Conecta con profesionales de tu industria y expande tu red de contactos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Main Script -->
+  <script type="module" src="/src/main.js"></script>
+  
+  <!-- Script para tabs -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.nav-link');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('data-tab');
+          
+          // Remover clase active de todos los tabs y panes
+          tabs.forEach(t => t.classList.remove('active'));
+          tabPanes.forEach(pane => pane.classList.remove('show', 'active'));
+          
+          // Agregar clase active al tab clickeado
+          this.classList.add('active');
+          
+          // Mostrar el panel correspondiente
+          const targetPane = document.getElementById(targetId);
+          if (targetPane) {
+            targetPane.classList.add('show', 'active');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

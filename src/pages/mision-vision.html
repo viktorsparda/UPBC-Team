@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Misión, Visión y Valores de la Universidad Politécnica de Baja California">
+  <meta name="author" content="UPBC">
+  
+  <title>Misión y Visión - Universidad Politécnica de Baja California</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  
+  <style>
+    /* Estilos específicos para la página de Misión y Visión */
+    .mision-vision-section {
+      padding: 120px 0 60px 0;
+      background-color: #fff;
+    }
+    
+    .mision-vision-header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    .mision-vision-header h2 {
+      color: #602b82;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    
+    .mision-vision-header h3 {
+      color: #602b82;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .section-divider {
+      height: 3px;
+      width: 80px;
+      background-color: #cd8b47;
+      margin: 0 auto 30px;
+    }
+    
+    .mision-vision-content {
+      margin-bottom: 40px;
+    }
+    
+    .mision-vision-content p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .mision-vision-content h4 {
+      color: #602b82;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 25px 0 15px;
+    }
+    
+    .mision-vision-content h5 {
+      color: #cd8b47;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0 10px;
+    }
+    
+    .mision-vision-content ul {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+    
+    .mision-vision-content ul li {
+      margin-bottom: 10px;
+      color: #666;
+      line-height: 1.7;
+    }
+    
+    .card-section {
+      padding: 30px 0;
+    }
+    
+    .info-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .info-card-header {
+      background-color: #602b82;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .info-card-header h3 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    
+    .info-card-body {
+      padding: 25px;
+    }
+    
+    .info-card-body p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+    
+    .info-card-body ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .info-card-body li {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+    
+    .highlight-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #cd8b47;
+      padding: 20px;
+      margin: 25px 0;
+    }
+    
+    .highlight-box h4 {
+      color: #602b82;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+    
+    .modelo-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+    
+    .etapas-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    
+    .etapas-box h4 {
+      color: #602b82;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #cd8b47;
+      padding-bottom: 10px;
+    }
+    
+    .etapas-box p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    /* Ajustes para dispositivos móviles */
+    @media (max-width: 767px) {
+      .mision-vision-section {
+        padding: 100px 0 40px 0;
+      }
+      
+      .mision-vision-header h2 {
+        font-size: 28px;
+      }
+      
+      .info-card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="mision-vision-section">
+      <div class="container">
+        <div class="mision-vision-header">
+          <h2>Misión y Visión</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-card">
+              <div class="info-card-header">
+                <h3>Misión</h3>
+              </div>
+              <div class="info-card-body">
+                <p>Formar profesionistas con un amplio sentido práctico de su disciplina y sólidas bases para el aprendizaje continuo, desarrollando liderazgo tecnológico, capacidad emprendedora y compromiso social en un marco de valores. Impulsar la generación y aplicación del conocimiento para elevar la competitividad de sectores clave en el desarrollo regional, así como fomentar la cultura, el deporte, la educación continua y la difusión del conocimiento.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="info-card">
+              <div class="info-card-header">
+                <h3>Visión</h3>
+              </div>
+              <div class="info-card-body">
+                <p>Constituirse como una universidad con programas educativos pertinentes y acreditados a nivel nacional, con reconocimiento internacional, y posgrados de calidad orientados a la formación de investigadores. Destacar en los sectores clave de la región por el liderazgo de sus egresados y el impacto de sus investigaciones científicas y desarrollos tecnológicos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mision-vision-content">
+          <div class="highlight-box">
+            <h4>Política de calidad</h4>
+            <p>En la Universidad Politécnica de Baja California, nos comprometemos a formar profesionistas competentes en áreas científicas y tecnológicas que respondan a las necesidades del sector social y productivo, mediante la mejora continua de nuestros procesos y el uso eficiente de los recursos.</p>
+            <h5>Objetivos:</h5>
+            <ul>
+              <li>Satisfacer las necesidades de los usuarios.</li>
+              <li>Controlar la calidad de los procesos.</li>
+              <li>Mejorar constantemente el sistema de gestión de calidad.</li>
+              <li>Desarrollar continuamente al personal.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-card">
+              <div class="info-card-header">
+                <h3>Logo Institucional</h3>
+              </div>
+              <div class="info-card-body">
+                <p>El 20 de junio de 2007, un jurado calificador —integrado por representantes de la UPBC, miembros de la Junta Directiva y de la sociedad— dictaminó como ganador el logotipo propuesto por Marco Antonio Manríquez Curiel. Este representa la universalidad del conocimiento (libro), la tecnología (circuito electrónico) y la península de Baja California.</p>
+                <div class="text-center mt-3">
+                  <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" alt="Logo UPBC" class="img-fluid" style="max-width: 300px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="modelo-section">
+      <div class="container">
+        <div class="mision-vision-header">
+          <h2>Modelo Educativo</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mision-vision-content">
+              <p>La UPBC ofrece un modelo educativo basado en competencias. Este enfatiza tanto la formación técnica como el desarrollo de actitudes y valores. El modelo permite a los estudiantes obtener una sólida formación teórica, metodológica y ética.</p>
+              
+              <h4>Características:</h4>
+              <ul>
+                <li>Planes cuatrimestrales (3 años y 4 meses).</li>
+                <li>Asignaturas específicas desde el primer cuatrimestre.</li>
+                <li>Inglés durante toda la carrera.</li>
+                <li>Estancias y estadías profesionales.</li>
+                <li>Profesores con grado mínimo de maestría.</li>
+              </ul>
+              
+              <div class="highlight-box">
+                <h4>Definición de competencia:</h4>
+                <p>Conjunto de saberes que integran el ser, saber, saber hacer y saber convivir, a través de habilidades, valores, actitudes y conocimientos que forman a un individuo integral.</p>
+              </div>
+              
+              <p>En 2010, la UPBC obtuvo el registro oficial de la SEP como institución de calidad en educación superior tecnológica, reconociendo su compromiso con la excelencia académica y el desarrollo regional.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mision-vision-header">
+          <h3>Etapas del Modelo Educativo</h3>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="etapas-box">
+              <h4>Técnico Superior Universitario (TSU)</h4>
+              <p>Se cursan seis cuatrimestres con asignaturas específicas desde el inicio. Incluye una estadía profesional en el sexto cuatrimestre. Se otorga el título de TSU.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="etapas-box">
+              <h4>Licenciatura</h4>
+              <p>Tres cuatrimestres adicionales, con una segunda estadía profesional en el décimo cuatrimestre. Se obtiene el título de Licenciatura tras completar 10 cuatrimestres (3 años y 4 meses).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Main Script -->
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

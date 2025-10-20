@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La UPBC amplía su oferta educativa con cinco nuevas carreras para el próximo ciclo escolar">
+  <meta name="author" content="UPBC">
+  
+  <title>Nuevas Carreras - Universidad Politécnica de Baja California</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  
+  <style>
+    .news-header {
+      background: linear-gradient(135deg, #602b82 0%, #8b4fb9 100%);
+      padding: 150px 0 80px;
+      color: white;
+      position: relative;
+    }
+    
+    .news-header::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to bottom, transparent, #fff);
+    }
+    
+    .news-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .news-meta {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+    
+    .news-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .news-meta-item i {
+      color: #cd8b47;
+    }
+    
+    .news-content-section {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+    
+    .news-image-container {
+      margin: 40px 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .news-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .news-body {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #666;
+    }
+    
+    .news-body p {
+      margin-bottom: 25px;
+    }
+    
+    .career-list {
+      margin: 30px 0;
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #cd8b47;
+      border-radius: 5px;
+      list-style: none;
+    }
+    
+    .career-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #602b82;
+      font-size: 17px;
+    }
+    
+    .career-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #cd8b47;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .news-images-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 40px 0;
+    }
+    
+    .news-images-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .news-footer {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #f0f0f0;
+    }
+    
+    .news-share {
+      margin-bottom: 30px;
+    }
+    
+    .news-share h4 {
+      color: #602b82;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .share-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .share-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #cd8b47;
+      color: #fff;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .share-button:hover {
+      background-color: #602b82;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #cd8b47;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .back-link:hover {
+      color: #602b82;
+      text-decoration: none;
+    }
+    
+    .back-link i {
+      transition: transform 0.3s ease;
+    }
+    
+    .back-link:hover i {
+      transform: translateX(-5px);
+    }
+    
+    @media (max-width: 767px) {
+      .news-header {
+        padding: 120px 0 60px;
+      }
+      
+      .news-title {
+        font-size: 28px;
+      }
+      
+      .news-meta {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .news-images-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Header -->
+    <section class="news-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <h1 class="news-title">La UPBC amplía su oferta educativa con cinco nuevas carreras para el próximo ciclo escolar</h1>
+            <div class="news-meta">
+              <div class="news-meta-item">
+                <i class="fa fa-calendar"></i>
+                <span>25 de junio de 2025</span>
+              </div>
+              <div class="news-meta-item">
+                <i class="fa fa-map-marker"></i>
+                <span>Mexicali, B.C.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="news-content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <!-- News Body -->
+            <div class="news-body">
+              <p>La Universidad Politécnica de Baja California (UPBC) presentó hoy de manera oficial la incorporación de cinco nuevas carreras que se suman a su oferta académica, reafirmando su compromiso con la formación de profesionistas preparados para enfrentar los retos del presente y del futuro.</p>
+              
+              <!-- Main Image -->
+              <div class="news-image-container">
+                <img src="/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.30 PM.jpeg" alt="Presentación de nuevas carreras UPBC">
+              </div>
+              
+              <p>Durante un encuentro con medios de comunicación realizado en la Sala Audiovisual de la institución, la Rectora de la UPBC, Dra. Marcela Barreras Hernández, dio a conocer que a partir del mes de septiembre las y los estudiantes podrán inscribirse en los siguientes programas:</p>
+              
+              <ul class="career-list">
+                <li>Ingeniería en Semiconductores</li>
+                <li>Ingeniería Industrial</li>
+                <li>Licenciatura en Educación</li>
+                <li>Licenciatura en Gastronomía</li>
+                <li>Licenciatura en Negocios y Mercadotecnia</li>
+              </ul>
+              
+              <p>La Rectora explicó que cada una de estas nuevas carreras ha sido diseñada estratégicamente para responder a las exigencias de un entorno laboral en constante transformación, combinando un enfoque técnico, humano y ético que distingue a la universidad. Además, todos los programas incluirán una certificación como Técnico Superior Universitario (TSU), lo que permitirá a las y los egresados contar con una ventaja competitiva desde el inicio de su trayectoria profesional. Entre las certificaciones destacan el TSU en Manufactura de Semiconductores, Sistemas de Gestión de Calidad, Moldeo de Plásticos y Enseñanza del Inglés, entre otras.</p>
+              
+              <p>El evento contó con la participación del Mtro. Alejandro Rosales Sotelo, Subsecretario de Educación Media Superior, Superior e Investigación, quien reconoció a la UPBC como una institución estratégica para el desarrollo de Baja California. Destacó que estas nuevas opciones formativas son una muestra del compromiso con una educación pertinente, innovadora y de alta calidad que responde a las necesidades de la sociedad.</p>
+              
+              <!-- Images Grid -->
+              <div class="news-images-grid">
+                <img src="/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.51 PM.jpeg" alt="Autoridades en la presentación de nuevas carreras">
+                <img src="/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM.jpeg" alt="Asistentes al evento de nuevas carreras">
+              </div>
+              
+              <p>A la ceremonia asistieron también la Dra. Marina del Pilar Olmeda García, representantes de empresas de la región e instituciones de educación media superior, quienes coincidieron en señalar la importancia de contar con una universidad que, a lo largo de 19 años, ha impulsado la formación de talento con sentido social y visión de futuro. La Dra. Olmeda refrendó su compromiso de seguir apoyando el crecimiento de esta casa de estudios.</p>
+              
+              <p>Durante la presentación estuvieron presentes el Lic. Guadalupe Acuña Álvarez, titular de la Oficina de Enlace de la Secretaría de Educación, directivos de planteles de nivel medio superior y representantes del sector productivo, quienes celebraron el anuncio como una oportunidad para fortalecer la vinculación entre la academia y la industria.</p>
+              
+              <!-- More Images -->
+              <div class="news-images-grid">
+                <img src="/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM (1).jpeg" alt="Presentación de las nuevas carreras">
+                <img src="/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM (2).jpeg" alt="Asistentes a la presentación">
+              </div>
+              
+              <p>Con este importante paso, la UPBC amplía su oferta académica a once programas de licenciatura e ingeniería, consolidándose como una opción educativa de vanguardia que apuesta por la innovación, la calidad y el compromiso con el desarrollo de Mexicali, Baja California y México.</p>
+              
+              <p>Para más información sobre inscripciones y detalles de las nuevas carreras, invitamos a las y los interesados a consultar el sitio web oficial de la universidad o acudir directamente a las oficinas de servicios escolares.</p>
+            </div>
+            
+            <!-- News Footer -->
+            <div class="news-footer">
+              <!-- Share Buttons -->
+              <div class="news-share">
+                <h4>Compartir esta noticia:</h4>
+                <div class="share-buttons">
+                  <a href="#" class="share-button" onclick="shareOnFacebook(); return false;" title="Compartir en Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="share-button" onclick="shareOnTwitter(); return false;" title="Compartir en Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="share-button" onclick="shareOnWhatsApp(); return false;" title="Compartir en WhatsApp">
+                    <i class="fa fa-whatsapp"></i>
+                  </a>
+                  <a href="#" class="share-button" onclick="shareByEmail(); return false;" title="Compartir por Email">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Back Link -->
+              <a href="/index.html#meetings" class="back-link">
+                <i class="fa fa-arrow-left"></i>
+                <span>Volver a Novedades</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Main Script -->
+  <script type="module" src="/src/main.js"></script>
+  
+  <!-- Share Functions -->
+  <script>
+    function shareOnFacebook() {
+      const url = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`, '_blank');
+    }
+    
+    function shareOnTwitter() {
+      const url = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, '_blank');
+    }
+    
+    function shareOnWhatsApp() {
+      const url = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      window.open(`https://api.whatsapp.com/send?text=${title} ${url}`, '_blank');
+    }
+    
+    function shareByEmail() {
+      const url = window.location.href;
+      const title = document.title;
+      window.location.href = `mailto:?subject=${title}&body=Te comparto esta noticia: ${url}`;
+    }
+  </script>
+
+</body>
+</html>
