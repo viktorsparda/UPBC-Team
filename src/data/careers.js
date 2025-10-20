@@ -1,4 +1,5 @@
-export const CAREERS = [
+import { resolvePublicPath } from '@utils/constants.js';
+const RAW_CAREERS = [
   {
     slug: 'administracion',
     category: 'licenciatura',
@@ -869,6 +870,29 @@ export const CAREERS = [
     ]
   }
 ];
+
+const prefixAssetPaths = (value) => {
+  if (typeof value === 'string') {
+    if (value.startsWith('/assets/')) {
+      return resolvePublicPath(value.slice(1));
+    }
+    return value;
+  }
+
+  if (Array.isArray(value)) {
+    return value.map(prefixAssetPaths);
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, nestedValue]) => [key, prefixAssetPaths(nestedValue)])
+    );
+  }
+
+  return value;
+};
+
+export const CAREERS = RAW_CAREERS.map((career) => prefixAssetPaths(career));
 
 export const CAREERS_BY_SLUG = CAREERS.reduce((acc, career) => {
   acc[career.slug] = career;

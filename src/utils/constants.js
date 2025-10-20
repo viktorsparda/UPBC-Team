@@ -15,6 +15,8 @@ const withBase = (path = '') => {
   return `${BASE_URL}${path.replace(/^\//, '')}`;
 };
 
+export const resolvePublicPath = (path = '') => withBase(path);
+
 export const SITE_CONFIG = {
   name: 'Universidad Politécnica de Baja California',
   shortName: 'UPBC',
