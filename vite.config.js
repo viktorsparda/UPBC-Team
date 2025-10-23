@@ -76,7 +76,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@components': path.resolve(__dirname, './src/components'),
       '@layouts': path.resolve(__dirname, './src/layouts'),
-  '@data': path.resolve(__dirname, './src/data'),
+      '@data': path.resolve(__dirname, './src/data'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@utils': path.resolve(__dirname, './src/utils'),
       '@public': path.resolve(__dirname, './public')

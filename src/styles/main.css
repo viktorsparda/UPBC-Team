@@ -17,6 +17,9 @@
 @import './pages/home.css';
 @import './pages/career.css';
 
+/* Estilos extraidos de html */
+@import './extracted/_extraidos.css';
+
 /* Estilos globales */
 * {
   margin: 0;
