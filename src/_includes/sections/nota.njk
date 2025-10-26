@@ -1,0 +1,25 @@
+<section class="container my-5">
+  {# Encabezado #}
+  <div class="row">
+    <div class="col-12">
+      {% if section.subtitle %}
+      <h2 class="text-primary text-uppercase fs-5">{{ section.title }}</h2>
+      <h3 class="pb-2 border-bottom border-info mb-4 display-6 text-primary fw-bold">{{ section.subtitle }}</h3>
+      {% elseif section.title %}
+      <h2 class="pb-2 border-bottom border-info mb-3 text-primary text-uppercase fs-5 fw-bold">{{ section.title }}</h2>
+      {% else %}
+      <hr class="mb-4">
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col">
+      {% for card in section.cards %}
+      <div class="row">
+        {{ components.textCard(card.title, card.text) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

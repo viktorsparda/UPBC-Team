@@ -1,0 +1,992 @@
+---
+title: "Universidad Politécnica de Baja California | UPBC"
+layout: layouts/sections.njk   # layout that knows how to render sections
+sections:
+  - type: hero
+    toggle: false
+    title: "Universidad Politécnica de Baja California"
+    subtitle: "Formando profesionales..."
+    images:
+      - src: "/assets/images/carousel/hero/UPBC_POSTNuevacarrera_EDUCACION_1080x1080.jpg"
+        alt: "Imagen A"
+        link: "/carreras/administracion/"
+      - src: "/assets/images/carousel/hero/UPBC_POSTNuevacarrera_GASTRONOMIA_1080x1080.jpg"
+        alt: "Imagen B"
+        link: "/carreras/gastronomia/"
+  - type: news
+    toggle: false  
+    items:
+      - title: "Noticia 1"
+        date: 2025-01-01
+        url: "/noticias/1/"
+      - title: "Noticia 2"
+        date: 2025-02-01
+        url: "/noticias/2/"
+---
+
+  <!-- Main Content -->
+  
+    <!-- Hero Banner Section - Diseño Original Mejorado -->
+    <section class="main-banner" id="top" style="background-color: #602b82; padding: 80px 0 40px;">
+      <div class="container">
+        <!-- Fila Superior: Imagen Principal + Carousel de Carreras -->
+        <div class="row mb-5">
+          <!-- Columna Izquierda: Imagen con Botón -->
+          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            <div class="upbc-banner-image" style="position: relative; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.2); padding: 15px;">
+              <img src="/assets/images/imagen-inicio/UPBC_PAGWEB_fotoprincipal_1080x1080.jpg" 
+                   alt="Universidad Politécnica de Baja California" 
+                   class="img-fluid" 
+                   style="width: 100%; border-radius: 10px;">
+              <!-- Botón Inscríbete Superpuesto -->
+              <div style="position: absolute; bottom: 35px; left: 35px; z-index: 10;">
+                <a href="#apply" class="upbc-inscribete-btn">
+                  <i class="fa fa-arrow-right"></i>
+                  <span>¡INSCRÍBETE AHORA!</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Columna Derecha: Carousel de Carreras -->
+          <div class="col-lg-6 col-md-6">
+            <div id="carreras-hero-carousel" class="simple-carousel-container" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.2); height: auto; position: relative;">
+              <div class="simple-carousel-track" style="display: flex; height: 100%; transition: transform 0.5s ease;">
+                <!-- Carrera 1: Educación -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTNuevacarrera_EDUCACION_1080x1080.jpg" 
+                         alt="Nueva carrera: Educación" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 2: Gastronomía -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTNuevacarrera_GASTRONOMIA_1080x1080.jpg" 
+                         alt="Nueva carrera: Gastronomía" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 3: Industrial -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTNuevacarrera_INDUSTRIAL_1080x1080.jpg" 
+                         alt="Nueva carrera: Industrial" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 4: Negocios y Mercadotecnia -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTNuevacarrera_NEGOCIOSyMERCADOTECNIA_1080x1080.jpg" 
+                         alt="Nueva carrera: Negocios y Mercadotecnia" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 5: Administración -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimerasCarreras_ADMINISTRACION_1080x1080.jpg" 
+                         alt="Carrera: Administración" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 6: Energía -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimerasCarreras_ENERGIA_1080x1080.jpg" 
+                         alt="Carrera: Energía" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 7: Manufactura -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimerasCarreras_MANUFACTURA_1080x1080.jpg" 
+                         alt="Carrera: Manufactura" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 8: Mecatrónica -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimerasCarreras_MECATRONICA_1080x1080.jpg" 
+                         alt="Carrera: Mecatrónica" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 9: TI -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimerasCarreras_TI_1080x1080.jpg" 
+                         alt="Carrera: Tecnologías de la Información" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 10: Animación -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_POSTPrimrasCarreras_ANIMACION_1080x1080.jpg" 
+                         alt="Carrera: Animación" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <!-- Carrera 11: Semiconductores -->
+                <div class="simple-carousel-item" style="flex-shrink: 0; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+                  <a href="#carreras-disponibles" style="display: block; width: 100%; height: 100%;">
+                    <img src="/assets/images/carousel/UPBC_Semiconductores_POST_1080x1080-01.jpg" 
+                         alt="Semiconductores UPBC" 
+                         loading="eager"
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+              </div>
+              <!-- Navigation Buttons -->
+              <button id="carreras-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button id="carreras-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+              <!-- Dots -->
+              <div id="carreras-dots" style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                <!-- Dots will be generated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fila Inferior: Carousel de Servicios -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <div id="servicios-carousel-container" style="position: relative; overflow: hidden; padding: 0 60px;">
+              <div id="servicios-carousel-track" style="display: flex; transition: transform 0.5s ease; gap: 20px;">
+                <!-- Servicio 1: Calendario Académico -->
+                <div class="servicio-item" style="flex-shrink: 0; min-width: calc(25% - 15px); box-sizing: border-box;">
+                  <div class="servicio-card" style="background: white; border-radius: 20px; padding: 40px 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="icon" style="width: 90px; height: 90px; margin: 0 auto 25px;">
+                      <img src="/assets/images/service-icon-01.png" alt="Calendario Académico" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h4 style="color: #602b82; font-size: 19px; font-weight: 600; margin-bottom: 15px;">Calendario Académico</h4>
+                    <a href="#" class="servicio-link" style="color: #cd8b47; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-size: 15px;">
+                      Ver calendario <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Servicio 2: Becas -->
+                <div class="servicio-item" style="flex-shrink: 0; min-width: calc(25% - 15px); box-sizing: border-box;">
+                  <div class="servicio-card" style="background: white; border-radius: 20px; padding: 40px 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="icon" style="width: 90px; height: 90px; margin: 0 auto 25px;">
+                      <img src="/assets/images/service-icon-02.png" alt="Becas" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h4 style="color: #602b82; font-size: 19px; font-weight: 600; margin-bottom: 15px;">Becas</h4>
+                    <a href="#" class="servicio-link" style="color: #cd8b47; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-size: 15px;">
+                      Solicitar <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Servicio 3: SIAXX -->
+                <div class="servicio-item" style="flex-shrink: 0; min-width: calc(25% - 15px); box-sizing: border-box;">
+                  <div class="servicio-card" style="background: white; border-radius: 20px; padding: 40px 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="icon" style="width: 90px; height: 90px; margin: 0 auto 25px;">
+                      <img src="/assets/images/service-icon-03.png" alt="SIAXX" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h4 style="color: #602b82; font-size: 19px; font-weight: 600; margin-bottom: 15px;">SIAXX</h4>
+                    <a href="#" class="servicio-link" style="color: #cd8b47; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-size: 15px;">
+                      Acceder <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Servicio 4: Inscripciones -->
+                <div class="servicio-item" style="flex-shrink: 0; min-width: calc(25% - 15px); box-sizing: border-box;">
+                  <div class="servicio-card" style="background: white; border-radius: 20px; padding: 40px 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="icon" style="width: 90px; height: 90px; margin: 0 auto 25px;">
+                      <img src="/assets/images/service-icon-02.png" alt="Inscripciones" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h4 style="color: #602b82; font-size: 19px; font-weight: 600; margin-bottom: 15px;">Inscripciones</h4>
+                    <a href="#" class="servicio-link" style="color: #cd8b47; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-size: 15px;">
+                      Más información <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Servicio 5: Oferta 2025 -->
+                <div class="servicio-item" style="flex-shrink: 0; min-width: calc(25% - 15px); box-sizing: border-box;">
+                  <div class="servicio-card" style="background: white; border-radius: 20px; padding: 40px 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="icon" style="width: 90px; height: 90px; margin: 0 auto 25px;">
+                      <img src="/assets/images/service-icon-01.png" alt="Oferta 2025" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h4 style="color: #602b82; font-size: 19px; font-weight: 600; margin-bottom: 15px;">Oferta 2025</h4>
+                    <a href="#" class="servicio-link" style="color: #cd8b47; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-size: 15px;">
+                      Explorar <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Buttons -->
+              <button id="servicios-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(96, 43, 130, 0.9); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button id="servicios-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(96, 43, 130, 0.9); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Novedades y Convocatorias Section -->
+    <section class="upcoming-meetings" id="meetings" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+              <h2 style="color: #602b82; font-size: 42px; font-weight: 700; margin-bottom: 15px;">Novedades y Convocatorias</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Left Column: Convocatorias Vigentes -->
+          <div class="col-lg-4">
+            <div class="categories" style="background: linear-gradient(135deg, #602b82 0%, #7d3ba8 100%); padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(96, 43, 130, 0.2);">
+              <h4 style="color: #fff; font-size: 24px; font-weight: 700; margin-bottom: 25px; text-align: center;">Convocatorias Vigentes</h4>
+              <ul style="list-style: none; padding: 0; margin: 0 0 30px 0;">
+                <li style="margin-bottom: 15px;">
+                  <a href="#" style="color: #fff; text-decoration: none; font-size: 16px; display: flex; align-items: center; padding: 10px; border-radius: 8px; transition: all 0.3s ease;">
+                    <i class="fa fa-angle-right" style="margin-right: 10px; font-size: 18px;"></i>
+                    Becas institucionales
+                  </a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                  <a href="#" style="color: #fff; text-decoration: none; font-size: 16px; display: flex; align-items: center; padding: 10px; border-radius: 8px; transition: all 0.3s ease;">
+                    <i class="fa fa-angle-right" style="margin-right: 10px; font-size: 18px;"></i>
+                    Intercambios académicos
+                  </a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                  <a href="#" style="color: #fff; text-decoration: none; font-size: 16px; display: flex; align-items: center; padding: 10px; border-radius: 8px; transition: all 0.3s ease;">
+                    <i class="fa fa-angle-right" style="margin-right: 10px; font-size: 18px;"></i>
+                    Proyectos de investigación
+                  </a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                  <a href="#" style="color: #fff; text-decoration: none; font-size: 16px; display: flex; align-items: center; padding: 10px; border-radius: 8px; transition: all 0.3s ease;">
+                    <i class="fa fa-angle-right" style="margin-right: 10px; font-size: 18px;"></i>
+                    Concursos estudiantiles
+                  </a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                  <a href="#" style="color: #fff; text-decoration: none; font-size: 16px; display: flex; align-items: center; padding: 10px; border-radius: 8px; transition: all 0.3s ease;">
+                    <i class="fa fa-angle-right" style="margin-right: 10px; font-size: 18px;"></i>
+                    Bolsa de trabajo
+                  </a>
+                </li>
+              </ul>
+              <div class="main-button-red" style="text-align: center;">
+                <a href="#" style="background: #cd8b47; color: #fff; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(205, 139, 71, 0.3);">Ver todas las convocatorias</a>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: News Carousel -->
+          <div class="col-lg-8">
+            <div class="news-carousel-container" style="position: relative; padding: 0 60px;">
+              <!-- Carousel Wrapper -->
+              <div class="news-carousel-wrapper" style="overflow: hidden; border-radius: 15px;">
+                <div class="news-carousel" id="news-carousel" style="display: flex; transition: transform 0.5s ease; gap: 20px;">
+                  <!-- Noticia 1: Feria de Estancias -->
+                  <div class="news-item" style="flex-shrink: 0; min-width: calc(50% - 10px);">
+                    <div class="meeting-item" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                      <div class="thumb" style="position: relative; overflow: hidden; height: 220px;">
+                        <div class="price" style="position: absolute; top: 15px; left: 15px; background: #602b82; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 2;">
+                          <span>Últimas noticias</span>
+                        </div>
+                        <a href="/news-feria-estancias.html">
+                          <img src="/assets/images/news/feria-estancias/feria-estancias-1.jpeg" alt="Feria de Estancias UPBC" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </a>
+                      </div>
+                      <div class="down-content" style="padding: 25px;">
+                        <div class="date" style="position: absolute; top: 220px; left: 25px; background: #602b82; color: #fff; width: 60px; padding: 8px; text-align: center; border-radius: 8px; font-size: 13px; font-weight: 600; line-height: 1.3;">
+                          SEP <span style="display: block; font-size: 32px; font-weight: 700; margin-top: 2px;">18</span>
+                        </div>
+                        <div style="flex: 1; padding-top: 50px;">
+                          <a href="/news-feria-estancias.html" style="text-decoration: none;">
+                            <h4 style="color: #602b82; font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.4;">Segunda Edición de la Feria de Estancias</h4>
+                          </a>
+                          <p class="news-excerpt" style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Esta mañana se celebró con gran éxito la Segunda Edición de la Feria de Estancias, Estadías y Bolsa de Trabajo en la UPBC.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Noticia 2: Reunión COMVIN -->
+                  <div class="news-item" style="flex-shrink: 0; min-width: calc(50% - 10px);">
+                    <div class="meeting-item" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                      <div class="thumb" style="position: relative; overflow: hidden; height: 220px;">
+                        <div class="price" style="position: absolute; top: 15px; left: 15px; background: #602b82; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 2;">
+                          <span>Últimas noticias</span>
+                        </div>
+                        <a href="/news-reunion-comvin.html">
+                          <img src="assets/images/news/reunion-comvin/reunion-comvin-1.jpeg" alt="Reunión UPBC y COMVIN" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </a>
+                      </div>
+                      <div class="down-content" style="padding: 25px;">
+                        <div class="date" style="position: absolute; top: 220px; left: 25px; background: #602b82; color: #fff; width: 60px; padding: 8px; text-align: center; border-radius: 8px; font-size: 13px; font-weight: 600; line-height: 1.3;">
+                          JUL <span style="display: block; font-size: 32px; font-weight: 700; margin-top: 2px;">20</span>
+                        </div>
+                        <div style="flex: 1; padding-top: 50px;">
+                          <a href="/news-reunion-comvin.html" style="text-decoration: none;">
+                            <h4 style="color: #602b82; font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.4;">Reunión UPBC y Comité de Vinculación</h4>
+                          </a>
+                          <p class="news-excerpt" style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Sostienen reunión la UPBC y el Comité de Vinculación de Mexicali para fortalecer lazos con la industria.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Noticia 3: Convenio -->
+                  <div class="news-item" style="flex-shrink: 0; min-width: calc(50% - 10px);">
+                    <div class="meeting-item" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                      <div class="thumb" style="position: relative; overflow: hidden; height: 220px;">
+                        <div class="price" style="position: absolute; top: 15px; left: 15px; background: #602b82; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 2;">
+                          <span>Últimas noticias</span>
+                        </div>
+                        <a href="/news-firman-convenio.html">
+                          <img src="assets/images/news/firman-convenio/WhatsApp Image 2025-07-09 at 3.28.29 PM.jpeg" alt="Convenio UPBC y Centro de Conciliación Laboral" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </a>
+                      </div>
+                      <div class="down-content" style="padding: 25px;">
+                        <div class="date" style="position: absolute; top: 220px; left: 25px; background: #602b82; color: #fff; width: 60px; padding: 8px; text-align: center; border-radius: 8px; font-size: 13px; font-weight: 600; line-height: 1.3;">
+                          JUL <span style="display: block; font-size: 32px; font-weight: 700; margin-top: 2px;">09</span>
+                        </div>
+                        <div style="flex: 1; padding-top: 50px;">
+                          <a href="/news-firman-convenio.html" style="text-decoration: none;">
+                            <h4 style="color: #602b82; font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.4;">Firman convenio la UPBC y el Centro de Conciliación Laboral</h4>
+                          </a>
+                          <p class="news-excerpt" style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Importante acuerdo de colaboración para impulsar la formación profesional y el desarrollo de nuestra comunidad.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Noticia 4: Nuevas Carreras -->
+                  <div class="news-item" style="flex-shrink: 0; min-width: calc(50% - 10px);">
+                    <div class="meeting-item" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                      <div class="thumb" style="position: relative; overflow: hidden; height: 220px;">
+                        <div class="price" style="position: absolute; top: 15px; left: 15px; background: #602b82; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 2;">
+                          <span>Últimas noticias</span>
+                        </div>
+                        <a href="/news-nuevas-carreras.html">
+                          <img src="assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.30 PM.jpeg" alt="Nuevas Carreras UPBC" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </a>
+                      </div>
+                      <div class="down-content" style="padding: 25px;">
+                        <div class="date" style="position: absolute; top: 220px; left: 25px; background: #602b82; color: #fff; width: 60px; padding: 8px; text-align: center; border-radius: 8px; font-size: 13px; font-weight: 600; line-height: 1.3;">
+                          JUN <span style="display: block; font-size: 32px; font-weight: 700; margin-top: 2px;">25</span>
+                        </div>
+                        <div style="flex: 1; padding-top: 50px;">
+                          <a href="/news-nuevas-carreras.html" style="text-decoration: none;">
+                            <h4 style="color: #602b82; font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.4;">Cinco Nuevas Carreras en la UPBC</h4>
+                          </a>
+                          <p class="news-excerpt" style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">La UPBC amplía su oferta educativa con cinco nuevas carreras para el próximo ciclo escolar.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Buttons -->
+              <button id="news-prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: rgba(96, 43, 130, 0.9); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button id="news-next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: rgba(96, 43, 130, 0.9); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+              <!-- Page Indicators -->
+              <div class="news-pagination" style="display: flex; justify-content: center; gap: 10px; margin-top: 25px;">
+                <span class="news-page-indicator" data-page="0" style="width: 12px; height: 12px; border-radius: 50%; background: #602b82; cursor: pointer; transition: all 0.3s ease;"></span>
+                <span class="news-page-indicator" data-page="1" style="width: 12px; height: 12px; border-radius: 50%; background: #ddd; cursor: pointer; transition: all 0.3s ease;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Oferta Educativa Section -->
+    <section class="apply-now" id="apply" style="padding: 80px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column: Educational Programs -->
+          <div class="col-lg-6 align-self-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="item" style="background: linear-gradient(135deg, #602b82 0%, #7d3ba8 100%); padding: 40px; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(96, 43, 130, 0.2); transition: all 0.3s ease;">
+                  <h3 style="color: #fff; font-size: 24px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase;">Oferta Educativa de Licenciatura</h3>
+                  <p style="color: rgba(255, 255, 255, 0.95); font-size: 16px; line-height: 1.7; margin: 0;">La Universidad Politécnica de Baja California ofrece programas de licenciatura diseñados para formar profesionales competitivos con una sólida preparación teórica y práctica.</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item" style="background: linear-gradient(135deg, #cd8b47 0%, #e5a860 100%); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(205, 139, 71, 0.2); transition: all 0.3s ease;">
+                  <h3 style="color: #fff; font-size: 24px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase;">Programas de Posgrado</h3>
+                  <p style="color: rgba(255, 255, 255, 0.95); font-size: 16px; line-height: 1.7; margin: 0;">Nuestros programas de posgrado están orientados a la especialización profesional y la investigación, con enfoque en las necesidades actuales del mercado laboral y el desarrollo tecnológico.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Accordions -->
+          <div class="col-lg-6">
+            <div class="accordions is-first-expanded" id="carreras-disponibles">
+              <!-- Accordion 1: Carreras Disponibles -->
+              <article class="accordion" style="background: #fff; border-radius: 15px; margin-bottom: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease;">
+                <div class="accordion-head" style="padding: 18px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: all 0.3s ease;">
+                  <span style="color: #602b82; font-size: 18px; font-weight: 700;">Carreras Disponibles</span>
+                  <span class="icon" style="color: #602b82; font-size: 16px; transition: transform 0.3s ease;">
+                    <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                  <div class="content" style="padding: 15px 25px 20px 25px;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/animacion/animacion.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería en Animación y Efectos Visuales
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/energia/energia.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería en Energía y Desarrollo Sostenible
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/mecatronica/mecatronica.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería Mecatrónica
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/tecnologias/tecnologias.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería en Tecnologías de la Información e Innovación Digital
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/manufactura/manufactura.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería en Manufactura Avanzada
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/microelectronica/microelectronica.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería en Microelectrónica y Semiconductores
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/industrial/industrial.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Ingeniería Industrial
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/administracion/administracion.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Licenciatura en Administración
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/educacion/educacion.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Licenciatura en Educación
+                        </a>
+                      </li>
+                      <li style="margin-bottom: 8px;">
+                        <a href="carreras/gastronomia/gastronomia.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Licenciatura en Gastronomía
+                        </a>
+                      </li>
+                      <li>
+                        <a href="carreras/negocios/negocios.html" style="color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 5px 0; transition: all 0.3s ease;">
+                          <i class="fa fa-graduation-cap" style="color: #602b82; margin-right: 10px; font-size: 14px;"></i>
+                          Licenciatura en Negocios y Mercadotecnia
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <!-- Accordion 2: Maestrías -->
+              <article class="accordion" style="background: #fff; border-radius: 15px; margin-bottom: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease;">
+                <div class="accordion-head" style="padding: 18px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: all 0.3s ease;">
+                  <span style="color: #602b82; font-size: 18px; font-weight: 700;">Maestrías</span>
+                  <span class="icon" style="color: #602b82; font-size: 16px; transition: transform 0.3s ease;">
+                    <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                  <div class="content" style="padding: 15px 25px 20px 25px;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                      <li style="color: #666; font-size: 14px; margin-bottom: 12px; padding-left: 25px; position: relative;">
+                        <i class="fa fa-certificate" style="color: #cd8b47; position: absolute; left: 0; top: 3px;"></i>
+                        Maestría en Enseñanza de las Ciencias
+                      </li>
+                      <li style="color: #666; font-size: 14px; margin-bottom: 12px; padding-left: 25px; position: relative;">
+                        <i class="fa fa-certificate" style="color: #cd8b47; position: absolute; left: 0; top: 3px;"></i>
+                        Maestría en Ingeniería con 4 líneas de investigación:
+                        <ul style="margin-left: 15px; margin-top: 8px; list-style: none; padding: 0;">
+                          <li style="margin-bottom: 5px; padding-left: 20px; position: relative; font-size: 13px;">
+                            <i class="fa fa-angle-right" style="color: #602b82; position: absolute; left: 0; top: 2px;"></i>
+                            Automatización y Control
+                          </li>
+                          <li style="margin-bottom: 5px; padding-left: 20px; position: relative; font-size: 13px;">
+                            <i class="fa fa-angle-right" style="color: #602b82; position: absolute; left: 0; top: 2px;"></i>
+                            Sistemas Inteligentes
+                          </li>
+                          <li style="margin-bottom: 5px; padding-left: 20px; position: relative; font-size: 13px;">
+                            <i class="fa fa-angle-right" style="color: #602b82; position: absolute; left: 0; top: 2px;"></i>
+                            Manufactura
+                          </li>
+                          <li style="padding-left: 20px; position: relative; font-size: 13px;">
+                            <i class="fa fa-angle-right" style="color: #602b82; position: absolute; left: 0; top: 2px;"></i>
+                            Tecnologías de la Información
+                          </li>
+                        </ul>
+                      </li>
+                      <li style="color: #666; font-size: 14px; padding-left: 25px; position: relative;">
+                        <i class="fa fa-certificate" style="color: #cd8b47; position: absolute; left: 0; top: 3px;"></i>
+                        Maestría en Alta Dirección de las Organizaciones
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <!-- Accordion 3: Educación Continua -->
+              <article class="accordion" style="background: #fff; border-radius: 15px; margin-bottom: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease;">
+                <div class="accordion-head" style="padding: 18px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: all 0.3s ease;">
+                  <span style="color: #602b82; font-size: 18px; font-weight: 700;">Educación Continua</span>
+                  <span class="icon" style="color: #602b82; font-size: 16px; transition: transform 0.3s ease;">
+                    <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                  <div class="content" style="padding: 15px 25px 20px 25px;">
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                      Ofrecemos diplomados y cursos especializados para profesionales que desean actualizar sus conocimientos y habilidades:<br><br>
+                      • Diplomado en Gestión de Proyectos<br>
+                      • Diplomado en Inteligencia Artificial<br>
+                      • Curso de Desarrollo Web<br>
+                      • Certificación en Seguridad Informática
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <!-- Accordion 4: Modalidades de Estudio -->
+              <article class="accordion last-accordion" style="background: #fff; border-radius: 15px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease;">
+                <div class="accordion-head" style="padding: 18px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: all 0.3s ease;">
+                  <span style="color: #602b82; font-size: 18px; font-weight: 700;">Modalidades de Estudio</span>
+                  <span class="icon" style="color: #602b82; font-size: 16px; transition: transform 0.3s ease;">
+                    <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                  <div class="content" style="padding: 15px 25px 20px 25px;">
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                      En la UPBC entendemos las diferentes necesidades de nuestros estudiantes, por lo que ofrecemos diversas modalidades de estudio:<br><br>
+                      • Presencial<br>
+                      • Semipresencial<br>
+                      • En línea<br>
+                      • Ejecutiva (fines de semana)
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vida Universitaria Section -->
+    <section class="our-courses" id="courses" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+              <h2 style="color: #602b82; font-size: 42px; font-weight: 700; margin-bottom: 15px;">Vida Universitaria</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <!-- Card 1: Eventos Especiales -->
+          <div class="col-lg-3 col-md-6 col-sm-12" style="flex: 1; min-width: 250px;">
+            <div class="item" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%;">
+              <img src="assets/images/course-04.jpg" alt="Eventos Especiales" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="down-content" style="padding: 25px;">
+                <h4 style="color: #602b82; font-size: 20px; font-weight: 700; margin-bottom: 15px;">Eventos Especiales</h4>
+                <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Semanas culturales, congresos, ferias de empleo y otros eventos que complementan tu formación y te conectan con oportunidades profesionales.</p>
+                <div class="text-button">
+                  <a href="#" style="color: #cd8b47; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color 0.3s ease;">Calendario de eventos <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Bienestar y Salud -->
+          <div class="col-lg-3 col-md-6 col-sm-12" style="flex: 1; min-width: 250px;">
+            <div class="item" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%;">
+              <img src="assets/images/course-03.jpg" alt="Bienestar y Salud" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="down-content" style="padding: 25px;">
+                <h4 style="color: #602b82; font-size: 20px; font-weight: 700; margin-bottom: 15px;">Bienestar y Salud</h4>
+                <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Servicios de atención psicológica, nutricional y médica para toda la comunidad universitaria. Tu bienestar es nuestra prioridad.</p>
+                <div class="text-button">
+                  <a href="#" style="color: #cd8b47; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color 0.3s ease;">
+                    Servicios disponibles <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Vida Estudiantil -->
+          <div class="col-lg-3 col-md-6 col-sm-12" style="flex: 1; min-width: 250px;">
+            <div class="item" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%;">
+              <img src="assets/images/course-01.jpg" alt="Vida Estudiantil" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="down-content" style="padding: 25px;">
+                <h4 style="color: #602b82; font-size: 20px; font-weight: 700; margin-bottom: 15px;">Vida Estudiantil</h4>
+                <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Participa en nuestras actividades estudiantiles, deportes y eventos recreativos que enriquecen tu experiencia universitaria y desarrollo personal.</p>
+                <div class="text-button">
+                  <a href="#" style="color: #cd8b47; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color 0.3s ease;">
+                    Más información <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4: Convivencia y Equidad -->
+          <div class="col-lg-3 col-md-6 col-sm-12" style="flex: 1; min-width: 250px;">
+            <div class="item" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%;">
+              <img src="assets/images/course-02.jpg" alt="Convivencia y Equidad" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="down-content" style="padding: 25px;">
+                <h4 style="color: #602b82; font-size: 20px; font-weight: 700; margin-bottom: 15px;">Convivencia y Equidad</h4>
+                <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Fomentamos un ambiente inclusivo y respetuoso donde todos los miembros de nuestra comunidad universitaria pueden desarrollarse plenamente.</p>
+                <div class="text-button">
+                  <a href="#" style="color: #cd8b47; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color 0.3s ease;">
+                    Conoce más <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vinculación Section -->
+    <section class="our-vinculacion" id="vinculacion" style="padding: 80px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+              <h2 style="color: #602b82; font-size: 42px; font-weight: 700; margin-bottom: 15px;">Vinculación</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="align-items: center;">
+          <!-- Left Column: Content -->
+          <div class="col-lg-6">
+            <div class="vinculacion-content" style="padding-right: 30px;">
+              <h3 style="color: #602b82; font-size: 28px; font-weight: 700; margin-bottom: 20px;">Colaboración Universidad-Empresa</h3>
+              <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
+                En la Universidad Politécnica de Baja California fomentamos la colaboración estrecha con el sector empresarial para desarrollar proyectos conjuntos, prácticas profesionales y oportunidades laborales para nuestros estudiantes.
+              </p>
+              <ul class="vinculacion-list" style="list-style: none; padding: 0; margin-bottom: 30px;">
+                <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; color: #666; font-size: 14px; line-height: 1.5;">
+                  <i class="fa fa-check-circle" style="color: #cd8b47; font-size: 16px; margin-top: 3px; flex-shrink: 0;"></i>
+                  <span>Convenios con más de 120 empresas nacionales e internacionales</span>
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; color: #666; font-size: 14px; line-height: 1.5;">
+                  <i class="fa fa-check-circle" style="color: #cd8b47; font-size: 16px; margin-top: 3px; flex-shrink: 0;"></i>
+                  <span>Prácticas profesionales en empresas líderes del sector</span>
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; color: #666; font-size: 14px; line-height: 1.5;">
+                  <i class="fa fa-check-circle" style="color: #cd8b47; font-size: 16px; margin-top: 3px; flex-shrink: 0;"></i>
+                  <span>Proyectos de investigación aplicada con la industria</span>
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; color: #666; font-size: 14px; line-height: 1.5;">
+                  <i class="fa fa-check-circle" style="color: #cd8b47; font-size: 16px; margin-top: 3px; flex-shrink: 0;"></i>
+                  <span>Bolsa de trabajo exclusiva para estudiantes y egresados</span>
+                </li>
+              </ul>
+              <div class="main-button-red">
+                <a href="#" style="display: inline-block; padding: 12px 30px; background: #602b82; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; text-transform: uppercase;">
+                  Conoce nuestros convenios
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Info Boxes -->
+          <div class="col-lg-6">
+            <div class="row vinculacion-boxes">
+              <!-- Box 1: Prácticas Profesionales -->
+              <div class="col-lg-6 col-md-6" style="margin-bottom: 30px;">
+                <div class="vinculacion-item" style="background: #fff; padding: 25px 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;">
+                  <div class="icon" style="margin-bottom: 15px;">
+                    <img src="assets/images/service-icon-01.png" alt="Prácticas Profesionales" style="width: 60px; height: 60px;">
+                  </div>
+                  <h4 style="color: #602b82; font-size: 16px; font-weight: 700; margin-bottom: 10px;">Prácticas Profesionales</h4>
+                  <p style="color: #666; font-size: 13px; line-height: 1.5; margin: 0;">Experiencia laboral real en empresas del sector mientras estudias.</p>
+                </div>
+              </div>
+              <!-- Box 2: Investigación Aplicada -->
+              <div class="col-lg-6 col-md-6" style="margin-bottom: 30px;">
+                <div class="vinculacion-item" style="background: #fff; padding: 25px 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;">
+                  <div class="icon" style="margin-bottom: 15px;">
+                    <img src="assets/images/service-icon-02.png" alt="Investigación Aplicada" style="width: 60px; height: 60px;">
+                  </div>
+                  <h4 style="color: #602b82; font-size: 16px; font-weight: 700; margin-bottom: 10px;">Investigación Aplicada</h4>
+                  <p style="color: #666; font-size: 13px; line-height: 1.5; margin: 0;">Proyectos de investigación con impacto directo en la industria.</p>
+                </div>
+              </div>
+              <!-- Box 3: Emprendimiento -->
+              <div class="col-lg-6 col-md-6" style="margin-bottom: 30px;">
+                <div class="vinculacion-item" style="background: #fff; padding: 25px 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;">
+                  <div class="icon" style="margin-bottom: 15px;">
+                    <img src="assets/images/service-icon-03.png" alt="Emprendimiento" style="width: 60px; height: 60px;">
+                  </div>
+                  <h4 style="color: #602b82; font-size: 16px; font-weight: 700; margin-bottom: 10px;">Emprendimiento</h4>
+                  <p style="color: #666; font-size: 13px; line-height: 1.5; margin: 0;">Incubadora de negocios para convertir ideas en empresas exitosas.</p>
+                </div>
+              </div>
+              <!-- Box 4: Educación Dual -->
+              <div class="col-lg-6 col-md-6" style="margin-bottom: 30px;">
+                <div class="vinculacion-item" style="background: #fff; padding: 25px 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;">
+                  <div class="icon" style="margin-bottom: 15px;">
+                    <img src="assets/images/service-icon-01.png" alt="Educación Dual" style="width: 60px; height: 60px;">
+                  </div>
+                  <h4 style="color: #602b82; font-size: 16px; font-weight: 700; margin-bottom: 10px;">Educación Dual</h4>
+                  <p style="color: #666; font-size: 13px; line-height: 1.5; margin: 0;">Formación académica combinada con experiencia laboral supervisada.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Historias de Éxito Section -->
+    <section class="our-historias" id="historias" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+              <h2 style="color: #602b82; font-size: 42px; font-weight: 700; margin-bottom: 15px;">Historias de Éxito</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Historia 1: Carlos Méndez -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="historia-item">
+              <div class="historia-profile">
+                <img src="assets/images/course-01.jpg" alt="Carlos Méndez">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4>Carlos Méndez</h4>
+                <span>Ingeniero en Sistemas Computacionales, 2018</span>
+                <p>"Gracias a la formación recibida en la UPBC y las prácticas profesionales, logré incorporarme a una empresa líder en desarrollo de software. Actualmente dirijo un equipo de desarrollo en Silicon Valley."</p>
+              </div>
+            </div>
+          </div>
+          <!-- Historia 2: Laura Sánchez -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="historia-item">
+              <div class="historia-profile">
+                <img src="assets/images/course-02.jpg" alt="Laura Sánchez">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4>Laura Sánchez</h4>
+                <span>Licenciada en Administración, 2019</span>
+                <p>"El programa de emprendimiento de la UPBC me dio las herramientas para crear mi propia empresa. Hoy mi startup ha recibido financiamiento internacional y genera empleos en la región."</p>
+              </div>
+            </div>
+          </div>
+          <!-- Historia 3: Miguel Rodríguez -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="historia-item">
+              <div class="historia-profile">
+                <img src="assets/images/course-03.jpg" alt="Miguel Rodríguez">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4>Miguel Rodríguez</h4>
+                <span>Ingeniero Industrial, 2020</span>
+                <p>"Las certificaciones adicionales que obtuve en la UPBC me permitieron destacar en el mercado laboral. Ahora trabajo en una empresa automotriz internacional implementando procesos de mejora continua."</p>
+              </div>
+            </div>
+          </div>
+          <!-- Historia 4: Ana Martínez -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="historia-item">
+              <div class="historia-profile">
+                <img src="assets/images/course-04.jpg" alt="Ana Martínez">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4>Ana Martínez</h4>
+                <span>Ingeniera en Energía, 2021</span>
+                <p>"Mi proyecto de investigación en energías renovables desarrollado en la UPBC recibió reconocimiento nacional. Actualmente trabajo en un importante proyecto de sustentabilidad energética para el gobierno federal."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ver más button -->
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-lg-12" style="text-align: center;">
+            <div class="main-button-yellow">
+              <a href="#" style="display: inline-block; padding: 12px 30px; background: #cd8b47; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; text-transform: uppercase;">
+                Ver más historias de éxito
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- La UPBC en Cifras Section -->
+    <section class="our-facts" style="padding: 80px 0; background: linear-gradient(135deg, #602b82 0%, #7d3a9e 100%);">
+      <div class="container">
+        <div class="row">
+          <!-- Columna de Cifras -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12" style="margin-bottom: 40px;">
+                <h2 style="color: white; font-size: 42px; font-weight: 700;">La UPBC en Cifras</h2>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-12" style="margin-bottom: 30px;">
+                    <div class="count-area-content percentage" style="text-align: center; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                      <div class="count-digit" style="font-size: 56px; font-weight: 800; color: #ffc107; margin-bottom: 10px;">92</div>
+                      <div class="count-title" style="font-size: 16px; font-weight: 500; color: white;">% de Empleabilidad</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="count-area-content" style="text-align: center; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                      <div class="count-digit" style="font-size: 56px; font-weight: 800; color: #ffc107; margin-bottom: 10px;">156</div>
+                      <div class="count-title" style="font-size: 16px; font-weight: 500; color: white;">Docentes Investigadores</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-12" style="margin-bottom: 30px;">
+                    <div class="count-area-content new-students" style="text-align: center; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                      <div class="count-digit" style="font-size: 56px; font-weight: 800; color: #ffc107; margin-bottom: 10px;">3500</div>
+                      <div class="count-title" style="font-size: 16px; font-weight: 500; color: white;">Estudiantes Activos</div>
+                    </div>
+                  </div> 
+                  <div class="col-12">
+                    <div class="count-area-content" style="text-align: center; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                      <div class="count-digit" style="font-size: 56px; font-weight: 800; color: #ffc107; margin-bottom: 10px;">45</div>
+                      <div class="count-title" style="font-size: 16px; font-weight: 500; color: white;">Convenios Internacionales</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Columna de Video -->
+          <div class="col-lg-6 align-self-center">
+            <div class="video" style="position: relative; text-align: center;">
+              <a href="https://www.youtube.com/watch?v=example" target="_blank" style="display: inline-block; position: relative;">
+                <img src="assets/images/play-icon.png" alt="Video institucional" style="width: 100%; max-width: 400px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+              </a>
+              <h4 class="video-caption" style="color: white; font-size: 22px; font-weight: 600; margin-top: 25px;">Conoce nuestra universidad</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-us" id="contact" style="padding: 80px 0; background: #f8f9fa;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 align-self-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-lg-12" style="margin-bottom: 30px;">
+                      <h2 style="color: #602b82; font-size: 42px; font-weight: 700;">Contacto</h2>
+                    </div>
+                    <div class="col-lg-4">
+                      <fieldset style="margin-bottom: 20px;">
+                        <input name="name" type="text" id="name" placeholder="Tu nombre completo...*" required="" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-4">
+                      <fieldset style="margin-bottom: 20px;">
+                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Tu correo electrónico...*" required="" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-4">
+                      <fieldset style="margin-bottom: 20px;">
+                        <input name="subject" type="text" id="subject" placeholder="Asunto...*" required="" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset style="margin-bottom: 20px;">
+                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Tu mensaje..." required="" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; min-height: 150px;"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button" style="background: #602b82; color: white; padding: 15px 40px; border: none; border-radius: 25px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase;">ENVIAR MENSAJE</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="right-info" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 25px;">
+                  <h6 style="color: #602b82; font-size: 14px; font-weight: 700; margin-bottom: 8px; text-transform: uppercase;">Teléfono</h6>
+                  <span style="color: #666; font-size: 15px;">(686) 104-2727</span>
+                </li>
+                <li style="margin-bottom: 25px;">
+                  <h6 style="color: #602b82; font-size: 14px; font-weight: 700; margin-bottom: 8px; text-transform: uppercase;">Correo Electrónico</h6>
+                  <span style="color: #666; font-size: 15px;">contacto@upbc.edu.mx</span>
+                </li>
+                <li style="margin-bottom: 25px;">
+                  <h6 style="color: #602b82; font-size: 14px; font-weight: 700; margin-bottom: 8px; text-transform: uppercase;">Dirección</h6>
+                  <span style="color: #666; font-size: 15px; line-height: 1.6;">Calle de la Claridad S/N Colonia Plutarco Elías Calles, Mexicali, Baja California, México CP. 21376</span>
+                </li>
+                <li>
+                  <h6 style="color: #602b82; font-size: 14px; font-weight: 700; margin-bottom: 8px; text-transform: uppercase;">Sitio Web</h6>
+                  <span style="color: #666; font-size: 15px;">www.upbc.edu.mx</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+
+

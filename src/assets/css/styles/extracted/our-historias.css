@@ -1,0 +1,88 @@
+/* Estilos para la sección de Historias de Éxito */
+.our-historias {
+    background-color: #fff !important;
+    padding: 60px 0 !important;
+}
+
+.historia-item {
+    background: #fff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 20px rgba(96,43,130,0.08) !important;
+    padding: 25px !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(96,43,130,0.05) !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.historia-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 30px rgba(96,43,130,0.15) !important;
+}
+
+.historia-profile {
+    position: relative !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.historia-profile img {
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #fff !important;
+    box-shadow: 0 4px 15px rgba(96,43,130,0.2) !important;
+}
+
+.historia-profile .quote {
+    position: absolute !important;
+    bottom: -10px !important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    background: #cd8b47 !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff !important;
+}
+
+.historia-profile .quote i {
+    font-size: 14px !important;
+}
+
+.our-historias .down-content {
+    text-align: center !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.our-historias .down-content h4 {
+    color: #602b82 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 5px !important;
+}
+
+.our-historias .down-content span {
+    color: #cd8b47 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+}
+
+.our-historias .down-content p {
+    color: #666 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    font-style: italic !important;
+    margin: 0 !important;
+    flex: 1 !important;
+}

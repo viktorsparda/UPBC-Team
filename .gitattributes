@@ -1,0 +1,26 @@
+# Recommended Git LFS tracking for large binary assets.
+# To enable: run `git lfs install` and then `git lfs track "*.mp4" "*.pdf" "*.zip" "*.woff2" "*.woff" "*.ttf" "*.png" "*.jpg"`.
+# Commit this file so others know which files should be handled with LFS.
+
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+
+# Images if you prefer LFS for large image files
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.woff filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.eot filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+
+# Example: track a folder of large carousel images
+# src/assets/images/carousel/* filter=lfs diff=lfs merge=lfs -text

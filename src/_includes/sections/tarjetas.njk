@@ -1,0 +1,28 @@
+{# Tarjetas section partial
+   Expects `section.title`, `section.subtitle` and `section.cards` where each card has `title`, `text`, `image` #}
+<section class="tarjetas-section container my-5">
+  {# Encabezado #}
+  <div class="row">
+    <div class="col-12">
+      {% if section.subtitle %}
+      <h2 class="text-primary text-uppercase fs-5">{{ section.title }}</h2>
+      <h3 class="pb-2 border-bottom border-info mb-4 display-6 text-primary fw-bold">{{ section.subtitle }}</h3>
+      {% elseif section.title %}
+      <h2 class="pb-2 border-bottom border-info mb-3 text-primary text-uppercase fs-5 fw-bold">{{ section.title }}</h2>
+      {% else %}
+      <hr class="mb-4">
+      {% endif %}
+    </div>
+  </div>
+  
+  {# Contenido #}
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+      {% for card in section.cards %}
+      <div class="col">
+        {{ components.valueCard(card.title, card.text, card.image) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

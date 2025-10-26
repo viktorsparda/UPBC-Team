@@ -1,0 +1,14 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <main>
+    {% for s in sections %}
+      {% set section = s %}
+      {% if section.toggle %}
+      {% include "sections/" + section.type + ".njk" %}
+      {% endif %}
+    {% endfor %}
+
+    {# optionally render the page body (Markdown) too #}
+    {{ content | safe }}
+  </main>
+{% endblock %}

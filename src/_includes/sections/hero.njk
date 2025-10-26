@@ -1,0 +1,35 @@
+{# Hero section: expects `section.title`, `section.subtitle`, `section.images[]` #}
+
+<section class="hero container my-5">
+    <div class="row g-3 align-items-center">
+
+        <div class="col-12 col-lg-6 p-2">
+            <div class="card text-white border-0 rounded-3 shadow-sm">
+                <img src="/assets/images/imagen-inicio/UPBC_PAGWEB_fotoprincipal_1080x1080.jpg" class="card-img" alt="University campus background">
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div>
+                        <a href="#" class="btn btn-warning fw-bold">¡INSCRÍBETE AHORA!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="heroCarousel" class="col-12 col-lg-6 p-2 bg-white rounded-4 shadow-sm carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% for img in section.images %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                    <a href="{{ img.link }}"><img src="{{ img.src }}" alt="{{ img.alt }}" class="d-block w-100 rounded"></a>
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+</section>
+

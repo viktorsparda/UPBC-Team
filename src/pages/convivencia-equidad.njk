@@ -1,0 +1,64 @@
+---
+layout: layouts/post.njk
+title: "Vida Universitaria"
+subtitle: "Convivencia y Equidad"
+sideElements:
+  - type: enlaces
+    title: "Enlaces"
+    links:
+      - url: "/vida-universitaria/"
+        text: "Vida Universitaria"
+        icon: null
+      - url: "/vida-universitaria/eventos-especiales/"
+        text: "Eventos Especiales"
+        icon: null
+      - url: "/vida-universitaria/bienestar-salud"
+        text: "Bienestar y Salud"
+        icon: null
+  - type: contacto
+    title: "Contacto"
+    subtitle: "Coordinación de Convivencia y Equidad"
+    email: "convivencia.equidad@upbc.edu.mx"
+    phone: "(686) 123-4567 Ext. 123"
+    location: "Edificio A, Planta Baja"
+    hours: "Lunes a Viernes: 8:00 - 16:00"
+  - type: recursos
+    title: "Recursos"
+    items:
+      - url: "assets/docs/protocolo-actuacion.pdf"
+        text: "Protocolo de actuación contra la discriminación"
+        icon: "bi bi-file-earmark-pdf"
+      - url: "assets/docs/guia-inclusion.pdf"
+        text: "Guía para la inclusión y diversidad"
+        icon: null
+sections:
+  - type: tarjetas
+    title: "Nuestros Valores"
+    subtitle: null
+    cards:
+      - title: "Respeto"
+        text: "Promovemos el reconocimiento y valoración de las diferencias individuales, fomentando un trato digno entre todos los miembros de nuestra comunidad."
+        image: "/assets/svg/handshake-solid.svg"
+      - title: "Equidad"
+        text: "Trabajamos para garantizar la igualdad de oportunidades y el acceso justo a los recursos y servicios educativos para todos nuestros estudiantes."
+        image: "/assets/svg/scale-balanced-solid.svg"
+      - title: "Inclusión"
+        text: "Construimos espacios donde todas las voces son escuchadas y valoradas, eliminando barreras para la participación plena de cada persona."
+        image: "/assets/svg/user-group-solid.svg"
+      - title: "Solidaridad"
+        text: "Fomentamos el apoyo mutuo y la colaboración entre los miembros de nuestra comunidad, creando redes de soporte para el bienestar colectivo."
+        image: "/assets/svg/heart-solid.svg"
+  - type: nota
+    title: "Programas y Actividades"
+    subtitle: null
+    cards:
+      - title: "Programa de Sensibilización y Prevención"
+        text: "Realizamos talleres, conferencias y campañas de concientización sobre temas como la prevención de la violencia, la igualdad de género y el respeto a la diversidad."
+      - title: "Mediación y Resolución de Conflictos"
+        text: "Contamos con un equipo capacitado para facilitar el diálogo y la resolución pacífica de conflictos dentro de la comunidad universitaria."
+      - title: "Comité de Equidad e Inclusión"
+        text: "Un grupo multidisciplinario que trabaja en la implementación de políticas y prácticas que promuevan la equidad y la inclusión en todos los ámbitos universitarios."
+---
+
+<!-- content will be injected by the sections layout -->
+{% include "sections/tarjetas.njk" %}

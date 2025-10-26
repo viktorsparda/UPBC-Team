@@ -1,0 +1,63 @@
+{
+    "name": "Universidad Politécnica de Baja California",
+    "shortName": "UPBC",
+    "description": "Formando profesionales de excelencia",
+    "social": {
+        
+        "facebook": "https://www.facebook.com/UPBCUNIVERSIDAD",
+        "instagram": "https://www.instagram.com/upbcuniversidad/",
+        "youtube": "https://www.youtube.com/channel/UCCROxBHIXoVourok76BnXNA",
+        "siaaxAlumnos": "https://www2.upbc.edu.mx/alumnos/siaax/",
+        "siaax": "https://www2.upbc.edu.mx/siaax/Defaultx.aspx"
+        
+    },
+    "navRoutes": [
+        {
+            "name": "Universidad", "url": "universidad",
+            "routes": [ 
+                { "name": "Historia", "url": "historia" },
+                { "name": "Mision Vision", "url": "mision-vision" },
+                { "name": "Directorio", "url": "directorio" },
+                { "name": "Instalaciones", "url": "instalaciones" }
+            ]
+        },
+        {
+            "name": "Oferta", "url": "oferta-educativa",
+            "routes": [
+                { "name": "Carreras", "url": "carreras" },
+                { "name": "Posgrados", "url": "posgrados" },
+                { "name": "EducacionContinua", "url": "educacion-continua" },
+                { "name": "Especiales", "url": "modalidades-especiales" }
+            ]
+        },
+        {
+            "name": "Admisiones", "url": "admisiones",
+            "routes": [
+                { "name": "Requisitos", "url": "requisitos" },
+                { "name": "Proceso de Inscripcion", "url": "proceso-inscripcion" },
+                { "name": "Calendario", "url": "calendario" },
+                { "name": "costos", "url": "costos" }
+            ]
+        },
+        {
+            "name": "Vida Universitaria", "url": "vida-universitaria",
+            "routes": [
+                { "name": "Vida Estudiantil", "url": "vida-estudiantil" },
+                { "name": "Convivencia y Equidad", "url": "convivencia-equidad" },
+                { "name": "Eventos Especiales", "url": "eventos-especiales" },
+                { "name": "Bienestar y Salud", "url": "bienestar-salud" }
+            ]
+        },
+        {
+            "name": "servicios", "url": "servicios",
+            "routes": [
+                { "name": "biblioteca", "url": "biblioteca" },
+                { "name": "laboratorios", "url": "laboratorios" },
+                { "name": "ervicios Escolares", "url": "servicios-escolares" },
+                { "name": "becas", "url": "becas" }
+            ]
+        },
+        { "name": "Contacto", "url": "contacto" }
+    ]
+
+}

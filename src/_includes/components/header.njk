@@ -1,0 +1,95 @@
+
+        <div class="sub-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-8">
+                        <div class="left-content">
+                            <p>Bienvenidos a la <em>{{ navigation.name }}</em> - {{ navigation.description }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="right-icons">
+                            <ul>
+                                <li><a href="{{ navigation.social.facebook }}" target="_blank" rel="noopener" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="{{ navigation.social.instagram }}" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="{{ navigation.social.youtube }}" target="_blank" rel="noopener" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="{{ navigation.social.siaaxAlumnos }}" target="_blank" rel="noopener" title="SIAAX Alumnos"><i class="fa fa-user"></i></a></li>
+                                <li><a href="{{ navigation.social.siaax }}" target="_blank" rel="noopener" title="SIAAX"><i class="fa fa-graduation-cap"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header-area header-sticky">
+            <div class="mobile-menu-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- Logo -->
+                            <a href="/" class="logo">
+                                <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" 
+                                    alt="Logo {{ navigation.shortname }}" 
+                                    class="navbar-logo-img">
+                            </a>
+
+                            <!-- Menu Container -->
+                            <div class="menu-container">
+                                <div class="menu-wrapper">
+                                    <ul class="nav single-row-menu">
+                                        <!-- Mobile Logo -->
+                                        <div class="mobile-menu-logo" style="display: none;">
+                                            <img src="/assets/images/logos/UPBC_FullColor-H-FondoClaro.png" 
+                                                alt="Logo {{ navigation.shortName }}" 
+                                                class="navbar-logo-img">
+                                            <div class="mobile-menu-close"><i class="fa fa-times"></i></div>
+                                        </div>
+                                        {% for np in  navigation.navRoutes %}
+                                        
+                                        {% if np.routes %}
+                                        
+                                        <li class="has-sub">
+                                            <a href="{{ np.url }}">{{ np.name }}</a>
+                                            <ul class="sub-menu">
+                                            
+                                            {% for sub in np.routes %}
+
+                                                <li><a href="{{ sub.url }}">{{ sub.name }}</a></li>
+                                                
+                                            {% endfor %}
+
+                                            </ul>
+                                        </li>
+
+                                        {% else %}
+
+                                        <li class="scroll-to-section">
+                                            <a href="{{ np.url }}" class="nav-link-{{ np.name | lower}}">{{ np.name }}</a>
+                                        </li>
+                                        
+                                        {% endif %}
+                                        
+                                        {% endfor %}
+                                        <!-- Mobile Search -->
+                                        <li class="mobile-search">
+                                            <div class="search-container">
+                                            <input type="text" placeholder="Buscar..." class="search-input">
+                                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Menu Toggle -->
+                            <div class="menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>

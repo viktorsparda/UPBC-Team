@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {# Prefer page.metaDescription, then page.description #}
+    {% if metaTitle or title %}
+        <title>{{ metaTitle or title }}</title>
+    {% else %}
+        <title>{{ title }}</title>
+    {% endif %}
+    {% if metaDescription or description %}
+        <meta name="description" content="{{ metaDescription or description }}">
+    {% endif %}
+    <meta name="author" content="UPBC">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/styles/main.css">
+</head>
+
+<body>
+    <div id="navbar-container">{% include 'components/header.njk' %}</div>
+
+    {# Main career template - expects a `career` object in page data. #}
+    <main id="career-page">
+        {% set c = career or page.career or {} %}
+
+        {% if c %}
+            {# Hero #}
+            <section class="career-hero">
+                <div class="container">
+                    {% if c.categoryLabel or c.category %}
+                        <span class="career-hero__badge">
+                            <i class="fa fa-graduation-cap"></i>
+                            {{ c.categoryLabel or c.category }}
+                        </span>
+                    {% endif %}
+
+                    <h1 class="career-hero__title">{{ c.name }}</h1>
+                    {% if c.tagline %}
+                        <p class="career-hero__subtitle">{{ c.tagline }}</p>
+                    {% endif %}
+
+                    {% if c.highlights and c.highlights | length > 0 %}
+                        <div class="career-hero__highlights">
+                            {% for h in c.highlights %}
+                                <span class="career-highlight">
+                                    <i class="fa fa-star"></i>
+                                    {{ h }}
+                                </span>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+
+            {# Layout #}
+            <section class="career-layout">
+                <div class="container">
+                    <div class="row g-4 g-lg-5">
+                        <div class="col-lg-8">
+                            {% if c.summary %}
+                                <div class="career-summary">{{ c.summary | safe }}</div>
+                            {% endif %}
+
+                            {# Description #}
+                            {% if c.description %}
+                                <div class="career-section">
+                                    <div class="career-section__header">
+                                        <h2 class="career-section__title">Descripción de la carrera</h2>
+                                    </div>
+                                    <div class="career-description">
+                                        {% if c.description.image %}
+                                            <figure class="career-description__image">
+                                                <img src="{{ c.description.image }}" alt="{{ c.description.alt or c.description.title or '' }}">
+                                            </figure>
+                                        {% endif %}
+                                        <div class="career-description__text">
+                                            {% if c.description.paragraphs %}
+                                                {% for p in c.description.paragraphs %}
+                                                    <p>{{ p }}</p>
+                                                {% endfor %}
+                                            {% elif c.description.html %}
+                                                {{ c.description.html | safe }}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {# Perfil de egreso #}
+                            {% if c.outcomes and c.outcomes.items and c.outcomes.items | length > 0 %}
+                                <div class="career-section">
+                                    <div class="career-section__header">
+                                        <h2 class="career-section__title">Perfil de egreso</h2>
+                                    </div>
+                                    {% if c.outcomes.lead %}
+                                        <p class="career-section__lead">{{ c.outcomes.lead }}</p>
+                                    {% endif %}
+                                    <ul class="career-list">
+                                        {% for it in c.outcomes.items %}
+                                            <li><i class="fa fa-check-circle"></i><span>{{ it }}</span></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+
+                            {# Campo laboral #}
+                            {% if c.labour and c.labour.items and c.labour.items | length > 0 %}
+                                <div class="career-section">
+                                    <div class="career-section__header">
+                                        <h2 class="career-section__title">Campo laboral</h2>
+                                    </div>
+                                    {% if c.labour.lead %}
+                                        <p class="career-section__lead">{{ c.labour.lead }}</p>
+                                    {% endif %}
+                                    <ul class="career-list">
+                                        {% for it in c.labour.items %}
+                                            <li><i class="fa fa-briefcase"></i><span>{{ it }}</span></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+
+                            {# Curriculum #}
+                            {% if c.curriculum and c.curriculum.items and c.curriculum.items | length > 0 %}
+                                <div class="career-section">
+                                    <div class="career-section__header">
+                                        <h2 class="career-section__title">{{ c.curriculum.title or 'Mapa curricular' }}</h2>
+                                    </div>
+                                    {% if c.curriculum.intro %}
+                                        <p class="career-section__lead">{{ c.curriculum.intro }}</p>
+                                    {% endif %}
+                                    <div class="career-curriculum__grid">
+                                        {% for item in c.curriculum.items %}
+                                            <article class="career-curriculum__item">
+                                                <header><h4>{{ item.title }}</h4></header>
+                                                {% if item.image %}
+                                                    <figure>
+                                                        <img src="{{ item.image }}" alt="{{ item.alt or item.title }}">
+                                                    </figure>
+                                                {% endif %}
+                                            </article>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            {# Sidebar: stats and sections #}
+                            {% if c.stats and c.stats | length > 0 %}
+                                <div class="career-sidebar__block">
+                                    <h4>Información clave</h4>
+                                    <div class="career-stats">
+                                        {% for s in c.stats %}
+                                            <div class="career-stat"><span>{{ s.value }}</span> {{ s.label }}</div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if c.sidebarSections and c.sidebarSections | length > 0 %}
+                                {% for section in c.sidebarSections %}
+                                    <div class="career-sidebar__block">
+                                        <h4>{{ section.title }}</h4>
+                                        <ul class="career-sidebar__list">
+                                            {% for it in section.items %}
+                                                <li><i class="fa fa-chevron-right"></i><span>{{ it }}</span></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        {% else %}
+            <section class="career-error">
+                <div class="container">
+                    <h2>Lo sentimos</h2>
+                    <p>No hay información disponible para esta carrera.</p>
+                </div>
+            </section>
+        {% endif %}
+
+    </main>
+
+    <div id="footer-container">{% include 'components/footer.njk' %}</div>
+
+        
+</body>
+
+</html>

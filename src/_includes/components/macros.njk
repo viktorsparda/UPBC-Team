@@ -1,0 +1,27 @@
+{# bloque de contenido tarjetas.njk #}
+{% macro valueCard(titulo, texto, imagen) %}
+<div class="card mb-3 bg-light border-0 w-100 shadow-sm">
+  <img src="{{ imagen }}" class="card-img-top float-start p-3" alt="{{ titulo }}">
+  <div class="card-body ">
+    <h5 class="card-title text-primary fw-semibold">{{ titulo }}</h5>
+    <p class="card-text fw-medium text-body-tertiary">{{ texto }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro callout(text, buttonUrl, buttonText) %}
+<div class="p-4 my-5 text-center bg-light border rounded-3">
+    <h4>{{ text }}</h4>
+    <a href="{{ buttonUrl }}" class="btn btn-primary mt-2">{{ buttonText }}</a>
+</div>
+{% endmacro %}
+
+{# uso en nota.njk #}
+{% macro textCard(titulo, texto) %}
+<div class="card mb-3 bg-light border-0 w-100 shadow-sm">
+  <div class="card-body ">
+    <h5 class="card-title text-primary fw-semibold">{{ titulo }}</h5>
+    <p class="card-text fw-medium text-body-tertiary">{{ texto }}</p>
+  </div>
+</div>
+{% endmacro %}

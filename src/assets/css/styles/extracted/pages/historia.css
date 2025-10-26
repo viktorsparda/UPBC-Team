@@ -1,0 +1,194 @@
+/* Estilos específicos para la página de Historia */
+    .historia-section {
+      padding: 120px 0 60px 0;
+      background-color: #fff;
+    }
+    
+    .historia-header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    .historia-header h2 {
+      color: #602b82;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    
+    .historia-content {
+      margin-bottom: 40px;
+    }
+    
+    .historia-content p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .historia-content h3 {
+      color: #602b82;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 30px 0 15px;
+    }
+    
+    .historia-content h4 {
+      color: #cd8b47;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 25px 0 15px;
+    }
+    
+    .historia-content ul {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+    
+    .historia-content ul li {
+      margin-bottom: 10px;
+      color: #666;
+      line-height: 1.7;
+    }
+    
+    .historia-image {
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .historia-image img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .historia-image:hover img {
+      transform: scale(1.03);
+    }
+    
+    .timeline-section {
+      position: relative;
+      padding: 30px 0;
+    }
+    
+    .timeline-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #602b82;
+      opacity: 0.2;
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    
+    .timeline-item h3 {
+      color: #602b82;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .timeline-item p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    .timeline-date {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: #cd8b47;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .rectores-section {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+    
+    .rector-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .rector-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .rector-image {
+      height: 250px;
+      overflow: hidden;
+    }
+    
+    .rector-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .rector-card:hover .rector-image img {
+      transform: scale(1.05);
+    }
+    
+    .rector-info {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .rector-info h4 {
+      color: #602b82;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .rector-info p {
+      color: #cd8b47;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    
+    .section-divider {
+      height: 3px;
+      width: 80px;
+      background-color: #cd8b47;
+      margin: 0 auto 30px;
+    }
+    
+    /* Ajustes para dispositivos móviles */
+    @media (max-width: 767px) {
+      .historia-section {
+        padding: 100px 0 40px 0;
+      }
+      
+      .historia-header h2 {
+        font-size: 28px;
+      }
+      
+      .timeline-section::before {
+        left: 20px;
+      }
+    }

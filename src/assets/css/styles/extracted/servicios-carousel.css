@@ -1,0 +1,74 @@
+/* Servicios Carousel */
+#servicios-carousel .carousel-item {
+    padding: 10px !important;
+}
+
+#servicios-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Cards de Servicios */
+.servicios-carousel .servicio-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-carousel .servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.servicios-carousel .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.servicios-carousel .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.servicios-carousel h4 {
+    color: #602b82;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.servicios-carousel p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.servicios-carousel .servicio-link {
+    color: #cd8b47;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.servicios-carousel .servicio-link:hover {
+    color: #602b82;
+    gap: 12px;
+}
+
+.servicios-carousel .servicio-link i {
+    font-size: 0.85rem;
+}

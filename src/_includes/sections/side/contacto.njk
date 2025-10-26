@@ -1,0 +1,20 @@
+{# Contact Info Block #}
+<section class="p-4">
+    <h4 class="fst-normal text-primary border-bottom border-info">{{sideElement.title}}</h4>
+    <p class="mb-1 fw-semibold">{{ sideElement.subtitle }}</p>
+    <ul class="list-unstyled mb-0">
+        {% if sideElement.email %}
+        <li class="text-light-emphasis"><i class="bi bi-envelope me-2"></i>{{ sideElement.email }}</li>
+        {% endif %}
+        {% if sideElement.phone %}
+        <li class="text-light-emphasis"><i class="bi bi-telephone me-2"></i>{{ sideElement.phone }}</li>
+        {% endif %}
+        {% if sideElement.location %}
+        <li class="text-light-emphasis"><i class="bi bi-geo-alt me-2"></i>{{ sideElement.location }}</li>
+        {% endif %}
+        {% if sideElement.hours %}
+        <li class="text-light-emphasis"><i class="bi bi-clock me-2"></i>{{ sideElement.hours }}</li>
+        {% endif %}
+    </ul>
+</section>
+            

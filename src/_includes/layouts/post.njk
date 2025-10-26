@@ -1,0 +1,39 @@
+{% extends "layouts/base.njk" %}
+{% import "components/macros.njk" as components %}
+{# Este bloque indica que todo deberia ir dentro de `content` en base.njk #}
+{% block content %}
+<div class="container-md my-5">
+    <div class="row gx-5">
+        {# Encabezado de seccion #}
+        <div class="row mx-5 mx-md-0">
+            <div class="col-12">
+                {% if subtitle %}
+                <h2 class="text-info  text-uppercase fs-5">{{ title }}</h2>
+                <h1 class="pb-2 border-bottom border-primary mb-4 display-4 text-primary fw-bold fs-2">{{ subtitle }}</h1>
+                {% else %}
+                <h1 class="pb-2 border-bottom border-primary mb-4 display-4 text-primary fw-bold fs-2">{{ title }}</h1>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2">
+            {# Contenido - genera todos los parciales indicados en sections del markdown type: {nombre del njk} #}
+            <main class="col-md-8 ">
+                {% for s in sections %}
+                {% set section = s %}
+                {% include "sections/" + section.type + ".njk" %}
+                {% endfor %}
+            </main>
+
+            {# Sidebar - igual que el anterior, pero utilizando los parciales dentro de sections/side/ #}
+            <aside class="list-group-flush col-md-4 bg-light-subtle">
+                {% for side in sideElements %}
+                {% set sideElement = side %}
+                {% include "sections/side/" + sideElement.type + ".njk" %}
+                {% endfor %}
+            </aside>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

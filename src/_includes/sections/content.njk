@@ -1,0 +1,12 @@
+{# seccion de contenido: render de contenido en la variable `content' de la pagina principal #}
+<section class="content-section container my-5">
+  <div class="row">
+    <div class="col-12">
+      {% if section and section.text %}
+        {{ section.text | safe }}
+      {% else %}
+        {{ content | safe }}
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,29 +1,26 @@
 {
-  "name": "upbc-web",
-  "private": true,
-  "version": "2.0.0",
-  "type": "module",
+  "name": "upbc-web11",
+  "version": "1.0.0",
+  "description": "This is the development build of upbc-web using eleventy",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:pages": "cross-env VITE_PUBLIC_BASE_PATH=/UPBC-Team/ vite build",
-    "preview": "vite preview",
-    "serve": "vite preview --port 5173",
-    "deploy:pages": "npm run build:pages && npx gh-pages -d dist -b gh-pages"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "cross-env": "^10.1.0",
-    "glob": "^11.0.3",
-    "vite": "^7.1.7"
+    "@11ty/eleventy": "^3.1.2",
+    "@types/node": "^24.8.1",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
     "lightbox2": "^2.11.5",
     "owl.carousel": "^2.3.4"
-  },
-  "description": "Sitio web oficial de la Universidad Politécnica de Baja California - Sistema moderno con Vite",
-  "author": "UPBC",
-  "license": "UNLICENSED"
+  }
 }
