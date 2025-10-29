@@ -1,0 +1,765 @@
+/**
+ * Estilos para páginas de Vida Universitaria
+ * Reemplaza hojas heredadas de Bootstrap/Owl/Lightbox
+ */
+
+/* ========== Secciones generales ========== */
+.page-title {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 3px solid var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-title h6 {
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.page-title h2 {
+  color: var(--color-primary);
+  font-size: clamp(2.2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-content {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+  background-color: var(--color-white);
+}
+
+.main-content h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.main-content > p {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-gray);
+}
+
+/* ========== Botones ========== */
+.btn-upbc,
+a.event-btn,
+a.program-btn,
+a.category-btn,
+a.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-base);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.btn-upbc:hover,
+a.event-btn:hover,
+a.program-btn:hover,
+a.category-btn:hover,
+a.cta-btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-upbc i,
+a.category-btn i,
+a.event-btn i,
+a.program-btn i,
+a.cta-btn i {
+  margin-right: 0.35rem;
+}
+
+/* Variante secundaria */
+a.main-button-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-base);
+  box-shadow: var(--box-shadow-sm);
+}
+
+a.main-button-red:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+a.cta-btn {
+  background-color: var(--color-secondary);
+}
+
+a.cta-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* ========== Página principal de Vida Universitaria ========== */
+.vida-universitaria-section {
+  padding: var(--spacing-xl) 0 var(--spacing-xxl);
+  background-color: var(--color-white);
+}
+
+.vida-universitaria-section .section-heading {
+  padding-top: clamp(80px, 12vw, 120px);
+  margin-bottom: var(--spacing-xl);
+}
+
+.vida-universitaria-section .section-heading h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+}
+
+.vida-universitaria-section .section-heading h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+.category-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.category-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.05);
+}
+
+.category-content {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.category-content h3 {
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.category-content p {
+  color: var(--color-gray);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.carrera-cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.carrera-cta h3 {
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carrera-cta p {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-md);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ========== Elementos compartidos en páginas internas ========== */
+.section-title,
+.calendar-title,
+.event-title {
+  color: var(--color-primary);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.event-section,
+.section-content,
+.wellness-services,
+.wellness-programs,
+.health-tips,
+.featured-events,
+.events-calendar {
+  margin-bottom: var(--spacing-xl);
+}
+
+.event-content p,
+.section-content p,
+.service-card p,
+.tip-card p,
+.program-content p,
+.event-details p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.event-gallery {
+  margin: var(--spacing-lg) 0;
+}
+
+.gallery-item {
+  margin-bottom: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hashtags {
+  margin: var(--spacing-lg) 0;
+}
+
+.hashtag-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.sidebar-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidebar-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-item h4 {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.quick-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 0.75rem;
+}
+
+.quick-links li:last-child {
+  margin-bottom: 0;
+}
+
+.quick-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-gray-dark);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.quick-links a:hover {
+  color: var(--color-primary);
+  transform: translateX(5px);
+}
+
+.quick-links i {
+  color: var(--color-secondary);
+  width: 20px;
+  text-align: center;
+}
+
+/* Listas de eventos compactos */
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-list li {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.event-date {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 55px;
+  height: 55px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.event-date span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.event-info h5 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: var(--color-dark);
+}
+
+.event-info p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--color-gray);
+}
+
+/* ========== Valores y programas (Convivencia) ========== */
+.value-card,
+.program-card,
+.service-card,
+.tip-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  padding: 1.75rem;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  height: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.value-card,
+.tip-card {
+  background-color: #f9f9f9;
+}
+
+.value-card:hover,
+.program-card:hover,
+.service-card:hover,
+.tip-card:hover,
+.featured-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.value-icon,
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.value-card h4,
+.program-card h4,
+.service-card h4,
+.tip-card h4 {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.program-card {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.program-card:hover .program-image img {
+  transform: scale(1.05);
+}
+
+.program-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* CTA box */
+.cta-box {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.cta-box h3 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+/* ========== Eventos Especiales ========== */
+.featured-event-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  height: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.featured-event-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.featured-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.featured-event-date {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.featured-event-card:hover .featured-event-image img {
+  transform: scale(1.05);
+}
+
+.featured-event-content {
+  padding: 1.75rem;
+}
+
+.featured-event-content h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.event-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-gray);
+}
+
+.event-meta i {
+  color: var(--color-secondary);
+  margin-right: 0.4rem;
+}
+
+.event-item {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.event-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.event-date-box {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.event-date-box .day {
+  font-size: 1.85rem;
+  line-height: 1;
+}
+
+.event-date-box .month {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.event-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event-details h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.event-details .event-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+}
+
+.event-details .event-location i {
+  color: var(--color-secondary);
+}
+
+.event-categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-categories li {
+  margin-bottom: 0.75rem;
+}
+
+.event-categories a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-gray-dark);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.event-categories a:hover {
+  color: var(--color-primary);
+}
+
+.event-categories .category-count {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+/* ========== Bienestar y Salud ========== */
+.service-card {
+  border-top: 5px solid var(--color-primary);
+}
+
+.tip-card {
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--color-secondary);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.schedule-table th {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.schedule-table tr:last-child td {
+  border-bottom: none;
+}
+
+.emergency-contact {
+  background-color: #f8d7da;
+  border-left: 5px solid #dc3545;
+  border-radius: var(--border-radius-sm);
+  padding: 1rem;
+  margin-top: 1.25rem;
+}
+
+.emergency-contact h5 {
+  color: #721c24;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.emergency-contact p {
+  color: #721c24;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.emergency-contact .phone {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ========== Responsivo ========== */
+@media (max-width: 992px) {
+  .vida-universitaria-section .section-heading {
+    padding-top: var(--spacing-xl);
+  }
+
+  .featured-event-image,
+  .program-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    text-align: center;
+  }
+
+  .featured-event-image,
+  .program-image {
+    height: 200px;
+  }
+
+  .event-item {
+    flex-direction: column;
+  }
+
+  .event-date-box {
+    width: 65px;
+    height: 65px;
+  }
+
+  .sidebar {
+    margin-top: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 576px) {
+  .category-image {
+    height: 180px;
+  }
+
+  .event-item {
+    gap: 1rem;
+  }
+
+  .featured-event-image,
+  .program-image {
+    height: 180px;
+  }
+}

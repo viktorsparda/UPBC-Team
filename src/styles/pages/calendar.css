@@ -1,0 +1,100 @@
+/**
+ * Estilos para la página de calendario escolar
+ */
+
+.calendario-container {
+  background-color: var(--color-light);
+  padding: clamp(80px, 12vw, 120px) 0 var(--spacing-xl);
+  min-height: 70vh;
+}
+
+.page-heading {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-heading h2 {
+  color: var(--color-primary);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-heading p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.calendar-controls .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--border-radius-xl);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.btn-purple {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.btn-purple:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-md);
+}
+
+.pdf-container {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-md);
+  padding: 1.5rem;
+}
+
+#pdf-viewer-container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  max-height: 800px;
+}
+
+#pdf-renderer {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--box-shadow-sm);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 992px) {
+  #pdf-viewer-container {
+    max-height: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendario-container {
+    padding-top: clamp(60px, 15vw, 100px);
+  }
+
+  #pdf-viewer-container {
+    max-height: 520px;
+  }
+}

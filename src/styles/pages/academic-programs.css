@@ -1,0 +1,455 @@
+/**
+ * Estilos para oferta académica (carreras, posgrados y educación continua)
+ */
+
+.carreras-section,
+.posgrados-section,
+.educacion-continua-section {
+  padding: clamp(80px, 12vw, 120px) 0 var(--spacing-xl);
+  background-color: var(--color-white);
+}
+
+.section-heading-secondary {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.section-heading-secondary h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  font-weight: 600;
+}
+
+/* ===== Carreras ===== */
+.carreras-filtros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.filtro-btn {
+  padding: 0.6rem 1.75rem;
+  background-color: var(--color-light);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--border-radius-xl);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.carreras-grid {
+  margin: 0;
+}
+
+.carreras-grid > [class*="col-"] {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (min-width: 1200px) {
+  .carreras-grid > [class*="col-"] {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carrera-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ===== Tarjetas reutilizables ===== */
+.carrera-card,
+.posgrado-item,
+.curso-item {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrera-card:hover,
+.posgrado-item:hover,
+.curso-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.carrera-image,
+.posgrado-image,
+.curso-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.carrera-image img,
+.posgrado-image img,
+.curso-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.carrera-card:hover .carrera-image img,
+.posgrado-item:hover .posgrado-image img,
+.curso-item:hover .curso-image img {
+  transform: scale(1.08);
+}
+
+.carrera-info,
+.posgrado-info,
+.curso-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.carrera-info h4,
+.posgrado-info h4,
+.curso-info h4 {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.carrera-info p,
+.posgrado-info p,
+.curso-info p {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Botones de tarjetas */
+.carrera-link,
+.main-button,
+.main-button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.carrera-link,
+.main-button {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.carrera-link:hover,
+.main-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.main-button-outline {
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.main-button-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.carrera-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(96, 43, 130, 0.9);
+  opacity: 0;
+  transition: var(--transition-base);
+}
+
+.carrera-card:hover .carrera-overlay {
+  opacity: 1;
+}
+
+/* ===== Posgrados ===== */
+.section-heading-secondary + .row {
+  margin-top: var(--spacing-sm);
+}
+
+.posgrado-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.posgrado-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-gray);
+}
+
+.posgrado-details li i {
+  color: var(--color-secondary);
+}
+
+.admisiones-cta,
+.admission-process,
+.contact-cta {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  box-shadow: var(--box-shadow-sm);
+  text-align: center;
+}
+
+.admisiones-cta h3,
+.admission-process h3,
+.contact-cta h3 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.admisiones-cta p,
+.contact-cta > p {
+  margin-bottom: var(--spacing-md);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.admission-process .row {
+  gap: 1.5rem 0;
+}
+
+.process-step {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.requisitos-section {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.requisitos-section h3 {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.requisitos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.requisitos-list li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+}
+
+.requisitos-list li i {
+  color: var(--color-secondary);
+  margin-top: 0.2rem;
+}
+
+.requisitos-note {
+  margin-top: var(--spacing-lg);
+  padding: 1.25rem;
+  background-color: var(--color-white);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: var(--border-radius-sm);
+}
+
+.contact-info {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Educación continua ===== */
+.category-tabs {
+  margin-bottom: var(--spacing-lg);
+}
+
+.category-tabs .nav-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-tabs .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+  color: var(--color-gray);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: var(--transition-base);
+}
+
+.category-tabs .nav-link:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-secondary);
+}
+
+.category-tabs .nav-link.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.curso-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--border-radius-xl);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.curso-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.curso-meta i {
+  color: var(--color-secondary);
+}
+
+.tab-content {
+  padding-top: var(--spacing-md);
+}
+
+.tab-pane {
+  min-height: 200px;
+}
+
+.benefits-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  color: var(--color-white);
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.benefit-item p {
+  opacity: 0.9;
+}
+
+/* ===== Utilidades ===== */
+@media (max-width: 992px) {
+  .contact-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carreras-section,
+  .posgrados-section,
+  .educacion-continua-section {
+    padding-top: clamp(60px, 15vw, 100px);
+  }
+
+  .carrera-info h4,
+  .posgrado-info h4,
+  .curso-info h4 {
+    font-size: 1.05rem;
+  }
+
+  .category-tabs .nav-link {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .admisiones-cta,
+  .admission-process,
+  .requisitos-section,
+  .contact-cta {
+    padding: 1.75rem;
+  }
+}

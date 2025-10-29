@@ -5,8 +5,7 @@
 
 /* Variables y base */
 @import './base/variables.css';
-
-/* Bootstrap (desde node_modules se importará en main.js) */
+@import './base/layout.css';
 
 /* Componentes */
 @import './components/navbar.css';
@@ -16,6 +15,11 @@
 /* Páginas */
 @import './pages/home.css';
 @import './pages/career.css';
+@import './pages/campus-life.css';
+@import './pages/academic-programs.css';
+@import './pages/institutional.css';
+@import './pages/news.css';
+@import './pages/calendar.css';
 
 /* Estilos globales */
 * {

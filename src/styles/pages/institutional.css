@@ -1,0 +1,531 @@
+/**
+ * Estilos para páginas institucionales y de información general
+ */
+
+.content-section,
+.mision-vision-section,
+.directorio-section,
+.instalaciones-section,
+.historia-section {
+  padding: clamp(80px, 12vw, 120px) 0 var(--spacing-xl);
+  background-color: var(--color-white);
+}
+
+.page-header,
+.historia-header,
+.section-heading,
+.mision-vision-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-header h1,
+.section-heading h2,
+.historia-header h2,
+.mision-vision-header h2 {
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-heading p,
+.page-heading p,
+.mision-vision-content p,
+.historia-content p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-secondary);
+  margin: 0 auto var(--spacing-lg);
+  border-radius: 999px;
+}
+
+/* ===== Página de becas ===== */
+.page-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+}
+
+.page-body h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.page-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.page-body ul {
+  padding-left: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.page-body a:hover {
+  color: var(--color-secondary);
+}
+
+.page-body .highlight {
+  background-color: #fff3cd;
+  padding: 0 0.25rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+}
+
+.beca-card,
+.info-card,
+.directorio-item,
+.instalacion-item,
+.timeline-item,
+.rector-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.beca-card:hover,
+.info-card:hover,
+.directorio-item:hover,
+.instalacion-item:hover,
+.timeline-item:hover,
+.rector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.beca-card {
+  padding: 1.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.beca-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.75rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.beca-card .descuento {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.table-descuentos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+.table-descuentos th,
+.table-descuentos td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table-descuentos th {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.important-note {
+  background-color: var(--color-light);
+  border-left: 4px solid var(--color-primary);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.important-note ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 0;
+}
+
+/* ===== Misión, visión y modelo educativo ===== */
+.mision-vision-content h4 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.mision-vision-content h5 {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: var(--spacing-md) 0 var(--spacing-xs);
+}
+
+.mision-vision-content ul,
+.historia-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.info-card-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.info-card-header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.info-card-body {
+  padding: 1.75rem;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+}
+
+.info-card-body ul {
+  margin: var(--spacing-sm) 0 0;
+  padding-left: 1.25rem;
+}
+
+.highlight-box {
+  background-color: var(--color-light);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: var(--border-radius-sm);
+  padding: 1.5rem;
+  margin: var(--spacing-lg) 0;
+}
+
+.highlight-box h4 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.modelo-section {
+  background-color: var(--color-light);
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+}
+
+.etapas-box {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.etapas-box h4 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.5rem;
+}
+
+/* ===== Directorio ===== */
+.directorio-item {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.directorio-image {
+  height: 210px;
+  background-color: var(--color-light);
+  overflow: hidden;
+}
+
+.directorio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.directorio-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.directorio-info.no-image {
+  min-height: 200px;
+  justify-content: center;
+}
+
+.directorio-info h4 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.directorio-info .cargo {
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.directorio-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.directorio-info p i {
+  color: var(--color-primary);
+}
+
+/* ===== Instalaciones ===== */
+.instalacion-item {
+  height: 100%;
+}
+
+.instalacion-image {
+  height: 240px;
+  overflow: hidden;
+  background-color: var(--color-light);
+}
+
+.instalacion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.instalacion-item:hover .instalacion-image img {
+  transform: scale(1.05);
+}
+
+.instalacion-info {
+  padding: 1.5rem;
+}
+
+.instalacion-info h4 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.instalacion-info p {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tour-virtual {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.tour-virtual h3 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tour-virtual p {
+  margin-bottom: var(--spacing-md);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Historia ===== */
+.historia-content h3 {
+  color: var(--color-primary);
+  font-size: clamp(1.4rem, 3.5vw, 1.75rem);
+  font-weight: 600;
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.historia-content h4 {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.historia-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.historia-image img {
+  width: 100%;
+  height: auto;
+  transition: transform var(--transition-base);
+}
+
+.historia-image:hover img {
+  transform: scale(1.03);
+}
+
+.timeline-section {
+  position: relative;
+  padding: var(--spacing-lg) 0;
+}
+
+.timeline-section::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 50%;
+  width: 4px;
+  background-color: rgba(96, 43, 130, 0.2);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-weight: 600;
+  border-radius: var(--border-radius-xl);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9rem;
+}
+
+.timeline-item h3 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-item ul {
+  padding-left: 1.25rem;
+  margin-top: var(--spacing-sm);
+}
+
+.rectores-section {
+  background-color: var(--color-light);
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+}
+
+.rector-card {
+  text-align: center;
+}
+
+.rector-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.rector-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.rector-card:hover .rector-image img {
+  transform: scale(1.05);
+}
+
+.rector-info {
+  padding: 1.5rem;
+}
+
+.rector-info h4 {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.rector-info p {
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ===== Botones reutilizados ===== */
+.main-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: var(--transition-base);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.main-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 992px) {
+  .timeline-section::before {
+    left: 40px;
+    transform: none;
+  }
+
+  .directorio-info,
+  .instalacion-info {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-section,
+  .mision-vision-section,
+  .directorio-section,
+  .instalaciones-section,
+  .historia-section {
+    padding-top: clamp(60px, 15vw, 100px);
+  }
+
+  .table-descuentos {
+    font-size: 0.9rem;
+  }
+
+  .timeline-section::before {
+    left: 24px;
+  }
+}

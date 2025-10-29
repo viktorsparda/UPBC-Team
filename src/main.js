@@ -12,7 +12,7 @@ import * as bootstrap from 'bootstrap';
 // Importar layout base
 import { BaseLayout } from '@layouts/BaseLayout.js';
 
-// Hacer Bootstrap disponible globalmente
+// Hacer Bootstrap disponible globalmente mientras se completa la migración de estilos
 window.bootstrap = bootstrap;
 
 // Inicializar la aplicación

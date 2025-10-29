@@ -1,0 +1,198 @@
+/**
+ * Sistema de rejilla y utilidades básicas
+ * Sustituye dependencias puntuales de Bootstrap
+ */
+
+:root {
+  --container-gutter: 1.5rem;
+  --container-max-width-sm: 540px;
+  --container-max-width-md: 720px;
+  --container-max-width-lg: 960px;
+  --container-max-width-xl: 1140px;
+  --container-max-width-xxl: 1320px;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 3rem;
+}
+
+/* ========== Contenedores ========== */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--container-gutter) / 2);
+  padding-left: calc(var(--container-gutter) / 2);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: var(--container-max-width-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-max-width-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--container-max-width-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-max-width-xl);
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: var(--container-max-width-xxl);
+  }
+}
+
+/* ========== Filas y columnas ========== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-0.5 * var(--container-gutter));
+  margin-left: calc(-0.5 * var(--container-gutter));
+}
+
+.row > [class*="col-"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: calc(0.5 * var(--container-gutter));
+  padding-left: calc(0.5 * var(--container-gutter));
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Breakpoint SM */
+@media (min-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Breakpoint MD */
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Breakpoint LG */
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .offset-lg-1 {
+    margin-left: 8.3333%;
+  }
+
+  .offset-lg-2 {
+    margin-left: 16.6667%;
+  }
+}
+
+/* ========== Utilidades de alineación ========== */
+.text-center {
+  text-align: center !important;
+}
+
+/* ========== Imágenes ========== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Espaciado (margen) ========== */
+.mt-0 { margin-top: var(--space-0) !important; }
+.mt-1 { margin-top: var(--space-1) !important; }
+.mt-2 { margin-top: var(--space-2) !important; }
+.mt-3 { margin-top: var(--space-3) !important; }
+.mt-4 { margin-top: var(--space-4) !important; }
+.mt-5 { margin-top: var(--space-5) !important; }
+
+.mb-0 { margin-bottom: var(--space-0) !important; }
+.mb-1 { margin-bottom: var(--space-1) !important; }
+.mb-2 { margin-bottom: var(--space-2) !important; }
+.mb-3 { margin-bottom: var(--space-3) !important; }
+.mb-4 { margin-bottom: var(--space-4) !important; }
+.mb-5 { margin-bottom: var(--space-5) !important; }
+
+/* ========== Espaciado (padding) ========== */
+.pt-0 { padding-top: var(--space-0) !important; }
+.pt-1 { padding-top: var(--space-1) !important; }
+.pt-2 { padding-top: var(--space-2) !important; }
+.pt-3 { padding-top: var(--space-3) !important; }
+.pt-4 { padding-top: var(--space-4) !important; }
+.pt-5 { padding-top: var(--space-5) !important; }
+
+.pb-0 { padding-bottom: var(--space-0) !important; }
+.pb-1 { padding-bottom: var(--space-1) !important; }
+.pb-2 { padding-bottom: var(--space-2) !important; }
+.pb-3 { padding-bottom: var(--space-3) !important; }
+.pb-4 { padding-bottom: var(--space-4) !important; }
+.pb-5 { padding-bottom: var(--space-5) !important; }
