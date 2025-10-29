@@ -28,9 +28,14 @@ export const SITE_CONFIG = {
     facebook: 'https://www.facebook.com/UPBCUNIVERSIDAD',
     instagram: 'https://www.instagram.com/upbcuniversidad/',
     youtube: 'https://www.youtube.com/channel/UCCROxBHIXoVourok76BnXNA',
-    siaaxAlumnos: 'https://www2.upbc.edu.mx/alumnos/siaax/',
-    siaax: 'https://www2.upbc.edu.mx/siaax/Defaultx.aspx'
+    siaax: 'https://www2.upbc.edu.mx/siaax/Defaultx.aspx',
+    siaaxAlumnos: 'https://www2.upbc.edu.mx/alumnos/siaax/'
   },
+
+  portalLinks: [
+    { label: 'SIAAX Alumnos', url: 'https://www2.upbc.edu.mx/alumnos/siaax/' },
+    { label: 'SIAAX Docentes', url: 'https://www2.upbc.edu.mx/siaax/Defaultx.aspx' }
+  ],
 
   // Rutas del sitio
   routes: {
@@ -38,34 +43,60 @@ export const SITE_CONFIG = {
     universidad: {
       historia: withBase('src/pages/historia.html'),
       misionVision: withBase('src/pages/mision-vision.html'),
-      directorio: withBase('src/pages/directorio.html'),
-      instalaciones: withBase('src/pages/instalaciones.html')
+      rectoria: `${withBase('src/pages/directorio.html')}#rectoria`,
+      instalaciones: withBase('src/pages/instalaciones.html'),
+      transparencia: 'https://www.upbc.edu.mx/trans_parencia/index.html',
+      directorio: withBase('src/pages/directorio.html')
     },
     ofertaEducativa: {
       carreras: withBase('src/pages/carreras.html'),
       posgrados: withBase('src/pages/posgrados.html'),
       educacionContinua: withBase('src/pages/educacion-continua.html'),
-      modalidadesEspeciales: withBase('oferta-educativa/modalidades-especiales/')
+      modeloEducativo: `${withBase('src/pages/mision-vision.html')}#modelo-educativo`
     },
     admisiones: {
-      requisitos: withBase('admisiones/requisitos/'),
       procesoInscripcion: withBase('admisiones/proceso-inscripcion/'),
-      calendario: withBase('src/pages/calendario.html'),
-      costos: withBase('admisiones/costos/')
-    },
-    vidaUniversitaria: {
-      main: withBase('src/pages/vida-universitaria.html'),
-      vidaEstudiantil: withBase('src/pages/vida-estudiantil.html'),
-      convivenciaEquidad: withBase('src/pages/convivencia-equidad.html'),
-      eventosEspeciales: withBase('src/pages/eventos-especiales.html'),
-      bienestarSalud: withBase('src/pages/bienestar-salud.html')
+      requisitos: withBase('admisiones/requisitos/'),
+      costos: withBase('admisiones/costos/'),
+      becas: withBase('src/pages/becas.html')
     },
     servicios: {
+      main: withBase('src/pages/servicios/index.html'),
+      procedimientos: {
+        reinscripcion: withBase('src/pages/servicios/procedimientos/reinscripcion.html'),
+        credencial: withBase('src/pages/servicios/procedimientos/credencial.html'),
+        constancias: withBase('src/pages/servicios/procedimientos/constancias.html'),
+        cambioCarrera: withBase('src/pages/servicios/procedimientos/cambio-carrera.html'),
+        prestamoDocumentos: withBase('src/pages/servicios/procedimientos/prestamo-documentos.html'),
+        certificadoParcial: withBase('src/pages/servicios/procedimientos/certificado-parcial.html'),
+        ecrii: withBase('src/pages/servicios/procedimientos/ecrii.html')
+      },
+      solicitudes: {
+        prorrogaPago: withBase('src/pages/servicios/solicitudes/prorroga-pago.html'),
+        bajaTemporal: withBase('src/pages/servicios/solicitudes/baja-temporal.html'),
+        bajaDefinitiva: withBase('src/pages/servicios/solicitudes/baja-definitiva.html')
+      },
+      bienestar: {
+        servicioMedico: withBase('src/pages/servicios/bienestar/servicio-medico.html')
+      },
+      soporte: {
+        correoInstitucional: withBase('src/pages/servicios/soporte/correo-institucional.html')
+      }
+    },
+    vidaEstudiantil: {
+      main: withBase('src/pages/vida-estudiantil.html'),
+      bienestarSalud: `${withBase('src/pages/vida-estudiantil.html')}#bienestar-salud`,
+      culturaDeportes: `${withBase('src/pages/vida-estudiantil.html')}#cultura-deportes`,
+      gruposEstudiantiles: `${withBase('src/pages/vida-estudiantil.html')}#grupos-estudiantiles`,
+      eventos: `${withBase('src/pages/vida-estudiantil.html')}#eventos`
+    },
+    serviciosVinculacion: {
       biblioteca: withBase('servicios/biblioteca/'),
       laboratorios: withBase('servicios/laboratorios/'),
-      serviciosEscolares: withBase('servicios/servicios-escolares/'),
-      becas: withBase('src/pages/becas.html')
-    }
+      centroIdiomas: 'https://www.upbc.edu.mx/Universidad/cadi.html',
+      vinculacionEstancias: 'https://www.upbc.edu.mx/WVINCULACION/ESTANCIAS.HTML'
+    },
+    contacto: withBase('#contact')
   },
 
   // Colores del tema
@@ -78,66 +109,99 @@ export const SITE_CONFIG = {
   }
 };
 
+const { routes } = SITE_CONFIG;
+
 export const MENU_ITEMS = [
   {
     label: 'Inicio',
-    url: withBase(''),
+    url: routes.home,
     type: 'link'
   },
   {
     label: 'Universidad',
+    url: routes.universidad.historia,
     type: 'dropdown',
     items: [
-      { label: 'Historia', url: withBase('src/pages/historia.html') },
-      { label: 'Misión y visión', url: withBase('src/pages/mision-vision.html') },
-      { label: 'Directorio', url: withBase('src/pages/directorio.html') },
-      { label: 'Instalaciones', url: withBase('src/pages/instalaciones.html') }
+      { label: 'Historia', url: routes.universidad.historia },
+      { label: 'Misión y Visión', url: routes.universidad.misionVision },
+      { label: 'Rectoría', url: routes.universidad.rectoria },
+      { label: 'Instalaciones', url: routes.universidad.instalaciones },
+      { label: 'Transparencia', url: routes.universidad.transparencia },
+      { label: 'Directorio', url: routes.universidad.directorio }
     ]
   },
   {
-    label: 'Oferta educativa',
+    label: 'Oferta Educativa',
+    url: routes.ofertaEducativa.carreras,
     type: 'dropdown',
     items: [
-      { label: 'Carreras', url: withBase('src/pages/carreras.html') },
-      { label: 'Posgrados', url: withBase('src/pages/posgrados.html') },
-      { label: 'Educación continua', url: withBase('src/pages/educacion-continua.html') },
-      { label: 'Modalidades especiales', url: withBase('oferta-educativa/modalidades-especiales/') }
+      { label: 'Carreras', url: routes.ofertaEducativa.carreras },
+      { label: 'Posgrados', url: routes.ofertaEducativa.posgrados },
+      { label: 'Educación Continua', url: routes.ofertaEducativa.educacionContinua },
+      { label: 'Modelo Educativo', url: routes.ofertaEducativa.modeloEducativo }
     ]
   },
   {
     label: 'Admisiones',
+    url: routes.admisiones.procesoInscripcion,
     type: 'dropdown',
     items: [
-      { label: 'Requisitos', url: withBase('admisiones/requisitos/') },
-      { label: 'Proceso de inscripción', url: withBase('admisiones/proceso-inscripcion/') },
-      { label: 'Calendario escolar', url: withBase('src/pages/calendario.html') },
-      { label: 'Costos', url: withBase('admisiones/costos/') }
+      { label: 'Proceso de Inscripción', url: routes.admisiones.procesoInscripcion },
+      { label: 'Requisitos', url: routes.admisiones.requisitos },
+      { label: 'Costos', url: routes.admisiones.costos },
+      { label: 'Becas', url: routes.admisiones.becas }
     ]
   },
   {
-    label: 'Vida universitaria',
-    url: withBase('src/pages/vida-universitaria.html'),
+    label: 'Vida Estudiantil',
+    url: routes.vidaEstudiantil.main,
     type: 'dropdown',
     items: [
-      { label: 'Vida Estudiantil', url: withBase('src/pages/vida-estudiantil.html') },
-      { label: 'Convivencia y Equidad', url: withBase('src/pages/convivencia-equidad.html') },
-      { label: 'Eventos Especiales', url: withBase('src/pages/eventos-especiales.html') },
-      { label: 'Bienestar y Salud', url: withBase('src/pages/bienestar-salud.html') }
+      { label: 'Bienestar y Salud', url: routes.vidaEstudiantil.bienestarSalud },
+      { label: 'Cultura y Deportes', url: routes.vidaEstudiantil.culturaDeportes },
+      { label: 'Grupos Estudiantiles', url: routes.vidaEstudiantil.gruposEstudiantiles },
+      { label: 'Eventos', url: routes.vidaEstudiantil.eventos }
     ]
   },
   {
-    label: 'Servicios',
+    label: 'Servicios y Vinculación',
+    url: routes.servicios.main,
     type: 'dropdown',
     items: [
-      { label: 'Biblioteca', url: withBase('servicios/biblioteca/') },
-      { label: 'Laboratorios', url: withBase('servicios/laboratorios/') },
-      { label: 'Servicios escolares', url: withBase('servicios/servicios-escolares/') },
-      { label: 'Becas', url: withBase('src/pages/becas.html') }
+      { label: 'Portal de Servicios', url: routes.servicios.main },
+      {
+        label: 'Servicios para Alumnos',
+        items: [
+          { label: 'Reinscripción', url: routes.servicios.procedimientos.reinscripcion },
+          { label: 'Constancias y Documentos', url: routes.servicios.procedimientos.constancias },
+          { label: 'Credencial institucional', url: routes.servicios.procedimientos.credencial },
+          { label: 'Cambio de carrera', url: routes.servicios.procedimientos.cambioCarrera },
+          { label: 'Préstamo de documentos', url: routes.servicios.procedimientos.prestamoDocumentos },
+          { label: 'Certificado parcial', url: routes.servicios.procedimientos.certificadoParcial },
+          { label: 'ECRII (Inglés)', url: routes.servicios.procedimientos.ecrii },
+          { label: 'Prórroga de pago', url: routes.servicios.solicitudes.prorrogaPago },
+          { label: 'Baja temporal', url: routes.servicios.solicitudes.bajaTemporal },
+          { label: 'Baja definitiva', url: routes.servicios.solicitudes.bajaDefinitiva },
+          { label: 'Correo institucional', url: routes.servicios.soporte.correoInstitucional }
+        ]
+      },
+      {
+        label: 'Servicios para Docentes',
+        items: [
+          { label: 'SIAAX Docentes', url: SITE_CONFIG.social.siaax },
+          { label: 'Portal de servicios docentes', url: 'https://www.upbc.edu.mx/SERVICIOS20/Empleados/Empleado.html' }
+        ]
+      },
+      { label: 'Servicio Médico', url: routes.servicios.bienestar.servicioMedico },
+      { label: 'Biblioteca', url: routes.serviciosVinculacion.biblioteca },
+      { label: 'Laboratorios', url: routes.serviciosVinculacion.laboratorios },
+      { label: 'Centro de Idiomas (CADI)', url: routes.serviciosVinculacion.centroIdiomas },
+      { label: 'Vinculación y Estancias', url: routes.serviciosVinculacion.vinculacionEstancias }
     ]
   },
   {
     label: 'Contacto',
-    url: withBase('#contact'),
+    url: routes.contacto,
     type: 'link'
   }
 ];

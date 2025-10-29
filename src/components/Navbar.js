@@ -24,6 +24,8 @@ const normalizePath = (url) => {
   }
 };
 
+const isExternalLink = (url = '') => /^(https?:)?\/\//.test(url) || url.startsWith('mailto:') || url.startsWith('tel:');
+
 export class Navbar {
   constructor(container) {
     this.container = typeof container === 'string' ? select(container) : container;
@@ -52,26 +54,31 @@ export class Navbar {
   }
 
   getSubHeaderTemplate() {
+    const portalLinks = SITE_CONFIG.portalLinks ?? [];
+    const social = SITE_CONFIG.social ?? {};
     return `
       <div class="sub-header">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-sm-8">
-              <div class="left-content">
-                <p>Bienvenidos a la <em>${SITE_CONFIG.name}</em> - ${SITE_CONFIG.description}</p>
-              </div>
+          <div class="sub-header-top">
+            <nav class="portal-menu" aria-label="Accesos para la comunidad UPBC">
+              <ul>
+                ${portalLinks.map(link => `
+                  <li>
+                    <a href="${link.url}" ${isExternalLink(link.url) ? 'target="_blank" rel="noopener"' : ''}>${link.label}</a>
+                  </li>
+                `).join('')}
+              </ul>
+            </nav>
+            <div class="right-icons" aria-label="Redes sociales">
+              <ul>
+                <li><a href="${social.facebook}" target="_blank" rel="noopener" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="${social.instagram}" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="${social.youtube}" target="_blank" rel="noopener" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+              </ul>
             </div>
-            <div class="col-lg-4 col-sm-4">
-              <div class="right-icons">
-                <ul>
-                  <li><a href="${SITE_CONFIG.social.facebook}" target="_blank" rel="noopener" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="${SITE_CONFIG.social.instagram}" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="${SITE_CONFIG.social.youtube}" target="_blank" rel="noopener" title="YouTube"><i class="fa fa-youtube"></i></a></li>
-                  <li><a href="${SITE_CONFIG.social.siaaxAlumnos}" target="_blank" rel="noopener" title="SIAAX Alumnos"><i class="fa fa-user"></i></a></li>
-                  <li><a href="${SITE_CONFIG.social.siaax}" target="_blank" rel="noopener" title="SIAAX"><i class="fa fa-graduation-cap"></i></a></li>
-                </ul>
-              </div>
-            </div>
+          </div>
+          <div class="left-content">
+            <p>Bienvenidos a la <em>${SITE_CONFIG.name}</em> - ${SITE_CONFIG.description}</p>
           </div>
         </div>
       </div>
@@ -135,13 +142,13 @@ export class Navbar {
   getMenuItemsTemplate() {
     return MENU_ITEMS.map(item => {
       if (item.type === 'dropdown') {
+        const parentUrl = item.url || 'javascript:void(0)';
+        const parentAttrs = isExternalLink(parentUrl) ? ' target="_blank" rel="noopener"' : '';
         return `
           <li class="has-sub">
-            <a href="${item.url || 'javascript:void(0)'}">${item.label}</a>
+            <a href="${parentUrl}"${parentAttrs}>${item.label}</a>
             <ul class="sub-menu">
-              ${item.items.map(subItem => `
-                <li><a href="${subItem.url}">${subItem.label}</a></li>
-              `).join('')}
+              ${item.items.map(subItem => this.getSubMenuItemTemplate(subItem)).join('')}
             </ul>
           </li>
         `;
@@ -153,6 +160,29 @@ export class Navbar {
         `;
       }
     }).join('');
+  }
+
+  getSubMenuItemTemplate(subItem = {}) {
+    const hasChildren = Array.isArray(subItem.items) && subItem.items.length > 0;
+    const url = subItem.url || 'javascript:void(0)';
+    const attrs = isExternalLink(url) ? ' target="_blank" rel="noopener"' : '';
+
+    if (hasChildren) {
+      return `
+        <li class="has-sub nested">
+          <a href="${url}"${attrs}>${subItem.label}</a>
+          <ul class="sub-menu">
+            ${subItem.items.map(child => {
+              const childUrl = child.url || 'javascript:void(0)';
+              const childAttrs = isExternalLink(childUrl) ? ' target="_blank" rel="noopener"' : '';
+              return `<li><a href="${childUrl}"${childAttrs}>${child.label}</a></li>`;
+            }).join('')}
+          </ul>
+        </li>
+      `;
+    }
+
+    return `<li><a href="${url}"${attrs}>${subItem.label}</a></li>`;
   }
 
   attachEvents() {
