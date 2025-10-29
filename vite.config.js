@@ -62,6 +62,20 @@ export default defineConfig({
         convivenciaEquidad: path.resolve(__dirname, 'src/pages/convivencia-equidad.html'),
         eventosEspeciales: path.resolve(__dirname, 'src/pages/eventos-especiales.html'),
         vidaEstudiantil: path.resolve(__dirname, 'src/pages/vida-estudiantil.html'),
+  // Portal de servicios
+  servicios: path.resolve(__dirname, 'src/pages/servicios/index.html'),
+  servicioMedico: path.resolve(__dirname, 'src/pages/servicios/bienestar/servicio-medico.html'),
+  serviciosReinscripcion: path.resolve(__dirname, 'src/pages/servicios/procedimientos/reinscripcion.html'),
+  serviciosCredencial: path.resolve(__dirname, 'src/pages/servicios/procedimientos/credencial.html'),
+  serviciosConstancias: path.resolve(__dirname, 'src/pages/servicios/procedimientos/constancias.html'),
+  serviciosPrestamoDocumentos: path.resolve(__dirname, 'src/pages/servicios/procedimientos/prestamo-documentos.html'),
+  serviciosCambioCarrera: path.resolve(__dirname, 'src/pages/servicios/procedimientos/cambio-carrera.html'),
+  serviciosCertificadoParcial: path.resolve(__dirname, 'src/pages/servicios/procedimientos/certificado-parcial.html'),
+  serviciosEcrii: path.resolve(__dirname, 'src/pages/servicios/procedimientos/ecrii.html'),
+  serviciosBajaTemporal: path.resolve(__dirname, 'src/pages/servicios/solicitudes/baja-temporal.html'),
+  serviciosBajaDefinitiva: path.resolve(__dirname, 'src/pages/servicios/solicitudes/baja-definitiva.html'),
+  serviciosProrrogaPago: path.resolve(__dirname, 'src/pages/servicios/solicitudes/prorroga-pago.html'),
+  serviciosCorreoInstitucional: path.resolve(__dirname, 'src/pages/servicios/soporte/correo-institucional.html'),
       },
       output: {
         manualChunks: {
