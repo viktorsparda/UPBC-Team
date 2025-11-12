@@ -1,0 +1,348 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: viktorsparda/UPBC-Team
+  branch: main
+
+media_folder: public/assets/images/uploads
+public_folder: /assets/images/uploads
+
+collections:
+  - name: careers
+    label: Carreras
+    label_singular: Carrera
+    folder: src/content/careers
+    extension: json
+    format: json
+    create: true
+    identifier_field: slug
+    slug: "{{slug}}"
+    path: "{{slug}}"
+    summary: "{{name}} ({{category}})"
+    preview_path: "{{slug}}.html"
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: "Identificador usado en URLs (sin espacios)"
+      - label: Nombre completo
+        name: name
+        widget: string
+      - label: Nombre corto
+        name: shortName
+        widget: string
+        required: false
+      - label: Categoría
+        name: category
+        widget: select
+        options:
+          - { label: "Licenciatura", value: "licenciatura" }
+          - { label: "Ingeniería", value: "ingenieria" }
+      - label: Meta title
+        name: metaTitle
+        widget: string
+      - label: Meta descripción
+        name: metaDescription
+        widget: text
+      - label: Eslogan
+        name: tagline
+        widget: string
+        required: false
+      - label: Resumen
+        name: summary
+        widget: text
+      - label: Descripción
+        name: description
+        widget: object
+        fields:
+          - { label: Imagen, name: image, widget: image, allow_multiple: false }
+          - { label: Texto alternativo, name: alt, widget: string, required: false }
+          - label: Párrafos
+            name: paragraphs
+            widget: list
+            field: { label: Párrafo, name: text, widget: text }
+      - label: Perfil de egreso
+        name: outcomes
+        widget: object
+        fields:
+          - { label: Texto principal, name: lead, widget: text, required: false }
+          - label: Elementos
+            name: items
+            widget: list
+            field: { label: Elemento, name: text, widget: string }
+      - label: Campo laboral
+        name: labour
+        widget: object
+        fields:
+          - { label: Texto principal, name: lead, widget: text, required: false }
+          - label: Elementos
+            name: items
+            widget: list
+            field: { label: Elemento, name: text, widget: string }
+      - label: Mapa curricular
+        name: curriculum
+        widget: object
+        required: false
+        fields:
+          - { label: Título, name: title, widget: string, required: false }
+          - { label: Introducción, name: intro, widget: text, required: false }
+          - label: Elementos
+            name: items
+            widget: list
+            required: false
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Imagen, name: image, widget: image, allow_multiple: false }
+              - { label: Texto alternativo, name: alt, widget: string, required: false }
+      - label: Estadísticas clave
+        name: stats
+        widget: list
+        required: false
+        fields:
+          - { label: Etiqueta, name: label, widget: string }
+          - { label: Valor, name: value, widget: string }
+      - label: Bloques laterales
+        name: sidebarSections
+        widget: list
+        required: false
+        fields:
+          - { label: Título, name: title, widget: string }
+          - label: Elementos
+            name: items
+            widget: list
+            field: { label: Elemento, name: text, widget: string }
+      - label: Destacados
+        name: highlights
+        widget: list
+        required: false
+        field: { label: Destacado, name: text, widget: string }
+  - name: news
+    label: Noticias
+    label_singular: Noticia
+    folder: src/content/news
+    extension: json
+    format: json
+    create: true
+    identifier_field: slug
+    slug: "{{slug}}"
+    path: "{{slug}}"
+    summary: "{{title}} ({{publishDate}})"
+    preview_path: "src/pages/news-{{slug}}.html"
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: "Se usa para el nombre del archivo y la URL (solo minúsculas y guiones)."
+        pattern: ['^[a-z0-9\-]+$', "Usa solo letras minúsculas, números y guiones."]
+      - label: Meta title
+        name: metaTitle
+        widget: string
+      - label: Meta descripción
+        name: metaDescription
+        widget: text
+        required: false
+      - label: Título principal
+        name: title
+        widget: string
+      - label: Subtítulo
+        name: subtitle
+        widget: string
+        required: false
+      - label: Fecha de publicación
+        name: publishDate
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+      - label: Autor
+        name: author
+        widget: string
+        required: false
+      - label: Ubicación
+        name: location
+        widget: string
+        required: false
+      - label: Etiquetas
+        name: tags
+        widget: list
+        required: false
+      - label: Mostrar metadatos en el encabezado
+        name: showMeta
+        widget: boolean
+        default: true
+        required: false
+      - label: Mostrar imagen principal
+        name: showCover
+        widget: boolean
+        default: true
+        required: false
+      - label: Mostrar fecha en el contenido
+        name: showDateInBody
+        widget: boolean
+        default: true
+        required: false
+      - label: Imagen principal
+        name: cover
+        widget: object
+        required: false
+        fields:
+          - { label: Imagen, name: src, widget: image, allow_multiple: false }
+          - { label: Texto alternativo, name: alt, widget: string, required: false }
+      - label: Contenido
+        name: body
+        widget: list
+        required: false
+        types:
+          - label: Párrafo
+            name: paragraph
+            widget: object
+            fields:
+              - { label: Texto, name: text, widget: text }
+          - label: Imagen
+            name: image
+            widget: object
+            fields:
+              - { label: Imagen, name: src, widget: image, allow_multiple: false }
+              - { label: Texto alternativo, name: alt, widget: string, required: false }
+              - { label: Leyenda, name: caption, widget: string, required: false }
+          - label: Lista
+            name: list
+            widget: object
+            fields:
+              - label: Tipo
+                name: style
+                widget: select
+                options:
+                  - { label: "Viñetas", value: "unordered" }
+                  - { label: "Numérica", value: "ordered" }
+              - label: Elementos
+                name: items
+                widget: list
+                field: { label: Elemento, name: text, widget: string }
+          - label: Galería
+            name: gallery
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string, required: false }
+              - label: Imágenes
+                name: images
+                widget: list
+                fields:
+                  - { label: Imagen, name: src, widget: image, allow_multiple: false }
+                  - { label: Texto alternativo, name: alt, widget: string, required: false }
+          - label: Cuadrícula de imágenes
+            name: imageGrid
+            widget: object
+            fields:
+              - label: Imágenes
+                name: images
+                widget: list
+                fields:
+                  - { label: Imagen, name: src, widget: image, allow_multiple: false }
+                  - { label: Texto alternativo, name: alt, widget: string, required: false }
+      - label: Sidebar
+        name: sidebar
+        widget: list
+        required: false
+        types:
+          - label: Texto
+            name: text
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Contenido, name: text, widget: text }
+          - label: Lista
+            name: list
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - label: Elementos
+                name: items
+                widget: list
+                fields:
+                  - { label: Texto, name: text, widget: string }
+                  - { label: Icono (Font Awesome), name: icon, widget: string, required: false }
+      - label: Mostrar sección CTA
+        name: ctaEnabled
+        widget: boolean
+        required: false
+        default: false
+        hint: "Activa la sección de vinculación al final de la noticia."
+      - label: Contenido CTA
+        name: cta
+        widget: object
+        required: false
+        fields:
+          - { label: Título, name: title, widget: string }
+          - { label: Texto, name: text, widget: text }
+          - { label: Texto del botón, name: buttonLabel, widget: string }
+          - { label: URL del botón, name: buttonUrl, widget: string }
+      - label: Habilitar botones para compartir
+        name: shareEnabled
+        widget: boolean
+        default: true
+        required: false
+      - label: Enlace de retorno
+        name: backLink
+        widget: object
+        required: false
+        fields:
+          - { label: Texto, name: label, widget: string, required: false }
+          - { label: URL, name: href, widget: string, required: false }
+  - name: chatbot
+    label: Chatbot
+    files:
+      - label: Conversación
+        name: conversation
+        file: chatbot/conversation.json
+        format: json
+        fields:
+          - label: Nodo inicial
+            name: startNode
+            widget: relation
+            collection: chatbot
+            file: conversation
+            search_fields: ["nodes.*.title", "nodes.*.id"]
+            value_field: "nodes.*.id"
+            display_fields: ["nodes.*.title", "nodes.*.id"]
+            multiple: false
+            required: true
+            hint: "Selecciona el mensaje que verá primero la persona usuaria. Puedes buscar por título o ID."
+          - label: Nodos
+            name: nodes
+            label_singular: Nodo
+            widget: list
+            collapsed: true
+            add_to_top: true
+            summary: "{{fields.title}} ({{fields.id}})"
+            fields:
+              - label: "ID del Nodo"
+                name: id
+                widget: string
+                pattern: ['^[a-z0-9_\-]+$', "Usa solo minúsculas, números, guiones medios o bajos (sin espacios)."]
+                hint: "Identificador único utilizado para enlazar opciones (ej. inicio_start)."
+              - { label: "Título (interno)", name: title, widget: string, hint: "Solo para identificar el nodo dentro del CMS." }
+              - label: "Texto del Bot (Mensaje)"
+                name: text
+                widget: markdown
+                buttons: [bold, italic, link, bulleted-list, numbered-list]
+                hint: "Contenido que leerá la persona usuaria. Usa Enter para saltos de línea."
+              - label: Opciones
+                name: options
+                widget: list
+                label_singular: Opción
+                add_to_top: true
+                collapsed: true
+                summary: "{{fields.label}} → {{fields.next}}"
+                fields:
+                  - { label: "Texto del Botón", name: label, widget: string }
+                  - label: "Nodo Siguiente"
+                    name: next
+                    widget: relation
+                    collection: chatbot
+                    file: conversation
+                    search_fields: ["nodes.*.title", "nodes.*.id"]
+                    value_field: "nodes.*.id"
+                    display_fields: ["nodes.*.title", "nodes.*.id"]
+                    multiple: false
+                    hint: "Selecciona a qué nodo debe dirigir esta opción."
