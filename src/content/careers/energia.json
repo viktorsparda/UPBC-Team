@@ -1,0 +1,96 @@
+{
+  "slug": "energia",
+  "category": "ingenieria",
+  "name": "Ingeniería en Energía y Desarrollo Sostenible",
+  "shortName": "Energía y Desarrollo Sostenible",
+  "metaTitle": "Ingeniería en Energía y Desarrollo Sostenible - UPBC",
+  "metaDescription": "Ingeniería en Energía y Desarrollo Sostenible en la UPBC. Energías renovables, eficiencia energética y transición hacia modelos sustentables.",
+  "tagline": "Construye un futuro energético sostenible",
+  "summary": "Diseña soluciones de energías renovables y gestiona proyectos que impulsan la transición hacia modelos sustentables.",
+  "description": {
+    "image": "/assets/images/carreras/energia/descripcion.jpg",
+    "alt": "Estudiante trabajando con paneles solares y sistemas energéticos",
+    "paragraphs": [
+      "La Ingeniería en Energía y Desarrollo Sostenible de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, implementación y gestión de sistemas energéticos sostenibles, con un enfoque en energías renovables y eficiencia energética.",
+      "Nuestro programa combina fundamentos de ingeniería con conocimientos especializados en tecnologías energéticas limpias, preparando a los estudiantes para liderar la transición hacia un modelo energético más sostenible y respetuoso con el medio ambiente."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería en Energía y Desarrollo Sostenible, serás capaz de:",
+    "items": [
+      "Diseñar e implementar sistemas de energía renovable como solar, eólica o geotérmica",
+      "Desarrollar estrategias de eficiencia energética para distintos sectores",
+      "Evaluar el impacto ambiental de proyectos energéticos",
+      "Gestionar proyectos de transición energética en organizaciones",
+      "Realizar auditorías energéticas y proponer mejoras",
+      "Aplicar normativas y estándares nacionales e internacionales en materia energética",
+      "Desarrollar investigación aplicada en energías limpias"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero en Energía y Desarrollo Sostenible podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Empresas de generación y distribución de energía",
+      "Compañías de instalación de sistemas de energía renovable",
+      "Consultorías ambientales y energéticas",
+      "Organismos gubernamentales del sector energético",
+      "Centros de investigación y desarrollo tecnológico",
+      "Empresas industriales con departamentos de sostenibilidad",
+      "Organizaciones dedicadas al desarrollo sostenible",
+      "Emprendimiento de proyectos energéticos"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapas curriculares",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos técnicos, científicos y de gestión en el ámbito energético y ambiental. Ofrecemos diferentes especializaciones para adaptarnos a tus intereses profesionales:",
+    "items": [
+      {
+        "title": "Especialización en Energía Solar",
+        "image": "/assets/images/carreras/energia/mapa-curricular-1.jpg",
+        "alt": "Mapa curricular de la especialización en Energía Solar"
+      },
+      {
+        "title": "Especialización en Energía Térmica Solar",
+        "image": "/assets/images/carreras/energia/mapa-curricular-2.jpg",
+        "alt": "Mapa curricular de la especialización en Energía Térmica Solar"
+      },
+      {
+        "title": "Especialización en Tecnologías Energéticas",
+        "image": "/assets/images/carreras/energia/mapa-curricular-3.jpg",
+        "alt": "Mapa curricular de la especialización en Tecnologías Energéticas"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería en Energía y Desarrollo Sostenible"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Energía solar fotovoltaica",
+        "Energía eólica",
+        "Eficiencia energética",
+        "Gestión ambiental",
+        "Sistemas de almacenamiento energético",
+        "Redes inteligentes"
+      ]
+    }
+  ],
+  "highlights": [
+    "Diseño de sistemas renovables",
+    "Gestión de eficiencia energética",
+    "Impacto ambiental y normatividad"
+  ]
+}

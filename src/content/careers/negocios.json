@@ -1,0 +1,86 @@
+{
+  "slug": "negocios",
+  "category": "licenciatura",
+  "name": "Licenciatura en Negocios y Mercadotecnia",
+  "shortName": "Negocios y Mercadotecnia",
+  "metaTitle": "Licenciatura en Negocios y Mercadotecnia - UPBC",
+  "metaDescription": "Licenciatura en Negocios y Mercadotecnia en la UPBC. Estrategia comercial, marketing digital y análisis de datos para mercados globales.",
+  "tagline": "Estrategias comerciales y marketing para el mundo digital",
+  "summary": "Crea estrategias comerciales y campañas de marketing basadas en datos para posicionar marcas en entornos competitivos.",
+  "description": {
+    "image": "/assets/images/carreras/negocios/descripcion.jpg",
+    "alt": "Estudiantes analizando métricas de marketing digital",
+    "paragraphs": [
+      "La Licenciatura en Negocios y Mercadotecnia de la Universidad Politécnica de Baja California forma profesionales especializados en la creación e implementación de estrategias comerciales y de marketing, con un enfoque en la innovación digital, el análisis de datos y el comportamiento del consumidor.",
+      "Nuestro programa proporciona una formación integral que combina fundamentos de negocios, técnicas de investigación de mercados, herramientas de marketing digital y desarrollo de habilidades directivas, preparando a los estudiantes para liderar proyectos comerciales en un entorno global y altamente competitivo."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la Licenciatura en Negocios y Mercadotecnia, serás capaz de:",
+    "items": [
+      "Diseñar e implementar estrategias de marketing efectivas",
+      "Desarrollar planes de negocios y proyectos comerciales",
+      "Gestionar campañas de marketing digital y redes sociales",
+      "Analizar datos de mercado y comportamiento del consumidor",
+      "Implementar estrategias de branding y posicionamiento",
+      "Coordinar equipos de ventas y desarrollo comercial",
+      "Aplicar técnicas de investigación de mercados"
+    ]
+  },
+  "labour": {
+    "lead": "Como Licenciado en Negocios y Mercadotecnia podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Departamentos de marketing en empresas nacionales e internacionales",
+      "Agencias de publicidad y marketing digital",
+      "Consultoría en estrategia comercial",
+      "Gestión de marca y desarrollo de producto",
+      "Investigación de mercados",
+      "Comercio electrónico y negocios digitales",
+      "Dirección comercial y ventas",
+      "Emprendimiento de proyectos propios"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en las áreas fundamentales de los negocios y la mercadotecnia contemporánea.",
+    "items": [
+      {
+        "title": "Programa académico de la Licenciatura en Negocios y Mercadotecnia",
+        "image": "/assets/images/carreras/negocios/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Licenciatura en Negocios y Mercadotecnia"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU y Licenciatura en Negocios y Mercadotecnia"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Marketing digital",
+        "Comercio electrónico",
+        "Gestión de marca",
+        "Análisis de datos comerciales",
+        "Estrategia de negocios",
+        "Comunicación comercial"
+      ]
+    }
+  ],
+  "highlights": [
+    "Marketing digital y analítica",
+    "Gestión comercial estratégica",
+    "Innovación en modelos de negocio"
+  ]
+}

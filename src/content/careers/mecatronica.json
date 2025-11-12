@@ -1,0 +1,99 @@
+{
+  "slug": "mecatronica",
+  "category": "ingenieria",
+  "name": "Ingeniería Mecatrónica",
+  "shortName": "Ingeniería Mecatrónica",
+  "metaTitle": "Ingeniería Mecatrónica - UPBC",
+  "metaDescription": "Ingeniería Mecatrónica en la UPBC. Integración de sistemas mecánicos, electrónicos y de control para automatización y robótica.",
+  "tagline": "Integración de sistemas mecánicos, electrónicos y de control",
+  "summary": "Diseña sistemas inteligentes que combinan mecánica, electrónica, control y software para automatizar procesos.",
+  "description": {
+    "image": "/assets/images/carreras/mecatronica/descripcion.jpg",
+    "alt": "Estudiantes prueban brazos robóticos en laboratorio mecatrónico",
+    "paragraphs": [
+      "La Ingeniería Mecatrónica de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, desarrollo e implementación de sistemas que integran componentes mecánicos, electrónicos, de control y computacionales.",
+      "Nuestro programa proporciona una formación multidisciplinaria que combina conocimientos de mecánica, electrónica, informática y sistemas de control, preparando a los estudiantes para desarrollar soluciones tecnológicas innovadoras en diversos sectores industriales y de servicios."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería Mecatrónica, serás capaz de:",
+    "items": [
+      "Diseñar y desarrollar sistemas mecatrónicos integrados",
+      "Implementar soluciones de automatización industrial y robótica",
+      "Programar sistemas embebidos y microcontroladores",
+      "Diseñar circuitos electrónicos y sistemas de control",
+      "Desarrollar aplicaciones de Internet de las Cosas (IoT)",
+      "Gestionar proyectos tecnológicos multidisciplinarios",
+      "Aplicar mantenimiento predictivo y preventivo en sistemas industriales"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero Mecatrónico podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Industria manufacturera y de procesos",
+      "Empresas de automatización industrial",
+      "Desarrollo de robótica industrial y de servicio",
+      "Industria automotriz y aeroespacial",
+      "Empresas de desarrollo tecnológico e innovación",
+      "Centros de investigación y desarrollo",
+      "Consultoría en ingeniería y automatización",
+      "Emprendimiento de proyectos tecnológicos"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapas curriculares",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en mecánica, electrónica, control y programación. Ofrecemos diferentes especializaciones para adaptarnos a tus intereses profesionales:",
+    "items": [
+      {
+        "title": "Especialización en Automatización",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-1.jpg",
+        "alt": "Mapa curricular de la especialización en Automatización"
+      },
+      {
+        "title": "Especialización en Instalaciones Eléctricas Eficientes",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-2.jpg",
+        "alt": "Mapa curricular de la especialización en Instalaciones Eléctricas Eficientes"
+      },
+      {
+        "title": "Especialización en Manufactura Lean y Procesos",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-3.jpg",
+        "alt": "Mapa curricular de la especialización en Manufactura Lean y Procesos"
+      },
+      {
+        "title": "Especialización en Operaciones",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-4.jpg",
+        "alt": "Mapa curricular de la especialización en Operaciones"
+      },
+      {
+        "title": "Especialización en Robótica",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-5.jpg",
+        "alt": "Mapa curricular de la especialización en Robótica"
+      },
+      {
+        "title": "Especialización en Sistemas de Manufactura Flexible",
+        "image": "/assets/images/carreras/mecatronica/mapa-curricular-6.jpg",
+        "alt": "Mapa curricular de la especialización en Sistemas de Manufactura Flexible"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería Mecatrónica"
+    }
+  ],
+  "sidebarSections": [],
+  "highlights": [
+    "Automatización y robótica",
+    "Sistemas embebidos y control",
+    "Integración IoT y conectividad"
+  ]
+}

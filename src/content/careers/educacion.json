@@ -1,0 +1,86 @@
+{
+  "slug": "educacion",
+  "category": "licenciatura",
+  "name": "Licenciatura en Educación",
+  "shortName": "Educación",
+  "metaTitle": "Licenciatura en Educación - UPBC",
+  "metaDescription": "Licenciatura en Educación en la Universidad Politécnica de Baja California. Innovación educativa, inclusión y tecnología al servicio del aprendizaje.",
+  "tagline": "Formando a los educadores del futuro",
+  "summary": "Diseña experiencias de aprendizaje innovadoras con enfoque inclusivo, tecnología educativa y desarrollo integral.",
+  "description": {
+    "image": "/assets/images/carreras/educacion/descripcion.jpg",
+    "alt": "Docente interactuando con estudiantes en aula moderna",
+    "paragraphs": [
+      "La Licenciatura en Educación de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, implementación y evaluación de procesos educativos innovadores, con un enfoque en las nuevas tecnologías, la inclusión y el desarrollo integral de los estudiantes.",
+      "Nuestro programa proporciona una formación integral que combina fundamentos pedagógicos, psicológicos y sociológicos con herramientas didácticas y tecnológicas de vanguardia, preparando a los estudiantes para transformar la educación y responder a los desafíos del siglo XXI."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la Licenciatura en Educación, serás capaz de:",
+    "items": [
+      "Diseñar e implementar programas educativos innovadores",
+      "Aplicar metodologías de enseñanza-aprendizaje centradas en el estudiante",
+      "Integrar tecnologías educativas en procesos formativos",
+      "Desarrollar estrategias de evaluación formativa y sumativa",
+      "Implementar prácticas educativas inclusivas",
+      "Gestionar proyectos educativos en diversos contextos",
+      "Realizar investigación educativa para la mejora continua"
+    ]
+  },
+  "labour": {
+    "lead": "Como Licenciado en Educación podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Instituciones educativas públicas y privadas",
+      "Departamentos de capacitación y desarrollo en empresas",
+      "Centros de investigación educativa",
+      "Desarrollo de contenidos educativos",
+      "Consultoría pedagógica",
+      "Gestión de proyectos educativos",
+      "Organizaciones sociales orientadas a la educación",
+      "Emprendimiento de proyectos educativos propios"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en las áreas fundamentales de la educación contemporánea.",
+    "items": [
+      {
+        "title": "Programa académico de la Licenciatura en Educación",
+        "image": "/assets/images/carreras/educacion/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Licenciatura en Educación"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU y Licenciatura en Educación"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Tecnología educativa",
+        "Educación inclusiva",
+        "Diseño curricular",
+        "Gestión educativa",
+        "Evaluación educativa",
+        "Educación para adultos"
+      ]
+    }
+  ],
+  "highlights": [
+    "Innovación pedagógica",
+    "Integración de tecnología educativa",
+    "Enfoque inclusivo y social"
+  ]
+}

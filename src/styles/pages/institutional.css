@@ -105,7 +105,6 @@
 .info-card:hover,
 .directorio-item:hover,
 .instalacion-item:hover,
-.timeline-item:hover,
 .rector-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--box-shadow-lg);

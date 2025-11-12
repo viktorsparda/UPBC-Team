@@ -1,0 +1,96 @@
+{
+  "slug": "industrial",
+  "category": "ingenieria",
+  "name": "Ingeniería Industrial",
+  "shortName": "Ingeniería Industrial",
+  "metaTitle": "Ingeniería Industrial - UPBC",
+  "metaDescription": "Ingeniería Industrial en la UPBC. Optimización de procesos, logística, calidad y productividad para sectores industriales y de servicios.",
+  "tagline": "Optimización y eficiencia en sistemas productivos y de servicios",
+  "summary": "Diseña y mejora sistemas productivos, logísticos y de servicios para maximizar calidad, seguridad y rentabilidad.",
+  "description": {
+    "image": "/assets/images/carreras/industrial/descripcion.jpg",
+    "alt": "Estudiantes de ingeniería industrial en laboratorio de procesos",
+    "paragraphs": [
+      "La Ingeniería Industrial de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, mejora e implementación de sistemas integrados de personas, materiales, información, equipos y energía, con un enfoque en la optimización de procesos y recursos.",
+      "Nuestro programa proporciona una formación integral que combina conocimientos técnicos, administrativos y de gestión, preparando a los estudiantes para resolver problemas complejos en diversos sectores productivos y de servicios, mejorando la productividad, calidad, seguridad y rentabilidad."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería Industrial, serás capaz de:",
+    "items": [
+      "Diseñar, implementar y mejorar sistemas integrados de producción y servicios",
+      "Aplicar técnicas de optimización de procesos y recursos",
+      "Gestionar sistemas de calidad y mejora continua",
+      "Desarrollar e implementar sistemas logísticos y cadenas de suministro eficientes",
+      "Aplicar métodos de ergonomía y seguridad industrial",
+      "Utilizar herramientas de simulación y análisis de datos para la toma de decisiones",
+      "Liderar proyectos de innovación y mejora en organizaciones"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero Industrial podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Industria manufacturera y de transformación",
+      "Empresas de servicios en sectores como salud, transporte o logística",
+      "Consultorías en mejora de procesos y calidad",
+      "Gestión de cadenas de suministro y logística",
+      "Departamentos de planeación y control de producción",
+      "Áreas de seguridad industrial y gestión ambiental",
+      "Empresas de desarrollo tecnológico e innovación",
+      "Emprendimiento de proyectos propios"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapas curriculares",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos técnicos, administrativos y de gestión para optimizar sistemas productivos y de servicios. Ofrecemos diferentes especializaciones para adaptarnos a tus intereses profesionales:",
+    "items": [
+      {
+        "title": "Especialización en Maquinaria Pesada",
+        "image": "/assets/images/carreras/industrial/mapa-curricular-1.jpg",
+        "alt": "Mapa curricular de la especialización en Maquinaria Pesada"
+      },
+      {
+        "title": "Especialización en Manufactura y Procesos",
+        "image": "/assets/images/carreras/industrial/mapa-curricular-2.jpg",
+        "alt": "Mapa curricular de la especialización en Manufactura y Procesos"
+      },
+      {
+        "title": "Especialización en Sistemas de Gestión de Calidad",
+        "image": "/assets/images/carreras/industrial/mapa-curricular-3.jpg",
+        "alt": "Mapa curricular de la especialización en Sistemas de Gestión de Calidad"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería Industrial"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Gestión de la calidad",
+        "Logística y cadena de suministro",
+        "Manufactura esbelta (Lean Manufacturing)",
+        "Ergonomía y seguridad industrial",
+        "Análisis y simulación de procesos",
+        "Gestión de proyectos"
+      ]
+    }
+  ],
+  "highlights": [
+    "Optimización de procesos y recursos",
+    "Calidad y mejora continua",
+    "Logística y cadena de suministro"
+  ]
+}

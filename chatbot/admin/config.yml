@@ -1,0 +1,59 @@
+collections:
+  - name: "chatbot"
+    label: "Chatbot (Nodos de Conversación)"
+    label_singular: "Nodo"
+    files:
+      - label: "Conversación"
+        name: "conversation"
+        file: "chatbot/conversation.json"
+        format: json
+        fields:
+          - label: "Nodo inicial"
+            name: "startNode"
+            widget: "relation"
+            collection: "chatbot"
+            file: "conversation"
+            search_fields: ["nodes.*.title", "nodes.*.id"]
+            value_field: "nodes.*.id"
+            display_fields: ["nodes.*.title", "nodes.*.id"]
+            multiple: false
+            required: true
+            hint: "Selecciona el mensaje que verá primero la persona usuaria."
+          - label: "Nodos"
+            name: "nodes"
+            widget: "list"
+            label_singular: "Nodo"
+            add_to_top: true
+            collapsed: true
+            summary: "{{fields.title}} ({{fields.id}})"
+            fields:
+              - label: "ID del Nodo"
+                name: "id"
+                widget: "string"
+                pattern: ['^[a-z0-9_\-]+$', "Usa solo minúsculas, números, guiones medios o bajos (sin espacios)."]
+                hint: "Identificador único para enlazar opciones (ej. inicio_start)."
+              - { label: "Título (interno)", name: "title", widget: "string", hint: "Solo para referencia en el CMS." }
+              - label: "Texto del Bot (Mensaje)"
+                name: "text"
+                widget: "markdown"
+                buttons: [bold, italic, link, bulleted-list, numbered-list]
+                hint: "Contenido que verá la persona usuaria."
+              - label: "Opciones (Botones)"
+                name: "options"
+                widget: "list"
+                label_singular: "Opción"
+                add_to_top: true
+                collapsed: true
+                summary: "{{fields.label}} → {{fields.next}}"
+                fields:
+                  - { label: "Texto del Botón", name: "label", widget: "string" }
+                  - label: "Nodo Siguiente"
+                    name: "next"
+                    widget: "relation"
+                    collection: "chatbot"
+                    file: "conversation"
+                    search_fields: ["nodes.*.title", "nodes.*.id"]
+                    value_field: "nodes.*.id"
+                    display_fields: ["nodes.*.title", "nodes.*.id"]
+                    multiple: false
+                    hint: "Selecciona el nodo al que llevará esta opción."

@@ -1,0 +1,74 @@
+{
+  "slug": "animacion",
+  "category": "ingenieria",
+  "name": "Ingeniería en Animación y Efectos Visuales",
+  "shortName": "Animación y Efectos Visuales",
+  "metaTitle": "Ingeniería en Animación y Efectos Visuales - UPBC",
+  "metaDescription": "Ingeniería en Animación y Efectos Visuales en la Universidad Politécnica de Baja California. Domina animación 2D y 3D, VFX y narrativa para medios digitales.",
+  "tagline": "Forma parte de la industria creativa digital",
+  "summary": "Integra arte y tecnología para crear experiencias audiovisuales con animación 2D, 3D y efectos visuales de alto impacto.",
+  "description": {
+    "image": "/assets/images/carreras/animacion/descripcion.jpg",
+    "alt": "Estudiantes trabajando en estaciones de animación digital",
+    "paragraphs": [
+      "La Ingeniería en Animación y Efectos Visuales de la Universidad Politécnica de Baja California forma profesionales especializados en la creación de contenido digital para la industria del entretenimiento, videojuegos, publicidad y medios audiovisuales.",
+      "Nuestro programa combina fundamentos artísticos con conocimientos técnicos avanzados, preparando a los estudiantes para dominar las herramientas y técnicas más actuales en animación 2D y 3D, modelado, rigging, texturizado, iluminación, composición digital y efectos visuales."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería en Animación y Efectos Visuales, serás capaz de:",
+    "items": [
+      "Diseñar y desarrollar proyectos de animación 2D y 3D con estándares profesionales",
+      "Crear efectos visuales para producciones audiovisuales utilizando software especializado",
+      "Implementar técnicas avanzadas de modelado, rigging, texturizado e iluminación",
+      "Desarrollar narrativas visuales efectivas para diferentes medios y plataformas",
+      "Gestionar proyectos creativos desde su conceptualización hasta su entrega final",
+      "Colaborar en equipos multidisciplinarios de producción digital",
+      "Aplicar principios de diseño, composición y teoría del color en proyectos digitales"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero en Animación y Efectos Visuales podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Estudios de animación y producción audiovisual",
+      "Empresas desarrolladoras de videojuegos",
+      "Agencias de publicidad y marketing digital",
+      "Productoras cinematográficas y televisivas",
+      "Estudios de diseño y efectos visuales",
+      "Empresas de realidad virtual y aumentada",
+      "Proyectos independientes o freelancing",
+      "Emprendimiento de estudios creativos propios"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos técnicos, artísticos y de gestión de proyectos creativos.",
+    "items": [
+      {
+        "title": "Programa académico en animación y VFX",
+        "image": "/assets/images/carreras/animacion/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Ingeniería en Animación y Efectos Visuales"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería en Animación y Efectos Visuales"
+    }
+  ],
+  "sidebarSections": [],
+  "highlights": [
+    "Producción 2D y 3D profesional",
+    "Narrativa visual para múltiples medios",
+    "Gestión de proyectos creativos"
+  ]
+}

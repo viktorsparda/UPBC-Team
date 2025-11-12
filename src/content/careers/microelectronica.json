@@ -1,0 +1,74 @@
+{
+  "slug": "microelectronica",
+  "category": "ingenieria",
+  "name": "Ingeniería en Microelectrónica y Semiconductores",
+  "shortName": "Microelectrónica y Semiconductores",
+  "metaTitle": "Ingeniería en Microelectrónica y Semiconductores - UPBC",
+  "metaDescription": "Ingeniería en Microelectrónica y Semiconductores en la UPBC. Diseño y fabricación de circuitos integrados y dispositivos a escala nano.",
+  "tagline": "Diseña el futuro de la tecnología a escala nanométrica",
+  "summary": "Desarrolla dispositivos y circuitos integrados aplicando física de semiconductores y procesos de fabricación avanzados.",
+  "description": {
+    "image": "/assets/images/carreras/microelectronica/descripcion.jpg",
+    "alt": "Ingeniero manipulando obleas de semiconductores en laboratorio",
+    "paragraphs": [
+      "La Ingeniería en Microelectrónica y Semiconductores de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, fabricación y prueba de dispositivos microelectrónicos y circuitos integrados, con un enfoque en las tecnologías de semiconductores que impulsan la innovación tecnológica global.",
+      "Nuestro programa combina fundamentos sólidos de electrónica, física de semiconductores, diseño de circuitos integrados y procesos de fabricación, preparando a los estudiantes para contribuir al desarrollo de tecnologías avanzadas en diversos sectores industriales."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería en Microelectrónica y Semiconductores, serás capaz de:",
+    "items": [
+      "Diseñar circuitos integrados analógicos y digitales",
+      "Desarrollar procesos de fabricación de dispositivos semiconductores",
+      "Implementar técnicas de caracterización y prueba de dispositivos microelectrónicos",
+      "Aplicar conocimientos de física de semiconductores en el desarrollo de nuevos dispositivos",
+      "Gestionar proyectos de investigación y desarrollo en microelectrónica",
+      "Diseñar sistemas embebidos y dispositivos electrónicos avanzados",
+      "Contribuir a la innovación en tecnologías emergentes como IoT, energías renovables y biomedicina"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero en Microelectrónica y Semiconductores podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Empresas de diseño de circuitos integrados",
+      "Fabricantes de semiconductores y componentes electrónicos",
+      "Industria de equipos electrónicos y sistemas embebidos",
+      "Centros de investigación y desarrollo tecnológico",
+      "Empresas de automatización y control industrial",
+      "Industria aeroespacial y automotriz",
+      "Sector de tecnologías médicas y biomédicas",
+      "Emprendimiento de proyectos tecnológicos"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en electrónica, física de semiconductores, diseño de circuitos integrados y procesos de fabricación.",
+    "items": [
+      {
+        "title": "Programa académico de la Ingeniería en Microelectrónica y Semiconductores",
+        "image": "/assets/images/carreras/microelectronica/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Ingeniería en Microelectrónica y Semiconductores"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería en Microelectrónica y Semiconductores"
+    }
+  ],
+  "sidebarSections": [],
+  "highlights": [
+    "Diseño de circuitos integrados",
+    "Procesos de fabricación de semiconductores",
+    "Caracterización y prueba de dispositivos"
+  ]
+}

@@ -4,6 +4,7 @@
 
 import { Navbar } from '@components/Navbar.js';
 import { Footer } from '@components/Footer.js';
+import { ContactModal } from '@components/ContactModal.js';
 import { ready } from '@utils/dom.js';
 
 export class BaseLayout {
@@ -16,12 +17,14 @@ export class BaseLayout {
     
     this.navbar = null;
     this.footer = null;
+    this.contactModal = null;
   }
 
   init() {
     ready(() => {
       this.initNavbar();
       this.initFooter();
+      this.initContactModal();
       this.onReady();
     });
   }
@@ -31,6 +34,12 @@ export class BaseLayout {
     if (navbarContainer) {
       this.navbar = new Navbar(navbarContainer);
     }
+  }
+
+  initContactModal() {
+    if (this.contactModal) return;
+    this.contactModal = new ContactModal();
+    this.contactModal.init();
   }
 
   initFooter() {
@@ -48,5 +57,6 @@ export class BaseLayout {
   destroy() {
     if (this.navbar) this.navbar.destroy();
     if (this.footer) this.footer.destroy();
+    this.contactModal = null;
   }
 }

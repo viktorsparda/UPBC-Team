@@ -1,0 +1,86 @@
+{
+  "slug": "gastronomia",
+  "category": "licenciatura",
+  "name": "Licenciatura en Gastronomía",
+  "shortName": "Gastronomía",
+  "metaTitle": "Licenciatura en Gastronomía - UPBC",
+  "metaDescription": "Licenciatura en Gastronomía en la UPBC. Técnica culinaria, innovación gastronómica y gestión de negocios de alimentos y bebidas.",
+  "tagline": "Arte culinario, innovación y gestión gastronómica",
+  "summary": "Combina técnicas culinarias, gestión y creatividad para diseñar experiencias gastronómicas con identidad y calidad.",
+  "description": {
+    "image": "/assets/images/carreras/gastronomia/descripcion.jpg",
+    "alt": "Chef estudiante preparando platillos en cocina profesional",
+    "paragraphs": [
+      "La Licenciatura en Gastronomía de la Universidad Politécnica de Baja California forma profesionales especializados en el arte culinario, la innovación gastronómica y la gestión de negocios de alimentos y bebidas, con un enfoque en la cocina regional, nacional e internacional.",
+      "Nuestro programa proporciona una formación integral que combina técnicas culinarias, conocimientos científicos, habilidades administrativas y sensibilidad cultural, preparando a los estudiantes para destacar en la industria gastronómica y contribuir a la preservación y evolución del patrimonio culinario."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la Licenciatura en Gastronomía, serás capaz de:",
+    "items": [
+      "Dominar técnicas culinarias tradicionales y de vanguardia",
+      "Diseñar menús y experiencias gastronómicas innovadoras",
+      "Gestionar establecimientos de alimentos y bebidas",
+      "Aplicar principios de nutrición y seguridad alimentaria",
+      "Desarrollar productos gastronómicos con identidad regional",
+      "Implementar estrategias de marketing gastronómico",
+      "Realizar investigación e innovación en el campo culinario"
+    ]
+  },
+  "labour": {
+    "lead": "Como Licenciado en Gastronomía podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Restaurantes y hoteles nacionales e internacionales",
+      "Empresas de catering y banquetes",
+      "Desarrollo de productos alimenticios",
+      "Consultoría gastronómica",
+      "Gestión de servicios de alimentos",
+      "Docencia e investigación culinaria",
+      "Crítica gastronómica y comunicación",
+      "Emprendimiento de negocios gastronómicos"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en las áreas fundamentales de la gastronomía contemporánea.",
+    "items": [
+      {
+        "title": "Programa académico de la Licenciatura en Gastronomía",
+        "image": "/assets/images/carreras/gastronomia/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Licenciatura en Gastronomía"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU y Licenciatura en Gastronomía"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Instalaciones especializadas",
+      "items": [
+        "Cocinas profesionales",
+        "Laboratorio de panadería y repostería",
+        "Laboratorio de análisis sensorial",
+        "Cava y bar didáctico",
+        "Restaurante escuela",
+        "Huerto orgánico"
+      ]
+    }
+  ],
+  "highlights": [
+    "Técnica culinaria de alto nivel",
+    "Gestión de negocios gastronómicos",
+    "Innovación con identidad regional"
+  ]
+}

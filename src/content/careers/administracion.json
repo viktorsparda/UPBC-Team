@@ -1,0 +1,92 @@
+{
+  "outcomes": {
+    "lead": "Al egresar de la Licenciatura en Administración, serás capaz de:",
+    "items": [
+      "Diseñar e implementar estrategias organizacionales efectivas",
+      "Gestionar eficientemente recursos humanos, financieros y materiales",
+      "Desarrollar planes de negocios y proyectos de emprendimiento",
+      "Analizar información financiera y tomar decisiones estratégicas",
+      "Implementar estrategias de marketing y ventas",
+      "Liderar equipos de trabajo multidisciplinarios",
+      "Aplicar principios éticos y de responsabilidad social en la gestión empresarial"
+    ]
+  },
+  "summary": "Gestiona recursos, lidera equipos y diseña estrategias de negocio con visión innovadora y responsabilidad social.",
+  "shortName": "Administración",
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Administración financiera",
+        "Gestión del talento humano",
+        "Marketing estratégico",
+        "Emprendimiento e innovación",
+        "Comercio internacional",
+        "Gestión de proyectos"
+      ]
+    }
+  ],
+  "name": "Licenciatura en Administración",
+  "slug": "administracion",
+  "tagline": "Liderazgo y gestión estratégica para el éxito organizacional",
+  "metaTitle": "Licenciatura en Administración - UPBC",
+  "metaDescription": "Licenciatura en Administración en la Universidad Politécnica de Baja California. Liderazgo, gestión estratégica e innovación para organizaciones competitivas.",
+  "curriculum": {
+    "title": "Mapas curriculares",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en las áreas fundamentales de la administración moderna. Ofrecemos diferentes especializaciones para adaptarnos a tus intereses profesionales:",
+    "items": [
+      {
+        "title": "Especialización en Evaluación de Proyectos",
+        "image": "/assets/images/carreras/administracion/mapa-curricular-1.jpg",
+        "alt": "Mapa curricular de la Licenciatura en Administración con énfasis en evaluación de proyectos"
+      },
+      {
+        "title": "Especialización en Gestión de Capital Humano",
+        "image": "/assets/images/carreras/administracion/mapa-curricular-2.jpg",
+        "alt": "Mapa curricular de la Licenciatura en Administración con énfasis en gestión de capital humano"
+      }
+    ]
+  },
+  "description": {
+    "image": "/assets/images/carreras/administracion/descripcion.jpg",
+    "alt": "Estudiantes de la Licenciatura en Administración trabajando en equipo",
+    "paragraphs": [
+      "La Licenciatura en Administración de la Universidad Politécnica de Baja California forma profesionales especializados en la gestión eficiente de recursos y el desarrollo de estrategias organizacionales, con un enfoque en la innovación, sostenibilidad y responsabilidad social.",
+      "Nuestro programa proporciona una formación integral que combina conocimientos teóricos y prácticos en áreas como finanzas, marketing, recursos humanos, operaciones y emprendimiento, preparando a los estudiantes para liderar organizaciones en un entorno global y dinámico.",
+      "Prueba"
+    ]
+  },
+  "category": "licenciatura",
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU y Licenciatura en Administración"
+    }
+  ],
+  "highlights": [
+    "Estrategia y liderazgo organizacional",
+    "Gestión integral de recursos",
+    "Emprendimiento con enfoque social"
+  ],
+  "labour": {
+    "lead": "Como Licenciado en Administración podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Empresas privadas de diversos sectores",
+      "Instituciones financieras y bancarias",
+      "Departamentos de recursos humanos",
+      "Áreas de marketing y ventas",
+      "Consultorías empresariales",
+      "Organismos gubernamentales",
+      "Organizaciones no gubernamentales",
+      "Emprendimiento de proyectos propios"
+    ]
+  }
+}

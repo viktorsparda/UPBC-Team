@@ -9,10 +9,12 @@
     "build:pages": "cross-env VITE_PUBLIC_BASE_PATH=/UPBC-Team/ vite build",
     "preview": "vite preview",
     "serve": "vite preview --port 5173",
+    "cms": "decap-server --port 8081",
     "deploy:pages": "npm run build:pages && npx gh-pages -d dist -b gh-pages"
   },
   "devDependencies": {
     "cross-env": "^10.1.0",
+    "decap-server": "^3.1.9",
     "glob": "^11.0.3",
     "vite": "^7.1.7"
   },

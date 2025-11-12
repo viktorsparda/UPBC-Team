@@ -1,13 +1,17 @@
 import { resolvePublicPath } from '@utils/constants.js';
 
-const contentModules = import.meta.glob('../content/careers/*.json', {
+const contentModules = import.meta.glob('../content/news/*.json', {
   eager: true,
   import: 'default'
 });
 
-const RAW_CAREERS = Object.values(contentModules)
-  .map((career) => career)
-  .sort((a, b) => a.slug.localeCompare(b.slug));
+const RAW_NEWS = Object.values(contentModules)
+  .map((entry) => entry)
+  .sort((a, b) => {
+    const dateA = a.publishDate ? new Date(a.publishDate) : 0;
+    const dateB = b.publishDate ? new Date(b.publishDate) : 0;
+    return dateB - dateA;
+  });
 
 const prefixAssetPaths = (value) => {
   if (typeof value === 'string') {
@@ -30,15 +34,9 @@ const prefixAssetPaths = (value) => {
   return value;
 };
 
-export const CAREERS = RAW_CAREERS.map((career) => prefixAssetPaths(career));
+export const NEWS = RAW_NEWS.map((entry) => prefixAssetPaths(entry));
 
-export const CAREERS_BY_SLUG = CAREERS.reduce((acc, career) => {
-  acc[career.slug] = career;
+export const NEWS_BY_SLUG = NEWS.reduce((acc, news) => {
+  acc[news.slug] = news;
   return acc;
 }, {});
-
-export const CAREER_CATEGORIES = [
-  { id: 'all', label: 'Todas' },
-  { id: 'ingenieria', label: 'Ingenierías' },
-  { id: 'licenciatura', label: 'Licenciaturas' }
-];

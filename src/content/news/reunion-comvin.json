@@ -1,0 +1,82 @@
+{
+  "slug": "reunion-comvin",
+  "metaTitle": "Reunión UPBC y Comité de Vinculación de Mexicali - UPBC",
+  "metaDescription": "Encuentro entre la UPBC y el Comité de Vinculación de Mexicali para fortalecer lazos entre la industria y la comunidad estudiantil.",
+  "title": "Sostienen reunión la UPBC y el Comité de Vinculación de Mexicali",
+  "subtitle": "Fortaleciendo lazos entre la industria y la comunidad estudiantil",
+  "publishDate": "2025-09-03",
+  "showMeta": false,
+  "cover": {
+    "src": "/assets/images/news/reunion-comvin/reunion-comvin-1.jpeg",
+    "alt": "Reunión entre la UPBC y el Comité de Vinculación de Mexicali"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Con el propósito de dar a conocer su nueva estrategia de trabajo y fortalecer los lazos entre la industria y la comunidad estudiantil universitaria, integrantes del Comité de Vinculación de Mexicali (COMVIN) sostuvieron este día un encuentro con directivos de la Universidad Politécnica de Baja California (UPBC)."
+    },
+    {
+      "type": "paragraph",
+      "text": "La reunión fue encabezada por el Secretario Académico de la institución, Dr. Abelardo Mercado, acompañado de los directores de carrera y de la Coordinadora de Vinculación, Lizett Ayón."
+    },
+    {
+      "type": "paragraph",
+      "text": "Por parte del COMVIN participaron Verónica Fernández, Aurora Pimentel, Edna Calderón y Laura López, quienes compartieron las perspectivas y objetivos de la nueva estrategia de vinculación, con el interés común de generar oportunidades que beneficien tanto a la industria local como a los estudiantes de la UPBC."
+    },
+    {
+      "type": "paragraph",
+      "text": "Este encuentro refleja el compromiso de la Universidad Politécnica de Baja California con el fortalecimiento de la relación academia–industria, buscando siempre abrir espacios de colaboración que impulsen el desarrollo profesional de sus alumnos."
+    },
+    {
+      "type": "gallery",
+      "title": "Galería de imágenes",
+      "images": [
+        {
+          "src": "/assets/images/news/reunion-comvin/reunion-comvin-1.jpeg",
+          "alt": "Reunión UPBC y COMVIN - Imagen 1"
+        },
+        {
+          "src": "/assets/images/news/reunion-comvin/reunion-comvin-2.jpeg",
+          "alt": "Reunión UPBC y COMVIN - Imagen 2"
+        },
+        {
+          "src": "/assets/images/news/reunion-comvin/reunion-comvin-3.jpeg",
+          "alt": "Reunión UPBC y COMVIN - Imagen 3"
+        }
+      ]
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "text",
+      "title": "Sobre el Comité de Vinculación",
+      "text": "El Comité de Vinculación de Mexicali (COMVIN) es una organización que busca fortalecer la relación entre el sector educativo y el sector productivo, promoviendo la colaboración y el desarrollo de proyectos conjuntos."
+    },
+    {
+      "type": "text",
+      "title": "Vinculación en la UPBC",
+      "text": "La Universidad Politécnica de Baja California mantiene un fuerte compromiso con la vinculación academia-industria, facilitando a sus estudiantes oportunidades de prácticas profesionales, estadías y proyectos colaborativos con empresas locales e internacionales."
+    },
+    {
+      "type": "list",
+      "title": "Eventos relacionados",
+      "items": [
+        { "text": "Feria de Empleo UPBC - Octubre 2025", "icon": "fa fa-calendar-check-o" },
+        { "text": "Semana de la Vinculación - Noviembre 2025", "icon": "fa fa-calendar-check-o" },
+        { "text": "Expo Proyectos Industriales - Diciembre 2025", "icon": "fa fa-calendar-check-o" }
+      ]
+    }
+  ],
+  "ctaEnabled": true,
+  "cta": {
+    "title": "¿Quieres conocer más sobre nuestros programas de vinculación?",
+    "text": "Si eres estudiante o representante de una empresa y te interesa conocer más sobre nuestros programas de vinculación, contáctanos.",
+    "buttonLabel": "Contáctanos",
+    "buttonUrl": "/index.html#contact"
+  },
+  "shareEnabled": false,
+  "backLink": {
+    "label": "Volver a Novedades",
+    "href": "/index.html#meetings"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "manufactura",
+  "category": "ingenieria",
+  "name": "Ingeniería en Manufactura Avanzada",
+  "shortName": "Manufactura Avanzada",
+  "metaTitle": "Ingeniería en Manufactura Avanzada - UPBC",
+  "metaDescription": "Ingeniería en Manufactura Avanzada en la UPBC. Automatización, Industria 4.0 y mejora de procesos para sectores de alta tecnología.",
+  "tagline": "Innovación y excelencia en procesos productivos",
+  "summary": "Integra automatización, calidad e Industria 4.0 para transformar procesos de manufactura de alto desempeño.",
+  "description": {
+    "image": "/assets/images/carreras/manufactura/descripcion.jpg",
+    "alt": "Laboratorio de manufactura avanzada con maquinaria automatizada",
+    "paragraphs": [
+      "La Ingeniería en Manufactura Avanzada de la Universidad Politécnica de Baja California forma profesionales especializados en el diseño, optimización y gestión de procesos productivos de alta tecnología, con un enfoque en la Industria 4.0 y la manufactura inteligente.",
+      "Nuestro programa combina conocimientos de ingeniería industrial, automatización, sistemas de calidad y tecnologías emergentes, preparando a los estudiantes para liderar la transformación de los procesos productivos en diversos sectores industriales."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería en Manufactura Avanzada, serás capaz de:",
+    "items": [
+      "Diseñar y optimizar procesos de manufactura utilizando tecnologías avanzadas",
+      "Implementar sistemas de manufactura esbelta (Lean Manufacturing)",
+      "Desarrollar soluciones de automatización industrial",
+      "Gestionar sistemas de calidad y mejora continua",
+      "Aplicar tecnologías de la Industria 4.0 en entornos productivos",
+      "Diseñar y gestionar cadenas de suministro eficientes",
+      "Liderar proyectos de innovación en manufactura"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero en Manufactura Avanzada podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Industria manufacturera automotriz, aeroespacial, electrónica u otros sectores",
+      "Empresas de automatización industrial",
+      "Departamentos de ingeniería y producción",
+      "Consultorías en mejora de procesos y calidad",
+      "Empresas de desarrollo tecnológico para la industria",
+      "Centros de investigación y desarrollo",
+      "Gestión de cadenas de suministro",
+      "Emprendimiento de proyectos industriales"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapa curricular",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en procesos de manufactura, automatización, calidad y gestión industrial.",
+    "items": [
+      {
+        "title": "Programa académico de la Ingeniería en Manufactura Avanzada",
+        "image": "/assets/images/carreras/manufactura/mapa-curricular.jpg",
+        "alt": "Mapa curricular de la Ingeniería en Manufactura Avanzada"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería en Manufactura Avanzada"
+    }
+  ],
+  "sidebarSections": [],
+  "highlights": [
+    "Industria 4.0 y automatización",
+    "Optimización de procesos productivos",
+    "Gestión de calidad y mejora continua"
+  ]
+}

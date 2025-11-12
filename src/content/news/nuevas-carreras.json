@@ -1,0 +1,95 @@
+{
+  "slug": "nuevas-carreras",
+  "metaTitle": "Nuevas Carreras - Universidad Politécnica de Baja California",
+  "metaDescription": "La UPBC amplía su oferta educativa con cinco nuevas carreras para el próximo ciclo escolar.",
+  "title": "La UPBC amplía su oferta educativa con cinco nuevas carreras para el próximo ciclo escolar",
+  "publishDate": "2025-06-25",
+  "location": "Mexicali, B.C.",
+  "showCover": false,
+  "showDateInBody": false,
+  "cover": {
+    "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.30 PM.jpeg",
+    "alt": "Presentación de nuevas carreras en la UPBC"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "La Universidad Politécnica de Baja California (UPBC) presentó hoy de manera oficial la incorporación de cinco nuevas carreras que se suman a su oferta académica, reafirmando su compromiso con la formación de profesionistas preparados para enfrentar los retos del presente y del futuro."
+    },
+    {
+      "type": "image",
+      "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.30 PM.jpeg",
+      "alt": "Presentación oficial de nuevas carreras en la UPBC"
+    },
+    {
+      "type": "paragraph",
+      "text": "Durante un encuentro con medios de comunicación realizado en la Sala Audiovisual de la institución, la Rectora de la UPBC, Dra. Marcela Barreras Hernández, dio a conocer que a partir del mes de septiembre las y los estudiantes podrán inscribirse en los siguientes programas:" 
+    },
+    {
+      "type": "list",
+      "style": "unordered",
+      "items": [
+        { "text": "Ingeniería en Semiconductores" },
+        { "text": "Ingeniería Industrial" },
+        { "text": "Licenciatura en Educación" },
+        { "text": "Licenciatura en Gastronomía" },
+        { "text": "Licenciatura en Negocios y Mercadotecnia" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "La Rectora explicó que cada una de estas nuevas carreras ha sido diseñada estratégicamente para responder a las exigencias de un entorno laboral en constante transformación, combinando un enfoque técnico, humano y ético que distingue a la universidad. Además, todos los programas incluirán una certificación como Técnico Superior Universitario (TSU), lo que permitirá a las y los egresados contar con una ventaja competitiva desde el inicio de su trayectoria profesional. Entre las certificaciones destacan el TSU en Manufactura de Semiconductores, Sistemas de Gestión de Calidad, Moldeo de Plásticos y Enseñanza del Inglés, entre otras."
+    },
+    {
+      "type": "paragraph",
+      "text": "El evento contó con la participación del Mtro. Alejandro Rosales Sotelo, Subsecretario de Educación Media Superior, Superior e Investigación, quien reconoció a la UPBC como una institución estratégica para el desarrollo de Baja California. Destacó que estas nuevas opciones formativas son una muestra del compromiso con una educación pertinente, innovadora y de alta calidad que responde a las necesidades de la sociedad."
+    },
+    {
+      "type": "imageGrid",
+      "images": [
+        {
+          "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.51 PM.jpeg",
+          "alt": "Autoridades en la presentación de nuevas carreras"
+        },
+        {
+          "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM.jpeg",
+          "alt": "Asistentes al evento de nuevas carreras"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A la ceremonia asistieron también la Dra. Marina del Pilar Olmeda García, representantes de empresas de la región e instituciones de educación media superior, quienes coincidieron en señalar la importancia de contar con una universidad que, a lo largo de 19 años, ha impulsado la formación de talento con sentido social y visión de futuro. La Dra. Olmeda refrendó su compromiso de seguir apoyando el crecimiento de esta casa de estudios."
+    },
+    {
+      "type": "paragraph",
+      "text": "Durante la presentación estuvieron presentes el Lic. Guadalupe Acuña Álvarez, titular de la Oficina de Enlace de la Secretaría de Educación, directivos de planteles de nivel medio superior y representantes del sector productivo, quienes celebraron el anuncio como una oportunidad para fortalecer la vinculación entre la academia y la industria."
+    },
+    {
+      "type": "imageGrid",
+      "images": [
+        {
+          "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM (1).jpeg",
+          "alt": "Presentación de las nuevas carreras"
+        },
+        {
+          "src": "/assets/images/news/nuevas-carreras/WhatsApp Image 2025-07-08 at 3.49.52 PM (2).jpeg",
+          "alt": "Asistentes a la presentación"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Con este importante paso, la UPBC amplía su oferta académica a once programas de licenciatura e ingeniería, consolidándose como una opción educativa de vanguardia que apuesta por la innovación, la calidad y el compromiso con el desarrollo de Mexicali, Baja California y México."
+    },
+    {
+      "type": "paragraph",
+      "text": "Para más información sobre inscripciones y detalles de las nuevas carreras, invitamos a las y los interesados a consultar el sitio web oficial de la universidad o acudir directamente a las oficinas de servicios escolares."
+    }
+  ],
+  "shareEnabled": true,
+  "backLink": {
+    "label": "Volver a Novedades",
+    "href": "/index.html#meetings"
+  }
+}

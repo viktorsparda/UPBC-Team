@@ -1,0 +1,438 @@
+{
+  "startNode": "inicio_start",
+  "nodes": [
+  {
+    "id": "contacto_rectoria",
+    "title": "Contacto Rectoría",
+    "text": "Para contactar a Rectoría:\r\nRectora: Marcela Barreras Hernández\r\nCorreo: rectoria@upbc.edu.mx\r\nTeléfono: (686) 104-2727\r\nExtensión: 1123",
+    "options": [
+      { "label": "Volver", "next": "menu_contacto"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "contacto_gestion_escolar",
+    "title": "Contacto Gestión escolar",
+    "text": "Para trámites de alumnos:\r\nCorreo: gestionescolar@upbc.edu.mx\r\nTeléfono: (686) 104-2727\r\nExtensión: 1139",
+    "options": [
+      { "label": "Volver", "next": "menu_contacto"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "contacto_finanzas",
+    "title": "Contacto Finanzas",
+    "text": "Para dudas sobre pagos de inscripción, colegiaturas y otros:\r\nCorreo: finanzas@upbc.edu.mx\r\nTeléfono: (686) 104-2727\r\nExtensión: 1119",
+    "options": [
+      { "label": "Volver", "next": "menu_contacto"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "contacto_vinculacion",
+    "title": "Contacto Vinculación",
+    "text": "Para información sobre Estancias, Estadías y Bolsa de Trabajo:\r\nCorreo: vinculacion@upbc.edu.mx\r\nTeléfono: (686) 104-2727\r\nExtensión: 1271",
+    "options": [
+      { "label": "Volver", "next": "menu_contacto"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "contacto_soporte_tecnico",
+    "title": "Contacto Soporte Técnico",
+    "text": "Para problemas técnicos con tu correo institucional o acceso a plataformas:\r\nCorreo: soporte@upbc.edu.mx\r\nTeléfono: (686) 104-2727\r\nExtensión: 1116",
+    "options": [
+      { "label": "Volver", "next": "menu_contacto"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_convocatoria",
+    "title": "Info Convocatoria",
+    "text": "La convocatoria para Nuevo Ingreso se publica cada cuatrimestre. La convocatoria actual (ENERO-ABRIL 2026-1) indica que la fecha límite para obtener tu ficha es el 9 de diciembre de 2025. Los resultados se publican el 12 de diciembre y las inscripciones son del 15 al 19 de diciembre.",
+    "options": [
+      { "label": "Volver", "next": "menu_admisiones"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_becas",
+    "title": "Info Becas",
+    "text": "¡Sí! Ofrecemos becas cada cuatrimestre. Las principales son:\r\nBeca de Excelencia: 100% de descuento en reinscripción para el promedio más alto de cada carrera (se da en automático).\r\nBeca de Aprovechamiento: Descuento del 30% al 50% para promedios de 8.5 a 10 (debes solicitarla).\r\nBeca de Equidad Social: Apoyo si tu situación socioeconómica te pone en riesgo de deserción.\r\nBeca al Mérito: 50% de descuento si destacas en actividades científicas, culturales o deportivas.\r\n\r\nLas convocatorias se publican al inicio de cada cuatrimestre en el portal.",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_mision",
+    "title": "Info Nosotros Misión",
+    "text": "Nuestra Misión es formar integralmente profesionales con un enfoque humanista, científico y tecnológico, a través de programas educativos de calidad y pertinencia social, que contribuyan al desarrollo sostenible.",
+    "options": [
+      {"label": "Volver", "next": "menu_nosotros"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_vision",
+    "title": "Info Nosotros Visión",
+    "text": "Nuestra Visión es ser una institución de educación superior con reconocimiento nacional e internacional, destacada por su excelencia académica, su vinculación con el entorno y su compromiso con la innovación y la responsabilidad social.",
+    "options": [
+      {"label": "Volver", "next": "menu_nosotros"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_rectora",
+    "title": "Info Rector@",
+    "text": "",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_siaax",
+    "title": "Info SIAAX",
+    "text": "El SIAAX es nuestro Sistema de Información para Alumnos. Desde ahí puedes consultar tu carga académica, calificaciones, realizar pagos y solicitar becas.\r\nPuedes acceder usando tu matrícula y contraseña. ¿Te gustaría que te lleve al portal de acceso?\r\n<a href=\"https://www2.upbc.edu.mx/alumnos/siaax/\" target=\"_blank\">texto del enlace</a>",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_contacto_general",
+    "title": "Contacto General",
+    "text": "¡Claro! Aquí están nuestros datos principales:\r\nTeléfono (Conmutador): (686) 104-2727\r\nDirección: Calle de la Claridad S/N, Colonia Plutarco Elías Calles, Mexicali, B.C., México CP. 21376\r\nCorreo General: contacto@upbc.edu.mx.\r\n¿Necesitas el contacto de un área específica?",
+    "options": [
+      {"label": "Volver", "next": "menu_contacto"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_requisitos",
+    "title": "Info Requisitos",
+    "text": "Para ser admitido, necesitas:\r\n. Registrarte en línea para obtener tu preficha.\r\n. Pagar el costo de la ficha de examen.\r\n. Subir tus documentos (Certificado de Bachillerato, Acta de Nacimiento, CURP, Comprobante de Domicilio).\\n4. Presentar y aprobar el examen de admisión.",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_costos",
+    "title": "Info Costos",
+    "text": "El costo de la ficha para el examen de admisión es de $1,000 MXN.\r\nEl costo de la inscripción cuatrimestral (una vez aceptado) es de $3,500 MXN.",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_instalaciones",
+    "title": "Info Instalaciones",
+    "text": "Contamos con instalaciones de primer nivel, incluyendo Aulas equipadas, Talleres y Laboratorios especializados para cada carrera. Además, tenemos un Centro de Idiomas (CADI) para complementar tu formación.",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_normatividad",
+    "title": "Info Normatividad",
+    "text": "La universidad se rige por diversos instrumentos legales. Puedes consultar nuestros Reglamentos, Leyes, Políticas y Manuales en el portal de Normatividad del sitio web.",
+    "options": [
+      {"label": "Volver", "next": "menu_admisiones"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_servicios_alumnos",
+    "title": "Servicios alumnos",
+    "text": "Ofrecemos diversos servicios para alumnos, como:\r\nTrámites de reinscripción y pago en línea \r\nSolicitud de constancias y credenciales\r\nProcesos de baja temporal o definitiva\r\nSolicitud de becas\r\nEquivalencias y prórrogas de pago\r\nLa mayoría de estos trámites se inician a través del portal SIAAX.",
+    "options": [
+      {"label": "Volver", "next": "menu_servicios"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_servicios_egresados",
+    "title": "Servicios egresados",
+    "text": "Para nuestros egresados, ofrecemos servicios clave para concluir su etapa universitaria, incluyendo:\r\nSolicitud de Constancia de Terminación de Estudios\r\nInformación sobre el Procedimiento de Titulación\r\nEncuesta de Vinculación y seguimiento.",
+    "options": [
+      {"label": "Volver", "next": "menu_servicios"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "info_servicios_maestros",
+    "title": "Servicios maestros",
+    "text": "Para nuestro personal docente y administrativo, gestionamos servicios internos como:\r\nRequisitos de contratación\r\nSolicitud de vacaciones\r\nPases de salida y justificaciones (docentes y administrativos).",
+    "options": [
+      {"label": "Volver", "next": "menu_servicios"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_tecnologias_de_la_informacion",
+    "title": "Ingeniería en Tecnologías de la Información e Innovación Digital",
+    "text": "Sé un líder en la transformación digital. Aprenderás a analizar, diseñar y desarrollar sistemas de software, administrar redes y gestionar centros de cómputo para dar solución a las necesidades de la industria.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_animacion",
+    "title": "Ingeniería en Animación y Efectos Visuales",
+    "text": "Conviértete en un artista 3D y crea mundos digitales impresionantes. Dominarás técnicas avanzadas de animación y efectos visuales para la industria del entretenimiento.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_energia_y_desarrollo_sostenible",
+    "title": "Ingeniería Energía y desarrollo sostenible",
+    "text": "Diseña el futuro de la energía. Serás un profesional capacitado para implementar nuevas tecnologías de aprovechamiento energético (como solar y eólica) y contribuir al desarrollo sostenible del país.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_mecatronica",
+    "title": "Ingeniería Mecatrónica",
+    "text": "Domina la automatización y la robótica. Integrarás elementos de mecánica, electrónica y control para diseñar, desarrollar y mantener sistemas inteligentes y procesos de manufactura flexibles.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_manufactura",
+    "title": "Ingeniería Manufactura",
+    "text": "Gestiona y optimiza los procesos de producción industrial. Serás capaz de administrar sistemas de calidad, seguridad y medio ambiente, aplicando herramientas CAD/CAM y manufactura esbelta para mejorar la competitividad de las empresas.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_microelectronica_y_semiconductores",
+    "title": "Ingeniería Microelectrónica y semiconductores",
+    "text": "Forma parte de la industria de mayor crecimiento. Serás un especialista en el diseño, fabricación y prueba de microchips y circuitos integrados, componentes esenciales en la computación, telecomunicaciones y la industria automotriz.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "ingenierias_industrial",
+    "title": "Ingeniería Industrial",
+    "text": "Conviértete en un líder analítico capaz de optimizar sistemas y procesos. Aprenderás a diseñar e implementar soluciones sustentables para la generación de bienes y servicios, con un enfoque en la calidad y la mejora continua.",
+    "options": [
+      {"label": "Volver", "next": "menu_ingenierias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "inicio_start",
+    "title": "Start",
+    "text": "¡Hola! Soy el asistente virtual de la Universidad Politécnica de Baja California (UPBC). ¿En qué te puedo ayudar hoy?",
+    "options": [
+      {"label": "Oferta académica", "next": "menu_oferta"},
+      {"label": "Admisiones", "next": "menu_admisiones"},
+      {"label": "Servicios", "next": "menu_servicios"},
+      {"label": "Nosotros", "next": "menu_nosotros"},
+      {"label": "Contacto", "next": "menu_contacto"}
+    ]
+  },
+  {
+    "id": "licenciaturas_administracion",
+    "title": "Licenciatura en Administración",
+    "text": "Prepárate para ser un líder estratégico. Aprenderás a gestionar eficientemente los recursos humanos, financieros y materiales de una organización, tomando decisiones clave para asegurar su éxito y competitividad.",
+    "options": [
+      {"label": "Volver", "next": "menu_licenciaturas"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "licenciaturas_educacion",
+    "title": "Licenciatura en Educación",
+    "text": "Transforma el futuro a través de la enseñanza. Desarrollarás las competencias para diseñar, implementar y evaluar procesos educativos innovadores, utilizando nuevas tecnologías para responder a los retos del aprendizaje actual.",
+    "options": [
+      {"label": "Volver", "next": "menu_licenciaturas"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "licenciaturas_gastronomia",
+    "title": "Licenciatura en Gastronomía",
+    "text": "Conviértete en un profesional de la alta cocina. Dominarás las técnicas culinarias nacionales e internacionales, la administración de negocios gastronómicos y la innovación de alimentos, preparado para emprender o dirigir en el sector.",
+    "options": [
+      {"label": "Volver", "next": "menu_licenciaturas"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "licenciaturas_negocios_y_mercadotecnia",
+    "title": "Licenciatura en Negocios y mercadotecnia",
+    "text": "Aprende a crear y posicionar marcas exitosas. Desarrollarás estrategias de mercado innovadoras, comprendiendo el comportamiento del consumidor y utilizando herramientas digitales para impulsar el crecimiento de las empresas.",
+    "options": [
+      {"label": "Volver", "next": "menu_licenciaturas"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "maestrias_ensenanza_de_las_ciencias",
+    "title": "Maestría en Enseñanza de las ciencias",
+    "text": "Profesionaliza tu labor docente. Este posgrado está diseñado para fortalecer tus competencias en la enseñanza de las ciencias, permitiéndote innovar en tus métodos pedagógicos y mejorar el aprendizaje de tus estudiantes.",
+    "options": [
+      {"label": "Volver", "next": "menu_maestrias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "maestrias_ingenieria",
+    "title": "Maestría en Ingeniería",
+    "text": "Especialízate en la vanguardia de la tecnología. Este programa ofrece cuatro líneas de investigación: Automatización y Control, Sistemas Inteligentes, Manufactura y Tecnologías de la Información.",
+    "options": [
+      {"label": "Volver", "next": "menu_maestrias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "maestrias_alta_direccion_de_las_organizaciones",
+    "title": "Maestría en Alta dirección de las organizaciones",
+    "text": "Prepárate para liderar el cambio en las empresas. Desarrollarás una visión estratégica y habilidades directivas para optimizar la toma de decisiones, la gestión de equipos y la competitividad de cualquier organización.",
+    "options": [
+      {"label": "Volver", "next": "menu_maestrias"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_oferta",
+    "title": "Oferta académica",
+    "text": "¡Excelente elección! Nuestra oferta educativa es muy completa. ¿Qué nivel te interesa consultar?",
+    "options": [
+      {"label": "Todas", "next": "menu_todas"},
+      {"label": "Ingenierías", "next": "menu_ingenierias"},
+      {"label": "Licenciaturas", "next": "menu_licenciaturas"},
+      {"label": "Maestrías", "next": "menu_maestrias"},
+      {"label": "Volver", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_admisiones",
+    "title": "Admisiones",
+    "text": "¡Queremos que formes parte de UPBC! ¿Qué información del proceso de admisión necesitas?",
+    "options": [
+      {"label": "Información de Convocatoria", "next": "info_convocatoria"},
+      {"label": "Información de Requisitos", "next": "info_requisitos"},
+      {"label": "Información de Costos", "next": "info_costos"},
+      {"label": "Información de Becas", "next": "info_becas"},
+      {"label": "Información de Instalaciones", "next": "info_instalaciones"},
+      {"label": "Información de Normatividad", "next": "info_normatividad"},
+      {"label": "Información del Rector", "next": "info_rectora"},
+      {"label": "Información de SIAAX", "next": "info_siaax"},
+      {"label": "Volver", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_contacto",
+    "title": "Contacto",
+    "text": "Estamos para ayudarte. ¿Qué tipo de información de contacto necesitas?",
+    "options": [
+      {"label": "Contacto Rectoría", "next": "contacto_rectoria"},
+      {"label": "Contacto Gestión Escolar", "next": "contacto_gestion_escolar"},
+      {"label": "Contacto Finanzas", "next": "contacto_finanzas"},
+      {"label": "Contacto Vinculación", "next": "contacto_vinculacion"},
+      {"label": "Contacto Soporte Técnico", "next": "contacto_soporte_tecnico"},
+      {"label": "Contacto General", "next": "info_contacto_general"},
+      {"label": "Volver", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_nosotros",
+    "title": "Nosotros",
+    "text": "Somos una institución pública comprometida con la excelencia. ¿Qué te gustaría saber sobre nosotros?",
+    "options": [
+      {"label": "Misión", "next": "info_mision"},
+      {"label": "Visión", "next": "info_vision"},
+      {"label": "Volver", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_servicios",
+    "title": "Servicios",
+    "text": "Ofrecemos múltiples servicios a nuestra comunidad. ¿Para quién es el servicio?",
+    "options": [
+      {"label": "Servicios de Alumnos", "next": "info_servicios_alumnos"},
+      {"label": "Servicios de Egresados", "next": "info_servicios_egresados"},
+      {"label": "Servicios de Maestros", "next": "info_servicios_maestros"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_ingenierias",
+    "title": "Ingenierías",
+    "text": "Ver solo Ingenierías",
+    "options": [
+      {"label": "Ing. en Tecnologías de la Información", "next": "ingenierias_tecnologias_de_la_informacion"},
+      {"label": "Ing. en Animación y Efectos Visuales", "next": "ingenierias_animacion"},
+      {"label": "Ing. en Energía y Desarrollo Sostenible", "next": "ingenierias_energia_y_desarrollo_sostenible"},
+      {"label": "Ing. en Mecatrónica", "next": "ingenierias_mecatronica"},
+      {"label": "Ing. en Manufactura", "next": "ingenierias_manufactura"},
+      {"label": "Ing. en Microelectrónica y Semiconductores", "next": "ingenierias_microelectronica_y_semiconductores"},
+      {"label": "Ing. Industrial", "next": "ingenierias_industrial"},
+      {"label": "Volver", "next": "menu_oferta"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_licenciaturas",
+    "title": "Licenciaturas",
+    "text": "Ver solo Licenciaturas",
+    "options": [
+      {"label": "Lic. en Administración", "next": "licenciaturas_administracion"},
+      {"label": "Lic. en Educación", "next": "licenciaturas_educacion"},
+      {"label": "Lic. en Gastronomia", "next": "licenciaturas_gastronomia"},
+      {"label": "Lic. en Negocios y Mercadotecnia", "next": "licenciaturas_negocios_y_mercadotecnia"},
+      {"label": "Volver", "next": "menu_oferta"},
+      {"label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_todas",
+    "title": "Todas",
+    "text": "Ver Todas las Carreras",
+    "options": [
+      { "label": "Ing. en Tecnologías de la Información", "next": "ingenierias_tecnologias_de_la_informacion"},
+      { "label": "Ing. en Animación y Efectos Visuales", "next": "ingenierias_animacion"},
+      { "label": "Ing. en Energía y Desarrollo Sostenible", "next": "ingenierias_energia_y_desarrollo_sostenible"},
+      { "label": "Ing. en Mecatrónica", "next": "ingenierias_mecatronica"},
+      { "label": "Ing. en Manufactura", "next": "ingenierias_manufactura"},
+      { "label": "Ing. en Microelectrónica y Semiconductores", "next": "ingenierias_microelectronica_y_semiconductores"},
+      { "label": "Ing. Industrial", "next": "ingenierias_industrial" },
+      { "label": "Lic. en Administración", "next": "licenciaturas_administracion" },
+      { "label": "Lic. en Educación", "next": "licenciaturas_educacion"},
+      { "label": "Lic. en Gastronomía", "next": "licenciaturas_gastronomia"},
+      { "label": "Lic. en Negocios y Mercadotecnia", "next": "licenciaturas_negocios_y_mercadotecnia" },
+      { "label": "Volver", "next": "menu_oferta"},
+      { "label": "Inicio", "next": "inicio_start"}
+    ]
+  },
+  {
+    "id": "menu_maestrias",
+    "title": "Maestrías",
+    "text": "",
+    "options": [
+      { "label": "Maestría en Enseñanza de las ciencias", "next": "maestrias_ensenanza_de_las_ciencias" },
+      { "label": "Maestría en Ingeniería", "next": "maestrias_ingenieria" },
+      { "label": "Maestría en Alta dirección de las organizaciones", "next": "maestrias_alta_direccion_de_las_organizaciones" },
+      { "label": "Volver", "next": "menu_oferta" },
+      { "label": "Inicio", "next": "inicio_start" }
+    ]
+  }
+  ]
+}

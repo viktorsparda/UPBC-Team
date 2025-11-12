@@ -1,9 +1,17 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { globSync } from 'glob';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+const newsHtmlEntries = Object.fromEntries(
+  globSync('src/pages/news-*.html', { cwd: __dirname }).map((filePath) => {
+    const name = path.basename(filePath, '.html');
+    return [name, path.resolve(__dirname, filePath)];
+  })
+);
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? '';
 const manualBase = process.env.VITE_PUBLIC_BASE_PATH;
@@ -15,6 +23,7 @@ export default defineConfig({
   root: '.',
   base,
   publicDir: 'public',
+  appType: 'mpa',
   
   server: {
     port: 3000,
@@ -40,10 +49,8 @@ export default defineConfig({
         carreras: path.resolve(__dirname, 'src/pages/carreras.html'),
         posgrados: path.resolve(__dirname, 'src/pages/posgrados.html'),
         educacionContinua: path.resolve(__dirname, 'src/pages/educacion-continua.html'),
-        newsFeriaEstancias: path.resolve(__dirname, 'src/pages/news-feria-estancias.html'),
-        newsFirmanConvenio: path.resolve(__dirname, 'src/pages/news-firman-convenio.html'),
-        newsNuevasCarreras: path.resolve(__dirname, 'src/pages/news-nuevas-carreras.html'),
-        newsReunionComvin: path.resolve(__dirname, 'src/pages/news-reunion-comvin.html'),
+    novedades: path.resolve(__dirname, 'src/pages/novedades.html'),
+  ...newsHtmlEntries,
         // Carreras individuales
         administracion: path.resolve(__dirname, 'src/pages/administracion.html'),
         animacion: path.resolve(__dirname, 'src/pages/animacion.html'),
@@ -76,6 +83,7 @@ export default defineConfig({
   serviciosBajaDefinitiva: path.resolve(__dirname, 'src/pages/servicios/solicitudes/baja-definitiva.html'),
   serviciosProrrogaPago: path.resolve(__dirname, 'src/pages/servicios/solicitudes/prorroga-pago.html'),
   serviciosCorreoInstitucional: path.resolve(__dirname, 'src/pages/servicios/soporte/correo-institucional.html'),
+  admin: path.resolve(__dirname, 'admin/index.html'),
       },
       output: {
         manualChunks: {

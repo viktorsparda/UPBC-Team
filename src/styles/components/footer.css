@@ -6,7 +6,7 @@ footer {
   background-color: var(--color-dark);
   color: var(--color-gray-light);
   padding: var(--spacing-xxl) 0 var(--spacing-md);
-  margin-top: var(--spacing-xxl);
+  margin-top: 0;
 }
 
 .footer-widget {

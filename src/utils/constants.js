@@ -2,7 +2,8 @@
  * Constantes globales de la aplicación UPBC
  */
 
-const BASE_URL = import.meta.env.BASE_URL ?? '/';
+const metaEnv = import.meta.env || {};
+const BASE_URL = metaEnv.BASE_URL ?? '/';
 
 const withBase = (path = '') => {
   if (!path) return BASE_URL;
@@ -95,6 +96,9 @@ export const SITE_CONFIG = {
       laboratorios: withBase('servicios/laboratorios/'),
       centroIdiomas: 'https://www.upbc.edu.mx/Universidad/cadi.html',
       vinculacionEstancias: 'https://www.upbc.edu.mx/WVINCULACION/ESTANCIAS.HTML'
+    },
+    news: {
+      list: withBase('src/pages/novedades.html')
     },
     contacto: withBase('#contact')
   },
@@ -200,8 +204,20 @@ export const MENU_ITEMS = [
     ]
   },
   {
+    label: 'Novedades',
+    url: routes.news.list,
+    type: 'link'
+  },
+  {
     label: 'Contacto',
     url: routes.contacto,
     type: 'link'
   }
 ];
+
+export const getNewsDetailPath = (slug = '') => {
+  if (!slug) {
+    return routes.news.list;
+  }
+  return withBase(`src/pages/news-${slug}.html`);
+};

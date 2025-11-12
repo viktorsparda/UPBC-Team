@@ -1,0 +1,64 @@
+{
+  "slug": "firman-convenio",
+  "metaTitle": "Convenio UPBC y Centro de Conciliación Laboral - Universidad Politécnica de Baja California",
+  "metaDescription": "La Universidad Politécnica de Baja California celebró un convenio de colaboración con el Centro de Conciliación Laboral del Estado de Baja California.",
+  "title": "Firman convenio la UPBC y el Centro de Conciliación Laboral del Estado",
+  "publishDate": "2025-07-09",
+  "author": "Redacción UPBC",
+  "tags": ["Convenios", "Vinculación"],
+  "showCover": false,
+  "showDateInBody": false,
+  "cover": {
+    "src": "/assets/images/news/firman-convenio/WhatsApp Image 2025-07-09 at 3.28.29 PM.jpeg",
+    "alt": "Firma de convenio entre la UPBC y el Centro de Conciliación Laboral"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Con el propósito de fortalecer los lazos interinstitucionales y abrir nuevas oportunidades para impulsar la formación profesional y el desarrollo de nuestra comunidad, la Universidad Politécnica de Baja California celebró un importante convenio de colaboración con el Centro de Conciliación Laboral del Estado de Baja California."
+    },
+    {
+      "type": "image",
+      "src": "/assets/images/news/firman-convenio/WhatsApp Image 2025-07-09 at 3.28.29 PM.jpeg",
+      "alt": "Autoridades firmando el convenio UPBC - Centro de Conciliación Laboral"
+    },
+    {
+      "type": "paragraph",
+      "text": "El evento, celebrado el miércoles 9 de julio, fue encabezado por la Dra. Marcela Barreras Hernández, rectora de esta máxima casa de estudios, y la Mtra. Brenda Aracely Valenzuela Tortoledo, titular del Centro de Conciliación."
+    },
+    {
+      "type": "paragraph",
+      "text": "El convenio se firmó en las instalaciones de la UPBC, donde ambas titulares estuvieron acompañadas por sus respectivos equipos de trabajo, quienes coincidieron en manifestar el compromiso adquirido a través de este acuerdo."
+    },
+    {
+      "type": "imageGrid",
+      "images": [
+        {
+          "src": "/assets/images/news/firman-convenio/WhatsApp Image 2025-07-09 at 3.28.29 PM (1).jpeg",
+          "alt": "Autoridades durante la firma del convenio"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Este convenio de colaboración permitirá a los estudiantes de la UPBC realizar prácticas profesionales y estadías en el Centro de Conciliación Laboral, brindándoles la oportunidad de adquirir experiencia en un entorno real relacionado con la mediación y resolución de conflictos laborales."
+    },
+    {
+      "type": "paragraph",
+      "text": "Además, el acuerdo contempla la realización de actividades académicas conjuntas, como conferencias, talleres y cursos de capacitación, que beneficiarán tanto a la comunidad universitaria como al personal del Centro de Conciliación."
+    },
+    {
+      "type": "paragraph",
+      "text": "La Dra. Barreras Hernández destacó la importancia de este tipo de alianzas para fortalecer la formación integral de los estudiantes y su preparación para el mundo laboral, mientras que la Mtra. Valenzuela Tortoledo expresó su satisfacción por colaborar con una institución educativa de prestigio como la UPBC."
+    },
+    {
+      "type": "paragraph",
+      "text": "Con este convenio, la Universidad Politécnica de Baja California reafirma su compromiso con la vinculación efectiva entre la academia y las instituciones públicas, generando sinergias que contribuyen al desarrollo profesional de sus estudiantes y al fortalecimiento del tejido social e institucional de Baja California."
+    }
+  ],
+  "shareEnabled": true,
+  "backLink": {
+    "label": "Volver a Novedades",
+    "href": "/index.html#meetings"
+  }
+}

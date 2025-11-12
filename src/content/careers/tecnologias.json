@@ -1,0 +1,106 @@
+{
+  "slug": "tecnologias",
+  "category": "ingenieria",
+  "name": "Ingeniería en Tecnologías de la Información e Innovación Digital",
+  "shortName": "Tecnologías de la Información",
+  "metaTitle": "Ingeniería en Tecnologías de la Información e Innovación Digital - UPBC",
+  "metaDescription": "Ingeniería en Tecnologías de la Información e Innovación Digital en la UPBC. Desarrollo de software, IA, ciberseguridad y transformación digital.",
+  "tagline": "Lidera la transformación digital del futuro",
+  "summary": "Desarrolla soluciones de software, inteligencia artificial y ciberseguridad para impulsar la innovación digital.",
+  "description": {
+    "image": "/assets/images/carreras/tecnologias/descripcion.jpg",
+    "alt": "Equipo de estudiantes colaborando en laboratorio de TI",
+    "paragraphs": [
+      "La Ingeniería en Tecnologías de la Información e Innovación Digital de la Universidad Politécnica de Baja California forma profesionales especializados en el desarrollo, implementación y gestión de soluciones tecnológicas innovadoras para la era digital.",
+      "Nuestro programa combina fundamentos sólidos de ciencias de la computación con conocimientos avanzados en tecnologías emergentes como inteligencia artificial, big data, ciberseguridad y desarrollo de aplicaciones, preparando a los estudiantes para liderar la transformación digital en diversos sectores."
+    ]
+  },
+  "outcomes": {
+    "lead": "Al egresar de la carrera de Ingeniería en Tecnologías de la Información e Innovación Digital, serás capaz de:",
+    "items": [
+      "Desarrollar aplicaciones y sistemas de software utilizando diversas plataformas y lenguajes",
+      "Implementar soluciones basadas en inteligencia artificial y aprendizaje automático",
+      "Diseñar y gestionar infraestructuras de redes y sistemas informáticos",
+      "Aplicar estrategias de ciberseguridad para proteger sistemas e información",
+      "Analizar datos para obtener insights y apoyar la toma de decisiones",
+      "Liderar proyectos de transformación digital en organizaciones",
+      "Desarrollar soluciones innovadoras utilizando tecnologías emergentes"
+    ]
+  },
+  "labour": {
+    "lead": "Como Ingeniero en Tecnologías de la Información e Innovación Digital podrás desempeñarte profesionalmente en:",
+    "items": [
+      "Empresas de desarrollo de software y aplicaciones",
+      "Departamentos de TI en organizaciones de múltiples sectores",
+      "Consultorías tecnológicas y de transformación digital",
+      "Empresas de ciberseguridad",
+      "Startups tecnológicas",
+      "Centros de investigación y desarrollo tecnológico",
+      "Empresas de análisis de datos e inteligencia de negocios",
+      "Emprendimiento de proyectos tecnológicos"
+    ]
+  },
+  "curriculum": {
+    "title": "Mapas curriculares",
+    "intro": "Nuestro plan de estudios está diseñado para brindarte una formación integral, combinando conocimientos teóricos y prácticos en programación, redes, bases de datos, inteligencia artificial y gestión de proyectos tecnológicos. Ofrecemos diferentes especializaciones para adaptarnos a tus intereses profesionales:",
+    "items": [
+      {
+        "title": "Especialización en Ciencia de Datos",
+        "image": "/assets/images/carreras/tecnologias/mapa-curricular-1.jpg",
+        "alt": "Mapa curricular de la especialización en Ciencia de Datos"
+      },
+      {
+        "title": "Especialización en Desarrollo de Software Multiplataforma",
+        "image": "/assets/images/carreras/tecnologias/mapa-curricular-2.jpg",
+        "alt": "Mapa curricular de la especialización en Desarrollo de Software Multiplataforma"
+      },
+      {
+        "title": "Especialización en Entornos Virtuales y Negocios Digitales",
+        "image": "/assets/images/carreras/tecnologias/mapa-curricular-3.jpg",
+        "alt": "Mapa curricular de la especialización en Entornos Virtuales y Negocios Digitales"
+      },
+      {
+        "title": "Especialización en Inteligencia Artificial",
+        "image": "/assets/images/carreras/tecnologias/mapa-curricular-4.jpg",
+        "alt": "Mapa curricular de la especialización en Inteligencia Artificial"
+      },
+      {
+        "title": "Especialización en Infraestructura de Redes Digitales",
+        "image": "/assets/images/carreras/tecnologias/mapa-curricular-5.jpg",
+        "alt": "Mapa curricular de la especialización en Infraestructura de Redes Digitales"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Duración",
+      "value": "10 cuatrimestres"
+    },
+    {
+      "label": "Modalidad",
+      "value": "Presencial"
+    },
+    {
+      "label": "Título que otorga",
+      "value": "TSU e Ingeniería en Tecnologías de la Información e Innovación Digital"
+    }
+  ],
+  "sidebarSections": [
+    {
+      "title": "Áreas de especialización",
+      "items": [
+        "Desarrollo de software",
+        "Inteligencia artificial",
+        "Ciberseguridad",
+        "Ciencia de datos",
+        "Computación en la nube",
+        "Desarrollo web y móvil"
+      ]
+    }
+  ],
+  "highlights": [
+    "Desarrollo de software e innovación",
+    "Ciberseguridad y protección de datos",
+    "Inteligencia artificial aplicada"
+  ]
+}
