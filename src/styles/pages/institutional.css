@@ -29,6 +29,7 @@
   margin-bottom: var(--spacing-sm);
 }
 
+
 .section-heading p,
 .page-heading p,
 .mision-vision-content p,
@@ -194,6 +195,7 @@
   margin: 0;
   font-size: 1.35rem;
   font-weight: 600;
+  color: var(--color-white)
 }
 
 .info-card-body {

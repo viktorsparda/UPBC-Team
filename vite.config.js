@@ -83,6 +83,7 @@ export default defineConfig({
   serviciosBajaDefinitiva: path.resolve(__dirname, 'src/pages/servicios/solicitudes/baja-definitiva.html'),
   serviciosProrrogaPago: path.resolve(__dirname, 'src/pages/servicios/solicitudes/prorroga-pago.html'),
   serviciosCorreoInstitucional: path.resolve(__dirname, 'src/pages/servicios/soporte/correo-institucional.html'),
+  // Admin panel
   admin: path.resolve(__dirname, 'admin/index.html'),
       },
       output: {
